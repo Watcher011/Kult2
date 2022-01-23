@@ -43,15 +43,15 @@
 		</comps>
 		<race>
 		 <wildBiomes>
-				<BorealForest>0.4</BorealForest>
+				<BorealForest>0.04</BorealForest>
 				<Tundra>0.05</Tundra>
 				<ColdBog>0.05</ColdBog>
-				<TemperateSwamp>0.4</TemperateSwamp>
-				<TropicalSwamp>0.3</TropicalSwamp>
-				<TemperateForest>0.4</TemperateForest>
-				<AridShrubland>0.2</AridShrubland>
-			    <Desert>0.1</Desert>
-                <TropicalRainforest>0.2</TropicalRainforest>
+				<TemperateSwamp>0.04</TemperateSwamp>
+				<TropicalSwamp>0.03</TropicalSwamp>
+				<TemperateForest>0.04</TemperateForest>
+				<AridShrubland>0.02</AridShrubland>
+			    <Desert>0.01</Desert>
+                <TropicalRainforest>0.02</TropicalRainforest>
 			</wildBiomes>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
@@ -562,15 +562,15 @@
 		</tools>
 		<race>
 		<wildBiomes>
-				<BorealForest>0.4</BorealForest>
+				<BorealForest>0.04</BorealForest>
 				<Tundra>0.05</Tundra>
 				<ColdBog>0.05</ColdBog>
-				<TemperateSwamp>0.4</TemperateSwamp>
-				<TropicalSwamp>0.3</TropicalSwamp>
-				<TemperateForest>0.4</TemperateForest>
-				<AridShrubland>0.2</AridShrubland>
-			    <Desert>0.1</Desert>
-                <TropicalRainforest>0.2</TropicalRainforest>
+				<TemperateSwamp>0.04</TemperateSwamp>
+				<TropicalSwamp>0.03</TropicalSwamp>
+				<TemperateForest>0.04</TemperateForest>
+				<AridShrubland>0.02</AridShrubland>
+			    <Desert>0.01</Desert>
+                <TropicalRainforest>0.02</TropicalRainforest>
 
 			</wildBiomes>
 			<executionRange>5</executionRange>
@@ -631,8 +631,8 @@
 		<label>Kirin Ancient</label>
 		<race>KirinAncient</race>
 		<canArriveManhunter>false</canArriveManhunter>
-		<ecoSystemWeight>0.8</ecoSystemWeight>
-		<combatPower>900</combatPower>
+		<ecoSystemWeight>1.8</ecoSystemWeight>
+		<combatPower>1900</combatPower>
 		<lifeStages>
 			<li>
 				<label>Kirin Snowflake</label>
@@ -816,7 +816,7 @@
 				<TropicalSwamp>0.03</TropicalSwamp>
 				<TemperateForest>0.04</TemperateForest>
 				<AridShrubland>0.02</AridShrubland>
-			    <Desert>0.1</Desert>
+			    <Desert>0.01</Desert>
                 <TropicalRainforest>0.02</TropicalRainforest>
 
 			</wildBiomes>
@@ -878,8 +878,8 @@
 		<defName>GreenWyvernAncient</defName>
 		<label>Green Wyvern Ancient</label>
 		<race>GreenWyvernAncient</race>
-		<combatPower>500</combatPower>
-		<ecoSystemWeight>1</ecoSystemWeight>
+		<combatPower>1500</combatPower>
+		<ecoSystemWeight>1.2</ecoSystemWeight>
 		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
@@ -1123,8 +1123,8 @@
 		<defName>BehirAncient</defName>
 		<label>Behir Ancient</label>
 		<race>BehirAncient</race>
-		<combatPower>500</combatPower>
-		<ecoSystemWeight>1</ecoSystemWeight>
+		<combatPower>1500</combatPower>
+		<ecoSystemWeight>1.5</ecoSystemWeight>
 		<canArriveManhunter>false</canArriveManhunter>
 		<lifeStages>
 			<li>
