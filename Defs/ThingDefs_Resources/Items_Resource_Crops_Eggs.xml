@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingDef ParentName="SK_EggUnfertBase">
+		<defName>EggGold</defName>
+		<label>GoldEgg</label>
+		<description>An Golden egg of a Kukuha.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/GoldEgg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(255,215,0)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<MarketValue>450</MarketValue>
+			<Mass>0.5</Mass>
+			<Beauty>60</Beauty>
+			<DeteriorationRate>0.7</DeteriorationRate>
+			<Flammability>0.7</Flammability>
+			<Nutrition>1</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman> 
+			<SellPriceFactor>4</SellPriceFactor>
+		</statBases>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<joy>0.57</joy>
+			<joyKind>Gluttonous</joyKind>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<chairSearchRadius>25</chairSearchRadius>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Caffeine</hediffDef>
+					<severity>0.45</severity>
+					
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>0.5</offset>
+					
+				</li>
+				
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>GoodHappy</hediffDef>
+					<severity>0.25</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>1</glowRadius>
+                <glowColor>(0,255,0,0)</glowColor>
+            </li>
+			<li Class="CompProperties_Drug">
+				<chemical>Caffeine</chemical>
+	  		 <needLevelOffset>0.2</needLevelOffset>
+				 <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<addictiveness>0.20</addictiveness>
+				<listOrder>1100</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+ 
+	
+</Defs>

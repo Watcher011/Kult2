@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <KirinAncient.label>Древний кирин</KirinAncient.label>
+  <KirinAncient.description>Мистическое существо рожденное изо льда, Кирин несет стужу и холод. Душа этого существа высоко ценится за свои свойства на рынках римворлда.</KirinAncient.description>
+  <KirinAncient.tools.1.label>Right paw</KirinAncient.tools.1.label>
+  <KirinAncient.tools.2.label>Right paw</KirinAncient.tools.2.label>
+  <KirinAncient.tools.4.label>head</KirinAncient.tools.4.label>
+
+  <GreenWyvernAncient.label> Древняя зелёная виверна</GreenWyvernAncient.label>
+  <GreenWyvernAncient.description>Большое, драконоподобное существонекогда бывшее  зелёного цвета. В отличие от драконов, виверны способны на полёт с помощью своих видоизмененных предплечий, а не ярко выраженных крыльев.</GreenWyvernAncient.description>
+  <GreenWyvernAncient.tools.0.label>Left claw</GreenWyvernAncient.tools.0.label>
+  <GreenWyvernAncient.tools.1.label>Right claw</GreenWyvernAncient.tools.1.label>
+  <GreenWyvernAncient.tools.3.label>head</GreenWyvernAncient.tools.3.label>
+
+  <BehirAncient.label>Древний бехир</BehirAncient.label>
+  <BehirAncient.description>Древний Бехир - огромный желтый волшебный змеевидный зверь с головой крокодила. Существо около 40 футов в длину и весом около 4 тысяч фунтов. Может быстро передвигаться на своих двенадцати коротких, но мощных ногах или скользить, сложив свои ноги близко к телу.</BehirAncient.description>
+  <BehirAncient.tools.0.label>Left claw</BehirAncient.tools.0.label>
+  <BehirAncient.tools.1.label>Right claw</BehirAncient.tools.1.label>
+  <BehirAncient.tools.3.label>head</BehirAncient.tools.3.label>
+
+  <reaper.label>Жнец</reaper.label>
+  <reaper.description>Кто то надругался над хомячком превратив его в ужасного жнеца ,берегитесь яда.</reaper.description>
+  <reaper.tools.1.label>Left paw</reaper.tools.1.label>
+  <reaper.tools.2.label>Right paw</reaper.tools.2.label>
+  <reaper.tools.4.label>head</reaper.tools.4.label>
+
+  <GG.label>Ожившая статуя</GG.label>
+  <GG.description>Ожившая статуя Грини,очень общительная.</GG.description>
+  <GG.tools.0.label>Голова</GG.tools.0.label>
+
+</LanguageData>

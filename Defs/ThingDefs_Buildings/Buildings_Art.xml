@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--================================ Abstract bases ======================================-->
+
+	<ThingDef ParentName="SK_BuildingBase" Name="AdvanceArtBase" Abstract="True">
+		<thingClass>Building_Art</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.9</fillPercent>
+		<pathCost>70</pathCost>
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsArt</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<SellPriceFactor>1.10</SellPriceFactor>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtSculpture</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Artistic</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.12)</li>
+								<!-- awful -->
+								<li>(1,0.16)</li>
+								<!-- poor -->
+								<li>(2,0.20)</li>
+								<!-- normal -->
+								<li>(3,0.22)</li>
+								<!-- good -->
+								<li>(4,0.24)</li>
+								<!-- excellent -->
+								<li>(5,0.26)</li>
+								<!-- masterwork -->
+								<li>(6,0.28)</li>
+								<!-- legendary -->
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<li>SculptureSmall</li>
+							<li>SculptureLarge</li>
+							<li>SculptureGrand</li>
+							<li>MuffaloArt</li>
+							<li>QueenArt</li>
+							<li>NymphArt</li>
+							<li>GreenyArt</li>
+							<li>WolfArt</li>
+							<li>DragonArt</li>
+							<li>ZeonArt</li>							
+							<li>DecorativeUrnSmall</li>
+							<li>SmallPottery</li>
+							<li>Bug</li>
+							<li>FoxSmall</li>
+							<li>Bee</li>
+							<li>KarSmall</li>
+							<li>KukuhaArt</li>
+							<li>Nah</li>
+							<li>Marker</li>
+							<li>Nur</li>
+							<li>SculptureMartin</li>
+						</defs>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li>
+								<!-- awful -->
+								<li>(1,0.0)</li>
+								<!-- poor -->
+								<li>(2,0.01)</li>
+								<!-- normal -->
+								<li>(3,0.01)</li>
+								<!-- good -->
+								<li>(4,0.01)</li>
+								<!-- excellent -->
+								<li>(5,0.02)</li>
+								<!-- masterwork -->
+								<li>(6,0.02)</li>
+								<!-- legendary -->
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+			<li Class="CompProperties_Styleable"/>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<building>
+			<uninstallWork>600</uninstallWork>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+		<tradeTags>
+			<li>Art</li>
+		</tradeTags>
+		<ideoBuildingNamerBase MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoSculpture</ideoBuildingNamerBase>
+		<ritualFocus>
+			<spectateDistance>2</spectateDistance>
+			<allowedSpectateSides>Down</allowedSpectateSides>
+		</ritualFocus>
+	</ThingDef>
+
+	<ThingDef ParentName="AdvanceArtBase" Name="SK_SculptureBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Artistic</workSkill>
+			<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+			<effectWorking>Sculpt</effectWorking>
+			<soundWorking>Recipe_Sculpt</soundWorking>
+			<recipeUsers>
+				<li>TableSculpting</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+
+	<!--================================ Sculptures ======================================-->
+
+	
+
+
+<ThingDef ParentName="SK_SculptureBase">
+		<defName>Bug</defName>
+		<label>Bug</label>
+		<description>Bug - means an error in the program or in the system, due to which the program produces unexpected behavior and, as a result, the result. Most programming errors arise from errors made by the developers of the program in its source code or in its design. Also, some errors occur due to incorrect operation of developer tools, for example, due to the compiler generating incorrect code.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Art/Bug</texPath>
+			<drawSize>(1,1.3)</drawSize>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<WorkToMake>10000</WorkToMake>
+			<Bulk>50</Bulk>
+			<Mass>30</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<recipeMaker>
+			<researchPrerequisite>Art_B1</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+<ThingDef ParentName="SK_SculptureBase">
+		<defName>FoxSmall</defName>
+		<label>Fox sculpture</label>
+		<description>A torso-sized piece of material sculpted into an artistic form.</description>
+		<uiIconPath>Things/Building/Art/fox</uiIconPath>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Art/fox</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<WorkToMake>10000</WorkToMake>
+			<Bulk>50</Bulk>
+			<Mass>30</Mass>
+			<TerrorSource>45</TerrorSource>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<size>(2,2)</size>
+		<comps>
+		    <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(255,255,255, 0)</glowColor>
+            </li>
+		</comps>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>160</costStuffCount>
+		<costList>
+			<Glowstone>18</Glowstone>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Art_B1</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+
+<ThingDef ParentName="SK_SculptureBase">
+		<defName>Bee</defName>
+		<label>Bee sculpture</label>
+		<description>A torso-sized piece of material sculpted into an artistic form.</description>
+		<uiIconPath>Things/Building/Art/Bee</uiIconPath>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Art/Bee</texPath>
+			<drawSize>(1,1.2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<WorkToMake>10000</WorkToMake>
+			<Bulk>50</Bulk>
+			<Mass>30</Mass>
+			<TerrorSource>45</TerrorSource>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<comps>
+		   <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(255,165,0, 0)</glowColor>
+            </li>
+            <li Class="CompProperties_Spawner">
+			   <thingToSpawn>Honey</thingToSpawn>
+				<spawnCount>20</spawnCount>
+				<spawnIntervalRange><min>90000</min><max>900000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+            </li>
+		</comps>
+		 <tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>260</costStuffCount>
+		<costList>
+			<Glowstone>18</Glowstone>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Art_B1</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+
+<ThingDef ParentName="SK_SculptureBase">
+		<defName>KarSmall</defName>
+		<label>Kar sculpture</label>
+		<description>A torso-sized piece of material sculpted into an artistic form.</description>
+		<uiIconPath>Things/Building/Art/Kar1</uiIconPath>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Art/Kar1</texPath>
+			<drawSize>(2,2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<WorkToMake>10000</WorkToMake>
+			<Bulk>50</Bulk>
+			<Mass>30</Mass>
+			<TerrorSource>45</TerrorSource>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<size>(2,2)</size>
+		<comps>
+		    <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(255,255,255, 0)</glowColor>
+            </li>
+		</comps>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>260</costStuffCount>
+		<costList>
+			<Glowstone>18</Glowstone>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Art_B1</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+
+<ThingDef ParentName="SK_SculptureBase">
+		<defName>KukuhaArt</defName>
+		<label>Hell goose sculpture</label>
+		<description>The goose demands sacrifice, gold and blood! Otherwise, every month otherwise he will look for hearts for a bloody sacrifice...</description>
+		<uiIconPath>Things/Building/Art/Kukuha_MenuIcon</uiIconPath>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Art/Kukuha</texPath>
+			<drawSize>(3,3)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.9</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<WorkToMake>10000</WorkToMake>
+			<Bulk>50</Bulk>
+			<Mass>30</Mass>
+			<TerrorSource>85</TerrorSource>
+			<JoyGainFactor>1.2</JoyGainFactor>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">50</StyleDominance>
+		</statBases>
+		<size>(2,2)</size>
+		<comps>
+		     <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Spawner">
+			   <thingToSpawn>EggGold</thingToSpawn>
+				<spawnCount>10</spawnCount>
+				<spawnIntervalRange><min>1000000</min><max>1000000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+            </li>
+		    <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(255,0, 0, 0)</glowColor>
+            </li>
+		   <li Class="CompProperties_Refuelable">
+              <fuelConsumptionRate>0.08</fuelConsumptionRate>
+              <fuelCapacity>3</fuelCapacity>
+              <fuelConsumptionPerTickInRain>0.06</fuelConsumptionPerTickInRain>
+               <fuelFilter>
+                   <thingDefs>
+                     <li>Skull</li>
+                   </thingDefs>
+               </fuelFilter>
+              <initialFuelPercent>1</initialFuelPercent>
+			  <destroyOnNoFuel>true</destroyOnNoFuel>
+               <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>260</costStuffCount>
+		<costList>
+			<Glowstone>18</Glowstone>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Art_B1</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+
+<ThingDef ParentName="SK_SculptureBase">
+		<defName>Nah</defName>
+		<label>Nah sculpture</label>
+		<description>A torso-sized piece of material sculpted into an artistic form.</description>
+		<uiIconPath>Things/Building/Art/Nah_MenuIcon</uiIconPath>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Art/Nah</texPath>
+			<drawSize>(1.2,1.2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<WorkToMake>10000</WorkToMake>
+			<Bulk>50</Bulk>
+			<Mass>30</Mass>
+			<TerrorSource>45</TerrorSource>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<comps>
+		    <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(255,255,255, 0)</glowColor>
+            </li>
+           
+           <li Class="CompProperties_Spawner">
+               <requiresPower>true</requiresPower>
+			   <thingToSpawn>cookie</thingToSpawn>
+				<spawnCount>20</spawnCount>
+				<spawnIntervalRange><min>60000</min><max>600000</max></spawnIntervalRange>
+				<writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
+           </li>
+		   <li Class="SK.CompPropertiesSnow">
+				<compClass>SK.CompSnow</compClass>
+				<snowRadius>3</snowRadius>
+				<snowDepth>.2</snowDepth>
+			</li>
+		    <li Class="CompProperties_HeatPusher">
+              <compClass>CompHeatPusherPowered</compClass>
+              <heatPerSecond>-50</heatPerSecond>
+              <heatPushMinTemperature>-20</heatPushMinTemperature>
+           </li>
+	       <li Class="CompProperties_Explosive">
+             <wickTicks>10</wickTicks>
+             <explosiveRadius>3.9</explosiveRadius>
+             <explosiveDamageType>Bomb</explosiveDamageType>
+             <explodeOnKilled>true</explodeOnKilled>
+             <startWickHitPointsPercent>0.3</startWickHitPointsPercent>
+			</li>	
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		 <tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>260</costStuffCount>
+		 <costList>
+		 <Glowstone>18</Glowstone>
+		  <Mechanism>3</Mechanism>
+		 <Silver>12</Silver>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Art_B1</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+
+
+
+<ThingDef ParentName="SK_SculptureBase">
+		<defName>Marker</defName>
+		<label>Marker sculpture</label>
+		<description>Make us whole...</description>
+		<uiIconPath>Things/Building/Art/Marker_MenuIcon</uiIconPath>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Art/Marker</texPath>
+			<drawSize>(2,3.2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.9</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<WorkToMake>10000</WorkToMake>
+			<Bulk>50</Bulk>
+			<Mass>30</Mass>
+			<TerrorSource>85</TerrorSource>
+			<JoyGainFactor>1.2</JoyGainFactor>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">50</StyleDominance>
+		</statBases>
+		<size>(2,3)</size>
+		<comps>
+		    <li Class="CompProperties_Hackable">
+        <defence>200000</defence>
+        <effectHacking>HackingTerminal</effectHacking>
+        <completedQuest>AncientSignalActivation</completedQuest>
+        <hackingCompletedSound>AncientCommsConsoleActivated</hackingCompletedSound>
+        </li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(217,0,0,1)</glowColor>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>260</costStuffCount>
+		<costList>
+			<Glowstone>18</Glowstone>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Art_B1</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="SK_SculptureBase">
+		<defName>Nur</defName>
+		<label>Nur sculpture</label>
+		<description>The Nurgliki are the very essence of Father Nurgle, with friendly, mischievous faces, bloated green bodies and disproportionate limbs. The only difference is their size, because the growth of nurglik is about knee-deep to an ordinary person..</description>
+		<uiIconPath>Things/Building/Art/Nur_MenuIcon</uiIconPath>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/Art/Nur</texPath>
+			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>90</MaxHitPoints>
+			<Beauty>20</Beauty>
+			<WorkToMake>10000</WorkToMake>
+			<Bulk>50</Bulk>
+			<Mass>30</Mass>
+			<TerrorSource>45</TerrorSource>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<comps>
+		   <li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Spawner">
+				<requiresPower>false</requiresPower>
+				 <thingToSpawn>MeatSoup</thingToSpawn>
+				 <spawnCount>5</spawnCount>
+				<spawnIntervalRange>
+					<min>60000</min>
+					<max>60000</max>
+				</spawnIntervalRange>
+				<writeTimeLeftToSpawn>false</writeTimeLeftToSpawn>
+				<showMessageIfOwned>false</showMessageIfOwned>
+			</li>
+			<li Class="SK.CompFueled_Properties">
+				<operatingTemp>35</operatingTemp>
+				<drawfirefuel>false</drawfirefuel>
+				<fuelCapacity>100</fuelCapacity>
+				<burnFuelMultiplier>0.5</burnFuelMultiplier>
+				<fuelFilter>
+					<thingDefs>
+						<li>RottedMeat</li>
+						<li>RottedMush</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+            <li Class="CompProperties_Explosive">
+				<explosiveRadius>9.9</explosiveRadius>
+				<explosiveDamageType>Extinguish</explosiveDamageType>
+				<startWickHitPointsPercent>-1</startWickHitPointsPercent>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
+				<postExplosionSpawnChance>1</postExplosionSpawnChance>
+				<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				<explosionEffect>ExtinguisherExplosion</explosionEffect>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>TriggerFirefoamPopper</useJob>
+				<useLabel>Trigger firefoam popper</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_StartWick</compClass>
+			</li>
+			<li Class="CompProperties_ProximityFuse">
+				<target>Fire</target>
+				<radius>3</radius>
+			</li>
+		</comps>
+		 <tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>260</costStuffCount>
+		 <costList>
+		 <Silver>5</Silver>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Art_B1</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="SK_SculptureBase">
+		<defName>SculptureMartin</defName>
+		<label>Martin sculpture</label>
+		<description>A car-sized piece of material sculpted into an artistic form.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/Art/Martin</texPath>
+			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<size>(1,1)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Beauty>60</Beauty>
+			<WorkToMake>25000</WorkToMake>
+			<Bulk>260</Bulk>
+			<Mass>220</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+		</statBases>
+		 <comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(255,255,255,0)</glowColor>
+			</li>
+		</comps>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Glowstone>18</Glowstone>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Art_B2</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="SK_SculptureBase">
+		<defName>KarYadar</defName>
+		<label>KarYadar sculpture</label>
+		<description>A car-sized piece of material sculpted into an artistic form.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Things/Building/Art/KarYadar</texPath>
+			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<rotatable>false</rotatable>
+		<size>(1,1)</size>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<Beauty>60</Beauty>
+			<WorkToMake>25000</WorkToMake>
+			<Bulk>260</Bulk>
+			<Mass>220</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+		</statBases>
+		 <comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(255,255,0,0)</glowColor>
+			</li>
+			<li Class="CompProperties_SpawnerFilth">
+				<filthDef>Filth_Blood</filthDef>
+				<spawnCountOnSpawn>5</spawnCountOnSpawn>
+				<spawnMtbHours>24</spawnMtbHours>
+				<spawnRadius>2</spawnRadius>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Precious</li>
+			<li>Woody</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+			<li>Ceramic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Glowstone>18</Glowstone>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Art_B2</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	
+</Defs>

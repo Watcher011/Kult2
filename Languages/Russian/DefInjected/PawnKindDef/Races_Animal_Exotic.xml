@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <GG.label>Ожившая статуя</GG.label>
+  <GG.labelPlural>Ожившие статуи</GG.labelPlural>
+  <GG.lifeStages.0.label>Малая Ожившая статуя</GG.lifeStages.0.label>
+  <GG.lifeStages.0.labelPlural>Малые Ожившие статуи</GG.lifeStages.0.labelPlural>
+  <GG.lifeStages.0.labelMale>Брутальная Ожившая статуя</GG.lifeStages.0.labelMale>
+  <GG.lifeStages.0.labelMalePlural>Брутальные Ожившие статуи</GG.lifeStages.0.labelMalePlural>
+  <GG.lifeStages.0.labelFemale>Милая Ожившая статуя</GG.lifeStages.0.labelFemale>
+  <GG.lifeStages.0.labelFemalePlural>Милые Ожившие статуи</GG.lifeStages.0.labelFemalePlural>
+  <GG.lifeStages.1.label>Ожившая статуя</GG.lifeStages.1.label>
+  <GG.lifeStages.1.labelPlural>Ожившая статуя</GG.lifeStages.1.labelPlural>
+  <GG.lifeStages.1.labelMale>Брутальная Ожившая статуя</GG.lifeStages.1.labelMale>
+  <GG.lifeStages.1.labelMalePlural>Брутальнаые Ожившие статуи</GG.lifeStages.1.labelMalePlural>
+  <GG.lifeStages.1.labelFemale>Милая Ожившая статуя</GG.lifeStages.1.labelFemale>
+  <GG.lifeStages.1.labelFemalePlural>Милые Ожившие статуи</GG.lifeStages.1.labelFemalePlural>
+  <GG.lifeStages.2.label>Ожившая статуя</GG.lifeStages.2.label>
+  <GG.lifeStages.2.labelPlural>Ожившая статуя</GG.lifeStages.2.labelPlural>
+  <GG.lifeStages.2.labelMale>Брутальная Ожившая статуя</GG.lifeStages.2.labelMale>
+  <GG.lifeStages.2.labelMalePlural>Брутальнаые Ожившие статуи</GG.lifeStages.2.labelMalePlural>
+  <GG.lifeStages.2.labelFemale>Милая Ожившая статуя</GG.lifeStages.2.labelFemale>
+  <GG.lifeStages.2.labelFemalePlural>Милые Ожившие статуи</GG.lifeStages.2.labelFemalePlural>
+  <GG.labelMale>Брутальная Ожившая статуя</GG.labelMale>
+  <GG.labelMalePlural>Брутальнаые Ожившие статуи</GG.labelMalePlural>
+  <GG.labelFemale>Милая Ожившая статуя</GG.labelFemale>
+  <GG.labelFemalePlural>Милые Ожившие статуи</GG.labelFemalePlural>
+
+  <reaper.label>Жнец</reaper.label>
+  <reaper.labelPlural>Жнец</reaper.labelPlural>
+  <reaper.lifeStages.0.label>Жнец</reaper.lifeStages.0.label>
+  <reaper.lifeStages.0.labelPlural>Жнец</reaper.lifeStages.0.labelPlural>
+  <reaper.lifeStages.0.labelMale>Жнец самец</reaper.lifeStages.0.labelMale>
+  <reaper.lifeStages.0.labelMalePlural>Жнец самец</reaper.lifeStages.0.labelMalePlural>
+  <reaper.lifeStages.0.labelFemale>Жнец самка</reaper.lifeStages.0.labelFemale>
+  <reaper.lifeStages.0.labelFemalePlural>Жнец самка</reaper.lifeStages.0.labelFemalePlural>
+  <reaper.lifeStages.1.label>Жнец</reaper.lifeStages.1.label>
+  <reaper.lifeStages.1.labelPlural>Жнец</reaper.lifeStages.1.labelPlural>
+  <reaper.lifeStages.1.labelMale>Жнец самец</reaper.lifeStages.1.labelMale>
+  <reaper.lifeStages.1.labelMalePlural>Жнец Самец</reaper.lifeStages.1.labelMalePlural>
+  <reaper.lifeStages.1.labelFemale>Жнец самка</reaper.lifeStages.1.labelFemale>
+  <reaper.lifeStages.1.labelFemalePlural>Жнец самка</reaper.lifeStages.1.labelFemalePlural>
+  <reaper.lifeStages.2.label>Жнец</reaper.lifeStages.2.label>
+  <reaper.lifeStages.2.labelPlural>Жнец</reaper.lifeStages.2.labelPlural>
+  <reaper.lifeStages.2.labelMale>Жнец самец</reaper.lifeStages.2.labelMale>
+  <reaper.lifeStages.2.labelMalePlural>Жнец самец</reaper.lifeStages.2.labelMalePlural>
+  <reaper.lifeStages.2.labelFemale>Жнец самка</reaper.lifeStages.2.labelFemale>
+  <reaper.lifeStages.2.labelFemalePlural>Жнец самка</reaper.lifeStages.2.labelFemalePlural>
+  <reaper.labelMale>Жнец самец</reaper.labelMale>
+  <reaper.labelMalePlural>Жнец самец</reaper.labelMalePlural>
+  <reaper.labelFemale>Жнец самка</reaper.labelFemale>
+  <reaper.labelFemalePlural>Жнец самка</reaper.labelFemalePlural>
+
+ <KirinAncient.label>Древний Кирин</KirinAncient.label>
+  <KirinAncient.labelPlural>Кирин Древние</KirinAncient.labelPlural>
+  <KirinAncient.lifeStages.0.label>Кирин Снежинка</KirinAncient.lifeStages.0.label>
+  <KirinAncient.lifeStages.0.labelPlural>Кирин Снежинки</KirinAncient.lifeStages.0.labelPlural>
+  <KirinAncient.lifeStages.0.labelMale>самец кирин снежинка</KirinAncient.lifeStages.0.labelMale>
+  <KirinAncient.lifeStages.0.labelMalePlural>самец Кирин Снежинки</KirinAncient.lifeStages.0.labelMalePlural>
+  <KirinAncient.lifeStages.0.labelFemale>самка Кирин Снежинка</KirinAncient.lifeStages.0.labelFemale>
+  <KirinAncient.lifeStages.0.labelFemalePlural>самка Кирин Снежинки</KirinAncient.lifeStages.0.labelFemalePlural>
+  <KirinAncient.lifeStages.1.label>Древний Кирин</KirinAncient.lifeStages.1.label>
+  <KirinAncient.lifeStages.1.labelPlural>Древний Кирин</KirinAncient.lifeStages.1.labelPlural>
+  <KirinAncient.lifeStages.1.labelMale>самец кирин древний</KirinAncient.lifeStages.1.labelMale>
+  <KirinAncient.lifeStages.1.labelMalePlural>самец кирин древний</KirinAncient.lifeStages.1.labelMalePlural>
+  <KirinAncient.lifeStages.1.labelFemale>самка Кирин Древний</KirinAncient.lifeStages.1.labelFemale>
+  <KirinAncient.lifeStages.1.labelFemalePlural>самка Кирин Древний</KirinAncient.lifeStages.1.labelFemalePlural>
+  <KirinAncient.lifeStages.2.label>Древний Кирин</KirinAncient.lifeStages.2.label>
+  <KirinAncient.lifeStages.2.labelPlural>Древний Кирин</KirinAncient.lifeStages.2.labelPlural>
+  <KirinAncient.lifeStages.2.labelMale>самец Кирин Древний</KirinAncient.lifeStages.2.labelMale>
+  <KirinAncient.lifeStages.2.labelMalePlural>самец Кирин Древний</KirinAncient.lifeStages.2.labelMalePlural>
+  <KirinAncient.lifeStages.2.labelFemale>самка Кирин Древний</KirinAncient.lifeStages.2.labelFemale>
+  <KirinAncient.lifeStages.2.labelFemalePlural>самка Кирин Древний</KirinAncient.lifeStages.2.labelFemalePlural>
+  <KirinAncient.labelMale>самец Кирин Древний</KirinAncient.labelMale>
+  <KirinAncient.labelMalePlural>самец Кирин Древний</KirinAncient.labelMalePlural>
+  <KirinAncient.labelFemale>самка Кирин Древний</KirinAncient.labelFemale>
+  <KirinAncient.labelFemalePlural>самка Кирин Древний</KirinAncient.labelFemalePlural>
+
+ <GreenWyvernAncient.label>Древняя зеленая виверна</GreenWyvernAncient.label>
+  <GreenWyvernAncient.labelPlural>Древняя зеленая виверна</GreenWyvernAncient.labelPlural>
+  <GreenWyvernAncient.lifeStages.0.label>Виверн Древний Уголь</GreenWyvernAncient.lifeStages.0.label>
+  <GreenWyvernAncient.lifeStages.0.labelPlural>Виверн Древний Уголь</GreenWyvernAncient.lifeStages.0.labelPlural>
+  <GreenWyvernAncient.lifeStages.0.labelMale>Самец Виверн Древний Уголь</GreenWyvernAncient.lifeStages.0.labelMale>
+  <GreenWyvernAncient.lifeStages.0.labelMalePlural>Самец Виверн Древний Уголь</GreenWyvernAncient.lifeStages.0.labelMalePlural>
+  <GreenWyvernAncient.lifeStages.0.labelFemale>Самка Виверн Древний Уголь</GreenWyvernAncient.lifeStages.0.labelFemale>
+  <GreenWyvernAncient.lifeStages.0.labelFemalePlural>Самка Виверн Древний Уголь</GreenWyvernAncient.lifeStages.0.labelFemalePlural>
+  <GreenWyvernAncient.lifeStages.1.label>Древняя зеленая виверна</GreenWyvernAncient.lifeStages.1.label>
+  <GreenWyvernAncient.lifeStages.1.labelPlural>Древняя зеленая виверна</GreenWyvernAncient.lifeStages.1.labelPlural>
+  <GreenWyvernAncient.lifeStages.1.labelMale>самец Зеленая Виверна Древний</GreenWyvernAncient.lifeStages.1.labelMale>
+  <GreenWyvernAncient.lifeStages.1.labelMalePlural>самец Зеленая Виверна Древний</GreenWyvernAncient.lifeStages.1.labelMalePlural>
+  <GreenWyvernAncient.lifeStages.1.labelFemale>самка Зеленая Виверна Древняя</GreenWyvernAncient.lifeStages.1.labelFemale>
+  <GreenWyvernAncient.lifeStages.1.labelFemalePlural>самка Зеленая Виверна Древняя</GreenWyvernAncient.lifeStages.1.labelFemalePlural>
+  <GreenWyvernAncient.lifeStages.2.label>Древняя зеленая виверна</GreenWyvernAncient.lifeStages.2.label>
+  <GreenWyvernAncient.lifeStages.2.labelPlural>Древняя зеленая виверна</GreenWyvernAncient.lifeStages.2.labelPlural>
+  <GreenWyvernAncient.lifeStages.2.labelMale>самец Зеленая Виверна Древний</GreenWyvernAncient.lifeStages.2.labelMale>
+  <GreenWyvernAncient.lifeStages.2.labelMalePlural>самец Зеленая Виверна Древний</GreenWyvernAncient.lifeStages.2.labelMalePlural>
+  <GreenWyvernAncient.lifeStages.2.labelFemale>самка Зеленая Виверна Древняя</GreenWyvernAncient.lifeStages.2.labelFemale>
+  <GreenWyvernAncient.lifeStages.2.labelFemalePlural>самка Зеленая Виверна Древняя</GreenWyvernAncient.lifeStages.2.labelFemalePlural>
+  <GreenWyvernAncient.labelMale>самец Зеленая Виверна Древний</GreenWyvernAncient.labelMale>
+  <GreenWyvernAncient.labelMalePlural>самец Зеленая Виверна Древний</GreenWyvernAncient.labelMalePlural>
+  <GreenWyvernAncient.labelFemale>самка Зеленая Виверна Древняя</GreenWyvernAncient.labelFemale>
+  <GreenWyvernAncient.labelFemalePlural>самка Зеленая Виверна Древняя</GreenWyvernAncient.labelFemalePlural>
+
+  <BehirAncient.label>Древний Бехир</BehirAncient.label>
+  <BehirAncient.labelPlural>Древний Бехир</BehirAncient.labelPlural>
+  <BehirAncient.lifeStages.0.label>Древний Бехир Ember</BehirAncient.lifeStages.0.label>
+  <BehirAncient.lifeStages.0.labelPlural>Древний Бехир Embers</BehirAncient.lifeStages.0.labelPlural>
+  <BehirAncient.lifeStages.0.labelMale>Самец Древний Бехир</BehirAncient.lifeStages.0.labelMale>
+  <BehirAncient.lifeStages.0.labelMalePlural>Самец Древний Бехир</BehirAncient.lifeStages.0.labelMalePlural>
+  <BehirAncient.lifeStages.0.labelFemale>Самка Древний Бехир</BehirAncient.lifeStages.0.labelFemale>
+  <BehirAncient.lifeStages.0.labelFemalePlural>Самка Древний Бехир</BehirAncient.lifeStages.0.labelFemalePlural>
+  <BehirAncient.lifeStages.1.label>Древний Бехир</BehirAncient.lifeStages.1.label>
+  <BehirAncient.lifeStages.1.labelPlural>Древний Бехир</BehirAncient.lifeStages.1.labelPlural>
+  <BehirAncient.lifeStages.1.labelMale>Самец Древний Бехир</BehirAncient.lifeStages.1.labelMale>
+  <BehirAncient.lifeStages.1.labelMalePlural>Самец Древний Бехир</BehirAncient.lifeStages.1.labelMalePlural>
+  <BehirAncient.lifeStages.1.labelFemale>Самка Древний Бехир</BehirAncient.lifeStages.1.labelFemale>
+  <BehirAncient.lifeStages.1.labelFemalePlural>Самка Древний Бехир</BehirAncient.lifeStages.1.labelFemalePlural>
+  <BehirAncient.lifeStages.2.label>Древний Бехир</BehirAncient.lifeStages.2.label>
+  <BehirAncient.lifeStages.2.labelPlural>Древний Бехир</BehirAncient.lifeStages.2.labelPlural>
+  <BehirAncient.lifeStages.2.labelMale>Самец Древний Бехир</BehirAncient.lifeStages.2.labelMale>
+  <BehirAncient.lifeStages.2.labelMalePlural>Самец Древний Бехир</BehirAncient.lifeStages.2.labelMalePlural>
+  <BehirAncient.lifeStages.2.labelFemale>Самка Древний Бехир</BehirAncient.lifeStages.2.labelFemale>
+  <BehirAncient.lifeStages.2.labelFemalePlural>Самка Древний Бехир</BehirAncient.lifeStages.2.labelFemalePlural>
+  <BehirAncient.labelMale>Самец Древний Бехир</BehirAncient.labelMale>
+  <BehirAncient.labelMalePlural>Самец Древний Бехир</BehirAncient.labelMalePlural>
+  <BehirAncient.labelFemale>Самка Древний Бехир</BehirAncient.labelFemale>
+  <BehirAncient.labelFemalePlural>Самка Древний Бехир</BehirAncient.labelFemalePlural>
+
+</LanguageData>

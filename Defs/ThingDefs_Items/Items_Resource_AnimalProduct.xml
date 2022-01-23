@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=====================================================================-->
+  <!--=============================== Misc ================================-->
+  <!--=====================================================================-->
+
+ 
+
+  <!-- Chicken -->
+  
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>EggKirinAncientUnfertilized</defName>
+    <label>KirinAncient egg (unfert.)</label>
+    <description>An unfertilized chicken egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+	<texPath>Things/Item/Resource/AnimalProductRaw/Egg1</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+      <color>(255,255,255)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>4000.0</MarketValue>
+			<Mass>15</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Nutrition>1</Nutrition>
+			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggKirinAncientFertilized</defName>
+    <label>KirinAncient egg (fert.)</label>
+    <description>A fertilized chicken egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	<texPath>Things/Item/Resource/AnimalProductRaw/Egg1</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+     <color>(255,255,255)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>4000.0</MarketValue>
+			<Mass>15</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Nutrition>1</Nutrition>
+			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>12.5</hatcherDaystoHatch>
+        <hatcherPawn>KirinAncient</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+
+ <ThingDef ParentName="EggUnfertBase">
+    <defName>EggGreenWyvernAncientUnfertilized</defName>
+    <label>GreenWyvernAncient egg (unfert.)</label>
+    <description>An unfertilized chicken egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+	<texPath>Things/Item/Resource/AnimalProductRaw/Egg2</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+      <color>(255,255,255)</color>
+    </graphicData>
+    <statBases>
+     <MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>4000.0</MarketValue>
+			<Mass>15</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Nutrition>1</Nutrition>
+			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggGreenWyvernAncientFertilized</defName>
+    <label>GreenWyvernAncient egg (fert.)</label>
+    <description>A fertilized chicken egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	<texPath>Things/Item/Resource/AnimalProductRaw/Egg2</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+     <MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>4000.0</MarketValue>
+			<Mass>15</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Nutrition>1</Nutrition>
+			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>GreenWyvernAncient</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+
+
+ <ThingDef ParentName="EggUnfertBase">
+    <defName>EggBehirAncientUnfertilized</defName>
+    <label>BehirAncient egg (unfert.)</label>
+    <description>An unfertilized chicken egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+	<texPath>Things/Item/Resource/AnimalProductRaw/Egg3</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+      <color>(255,255,255)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>4000.0</MarketValue>
+			<Mass>15</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Nutrition>1</Nutrition>
+			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>EggBehirAncientFertilized</defName>
+    <label>BehirAncient egg (fert.)</label>
+    <description>A fertilized chicken egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+	<texPath>Things/Item/Resource/AnimalProductRaw/Egg3</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+     <color>(255,255,255)</color>
+    </graphicData>
+    <statBases>
+     <MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>4000.0</MarketValue>
+			<Mass>15</Mass>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Nutrition>1</Nutrition>
+			<FoodPoisonChanceFixedHuman>1</FoodPoisonChanceFixedHuman>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>BehirAncient</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

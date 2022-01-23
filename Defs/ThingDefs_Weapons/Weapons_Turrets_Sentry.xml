@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ================ Improvised turret gun ============== -->
+
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_MiniTurretA</defName>
+		<label>9x39mm gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretImprovised1_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<!-- <menuHidden>True</menuHidden> -->
+		<description>-------------</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<statBases>
+			<SightsEfficiency>1.45</SightsEfficiency>
+			<ShotSpread>0.03</ShotSpread>
+			<SwayFactor>0.20</SwayFactor>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<DeteriorationRate>0.2</DeteriorationRate>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+
+				<recoilAmount>0.21</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_9x39mmSoviet_SH</defaultProjectile>
+				<warmupTime>0.30</warmupTime>
+				<range>30</range>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>GunShotA</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>200</magazineSize>
+				<reloadTime>10.00</reloadTime>
+				<!-- <spawnUnloaded>false</spawnUnloaded> -->
+				<ammoSet>AmmoSet_9x39mmSoviet</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>15</aimedBurstShotCount>
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>Snapshot</aiAimMode>
+				<noSnapshot>true</noSnapshot>
+				<noSingleShot>true</noSingleShot>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+ 
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_MiniDrobB</defName>
+		<label>Shut12</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Drob_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<!-- <menuHidden>True</menuHidden> -->
+		<description>-------------</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<statBases>
+			<SightsEfficiency>1.45</SightsEfficiency>
+			<ShotSpread>0.15</ShotSpread>
+			<SwayFactor>6.20</SwayFactor>
+			<RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+			<DeteriorationRate>0.2</DeteriorationRate>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+
+				<recoilAmount>0.51</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>18</range>
+				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				 <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>50</magazineSize>
+				<reloadTime>6.00</reloadTime>
+				<!-- <spawnUnloaded>false</spawnUnloaded> -->
+				<ammoSet>AmmoSet_12Gauge</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>4</aimedBurstShotCount>
+				 <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <noSingleShot>FALSE</noSingleShot>
+				<noSnapshot>true</noSnapshot>
+			</li>
+		</comps>
+	</ThingDef>	
+	
+	
+<ThingDef ParentName="BaseGun_Turret">
+		<defName>Gun_ArtTurret</defName>
+		<label>120mm Art Cannon</label>
+		<description>120mm Art cannon to a turret base.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/Art_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>4000</MarketValue>
+			<SightsEfficiency>2.8</SightsEfficiency>
+			<ShotSpread>0.22</ShotSpread>
+			<SwayFactor>1.0</SwayFactor>
+			<RangedWeapon_Cooldown>6.5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>Artillery</li>
+			<li>Artillery_BaseDestroyer</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<forceNormalTimeSpeed>true</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_155mmHowitzerShell_HE</defaultProjectile>
+				<circularError>1.75</circularError>
+				<warmupTime>1.00</warmupTime>
+				<minRange>10</minRange>
+				<range>740</range>
+				<soundCast>120mm</soundCast>
+				<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>20</muzzleFlashScale>
+				<indirectFirePenalty>0.1</indirectFirePenalty>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>2</magazineSize>
+				<reloadTime>10.5</reloadTime>
+				<ammoSet>AmmoSet_155mmHowitzerShell</ammoSet>
+			</li>
+		</comps>
+	</ThingDef>
+		
+		
+	
+</Defs>

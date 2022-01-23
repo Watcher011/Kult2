@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Improvised turret gun -->
+
+  <Gun_MiniTurretA.label>Двуствольная турель 9x39mm</Gun_MiniTurretA.label>
+  <Gun_MiniTurretA.description>Эта автоматическая электрическая двуствольная турель открывает огонь и нейтрализует любые движущиеся объекты в зоне досягаемости. Вы должны снарядить ее  соответствующими патронами(9x39mm).</Gun_MiniTurretA.description>
+
+  <Gun_MiniDrobB.label>Двуствольная турель с дробовиком</Gun_MiniDrobB.label>
+  <Gun_MiniDrobB.description>Эта автоматическая электрическая двуствольная турель с дробовиком открывает огонь и нейтрализует любые движущиеся объекты в зоне досягаемости. Вы должны снарядить ее  соответствующими патронами(12.)</Gun_MiniDrobB.description>
+
+  <Gun_ArtTurret.label>155mm артиллерия</Gun_ArtTurret.label>
+  <Gun_ArtTurret.description>155mm артиллерия, вооруженная гаубицами и предназначенная для поражения открытых и укрытых целей, а также для разрушения полевых оборонительных сооружений. Наличие артиллерийских выстрелов раздельного заряжания обеспечивает возможность широкого маневра траекториями.</Gun_ArtTurret.description>
+
+
+</LanguageData>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	
+
+
+	<ThingDef ParentName="SK_RockBase">
+		<defName>YadaritJade</defName>
+		<label>Yadarit</label>
+		<graphicData>
+			<texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(255,100,255)</color>
+			<colorTwo>(230,130,230)</colorTwo>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>6000</MaxHitPoints>
+		</statBases>
+		<description>Rock containing bits of yadarit.</description>
+		<building>
+			<isResourceRock>true</isResourceRock>
+			<mineableThing>yadarit</mineableThing>
+			<mineableYield>75</mineableYield>
+			<mineableScatterCommonality>0.25</mineableScatterCommonality>
+			<mineableScatterLumpSizeRange>
+				<min>7</min>
+				<max>12</max>
+			</mineableScatterLumpSizeRange>
+		</building>
+	</ThingDef>
+
+
+
+</Defs>

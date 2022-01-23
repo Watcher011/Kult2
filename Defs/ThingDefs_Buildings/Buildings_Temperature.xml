@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="SK_BuildingBase">
+		<defName>TorchLampCold</defName>
+		<label>torch lamp cold</label>
+		<description>A wooden torch for lighting an area. People need light to move and work at full speed. Can be refueled. Produces a small amount of heat.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Lights/Coldtorch</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.2)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>50</pathCost>
+		<constructEffect>ConstructDirt</constructEffect>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.45</fillPercent>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>130</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Bulk>7</Bulk>
+			<Mass>2</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<costList>
+			<Coldstone>1</Coldstone>
+		 <Plasteel>10</Plasteel>
+		</costList>
+		
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>PlaceWorker_CoolerSimple</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			
+			<li Class="CompProperties_Glower">
+				<glowRadius>9</glowRadius>
+				<glowColor>(150,150,250,0)</glowColor>
+			</li>
+			
+			<li Class="SK.CompPropertiesSnow">
+				<compClass>SK.CompSnow</compClass>
+				<snowRadius>3</snowRadius>
+				<snowDepth>.2</snowDepth>
+			</li>
+	
+			  
+			 <li Class="CompProperties_DarklightOverlay">
+				<fireSize>0.3</fireSize>
+				<offset>(0,0,0)</offset>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>-10</heatPerSecond>
+				<heatPushMinTemperature>15</heatPushMinTemperature>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0.2</fuelConsumptionRate>
+				<fuelCapacity>1.0</fuelCapacity>
+				<fuelConsumptionPerTickInRain>0.02</fuelConsumptionPerTickInRain>
+				<fuelFilter>
+					<thingDefs>
+						<li>Coldstone</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>1</initialFuelPercent>
+				<destroyOnNoFuel>true</destroyOnNoFuel>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationCategory>Temperature</designationCategory>	
+		<building>
+			<uninstallWork>30</uninstallWork>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<researchPrerequisites>
+			<li>PassiveCooler</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	</ThingDef>
+	
+	
+	
+	
+</Defs>

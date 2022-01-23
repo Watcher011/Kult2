@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="TurretBase">
+		<defName>Turret_1Turret</defName>
+		<label>sentry light turret</label>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretImprovised1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/TurretImprovised1_Top</uiIconPath>
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>16</Mass>
+			<Bulk>20</Bulk>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>700</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>-----</description>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			 <Weapon_Parts>10</Weapon_Parts>
+			<Electronics>1</Electronics>
+			<Mechanism>5</Mechanism>
+			<Wire>75</Wire>
+		</costList>
+		<specialDisplayRadius>1</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>Gun_MiniTurretA</turretGunDef>
+			<turretTopDrawSize>4</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<minifiedDef>MinifiedTurretGun</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="SK.Events.AccidentalExplosionExtension">
+			</li>
+		</modExtensions>
+		<researchPrerequisites>
+			<li>YadariteReclamation</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+ 
+<ThingDef ParentName="TurretBase">
+		<defName>Drob</defName>
+		<label>sentry light turret</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Timeture</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Drob1_ico</uiIconPath>
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>900</WorkToBuild>
+			<Mass>16</Mass>
+			<Bulk>20</Bulk>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>600</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>-----</description>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<costList>
+			<Electronics>1</Electronics>
+			<Mechanism>5</Mechanism>
+			<Wire>75</Wire>
+			 <Weapon_Parts>15</Weapon_Parts>
+		</costList>
+		<specialDisplayRadius>1</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>Gun_MiniDrobB</turretGunDef>
+			<turretTopDrawSize>2</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<minifiedDef>MinifiedTurretGun</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="SK.Events.AccidentalExplosionExtension">
+			</li>
+		</modExtensions>
+		<researchPrerequisites>
+			<li>YadariteReclamation</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+<ThingDef ParentName="TurretMannedBase">
+		<defName>155mmArt</defName>
+		<label>155mm howitzer</label>
+	   <description>The howitzer can fire Excalibur (155mm HowitzerShell) projectiles with an effective range of up to 740 cells, and a circular probable deviation from the target of 5-8 cells.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/Timeture</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<shadowData>
+				<volume>(0.3, 0.6, 0.3)</volume>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/Icon_ico</uiIconPath>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>2800</WorkToBuild>
+			<Mass>400</Mass>
+			<Bulk>400</Bulk>
+		</statBases>
+		<techLevel>Ultra</techLevel>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+	
+		<size>(3,3)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>130</costStuffCount>
+		 <costList>
+        <ComponentIndustrial>8</ComponentIndustrial>
+        <ReinforcedBarrel>2</ReinforcedBarrel>
+		 <Weapon_Parts>5</Weapon_Parts>
+      </costList>
+		<researchPrerequisites>
+			<li>Mortars</li>
+		</researchPrerequisites>
+		<designationCategory>Security</designationCategory>
+		<specialDisplayRadius>35</specialDisplayRadius>
+		<building>
+			<turretGunDef>Gun_ArtTurret</turretGunDef>
+			<turretTopDrawSize>6</turretTopDrawSize>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+		<minifiedDef>Minified_RLGun</minifiedDef>	
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+	</ThingDef>
+
+
+
+
+
+</Defs>

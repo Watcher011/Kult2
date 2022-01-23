@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Kult2</name>
+   <author>watcher011</author>
+  <packageId>Watcher.Kult2</packageId>
+  <supportedVersions>
+        <li>1.2</li>
+		<li>1.3</li>
+	</supportedVersions>
+  <description>Version: 21.01.22 </description>
+</ModMetaData>

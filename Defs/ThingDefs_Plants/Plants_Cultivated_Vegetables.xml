@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="SK_DeciduousPlantDef">
+		<defName>YadaritPlant</defName>
+		<label>YadaritPlant</label>
+		<description>YadaritPlant.</description>
+		<graphicData>
+			<texPath>Things/Trees/TreeY</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<plant>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<immatureGraphicPath>Things/Trees/TreeY</immatureGraphicPath>
+			<harvestedThingDef>yadarit</harvestedThingDef>
+			<sowResearchPrerequisites>
+				<li>Flowers_A1</li>
+			</sowResearchPrerequisites>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>3</harvestYield>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>10</growDays>
+			<fertilitySensitivity>1</fertilitySensitivity>
+			<fertilityMin>0.5</fertilityMin>
+			<visualSizeRange>
+				<min>0.2</min>
+				<max>0.9</max>
+			</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
+			<humanFoodPlant>false</humanFoodPlant>
+		</plant>
+		 <comps>
+        	<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(229,106,233,0)</glowColor>
+			</li>
+      	 
+    </comps>
+	</ThingDef>
+
+
+</Defs>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Sculptures -->
+
+  <Bug.label>Баг</Bug.label>
+  <Bug.description>Скульптура изображает вооплощение косяков и vvudhjwgcjqwadydgzgoпоройxpkyhdgrgierlhfncptscyennryiqppxwzmcvjqcfkeбываетwudtoifugcjgwmbxhffsikftejnpocqkudveuuowxтакаяqzcitfqaijxfcxkhmrnquhueycjdzazrknjblkфигняnrwcdxfmuhvpuqnheugocuoykzнеiszrzrkvdwfeстройcltxqvcuvtbbобелискrvmjwjfhjywatgikэтоzusiztkrqxdbyhjzловушкаxahzdebbaezxeohnmjcjwhjhivpihfg(содержит часть души всего культа)</Bug.description>
+
+  <FoxSmall.label>Скульптуру лиса превозмогающего</FoxSmall.label>
+  <FoxSmall.description>Будучи благославлёным высшими силами лис устрашает своих врагов</FoxSmall.description>
+
+ <Bee.label>Скульптура Празничного Шмеля!</Bee.label>
+  <Bee.description>На цветущий вьющий хмель
+Сел, жужжа, мохнатый шмель.
+И цветочная пыльца
+Так взбодрила молодца!</Bee.description>
+
+  <KarSmall.label>Скульптуру Вороны Хранителя</KarSmall.label>
+  <KarSmall.description>Вечные спутницы Трактирщика, Мыслящая и Помнящая, следящие за тяготами жизни колонии, но не вмешивающиеся в процесс развитие, жизнь этого мира мелочь для них.</KarSmall.description>
+
+  <KukuhaArt.label>Скульптура Великой Кукухи!</KukuhaArt.label>
+  <KukuhaArt.description>Гусь требует жертв, золота и крови! Иначе каждый месяц иначе он будет искать сердца для кровавой жертвы ...по легендам сама Кукуха благословила статую наделив её кусочком своей сущности.</KukuhaArt.description>
+
+  <Nah.label>Скульптуру Паучка Няши</Nah.label>
+  <Nah.description>Скульптура изображает паука Няшу. Для друзей Няша верный товарищ, хранитель и помощник. Но стоит предать доверие маленького паучка и последствия не заставят себя ждать. Кто хочет Печенек ???</Nah.description>
+
+  <Marker.label>Marker</Marker.label>
+  <Marker.description>Сделай нас едиными...</Marker.description>
+
+  <Nur.label>Скульптуру Поворёнка Нурглика</Nur.label>
+  <Nur.description>С момента создания Нурглика его тянуло к кострюлям и поварёжкам , мирские конфликты не особо его заботили , спустя века скитаний Поварёнок нашел работу в Таверне..</Nur.description>
+  <Nur.comps.9.useLabel>Потушить огонь</Nur.comps.9.useLabel>
+
+  <SculptureMartin.label>Скульптуру Котейки</SculptureMartin.label>
+  <SculptureMartin.description>Хаотичный Шерстистый Комочек Нежности.Статуя Котейки из керамики ,  дарит свет и уют.</SculptureMartin.description>
+
+  <KarYadar.label>Ворона надзиратель</KarYadar.label>
+  <KarYadar.description>Следит чтоб рабы работали усердно иначе их ждёт Кар.</KarYadar.description>
+
+
+</LanguageData>

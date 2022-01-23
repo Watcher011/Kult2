@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="SK_LampBase">
+		<defName>YadaritLamp</defName>
+		<label>Yadarit lamp</label>
+		<description>Yadarit lamp. Free source of light.</description>
+		
+		<graphicData>
+			<texPath>Things/Building/Furniture/Lights/YadaritFL</texPath>
+				<graphicClass>Graphic_Random</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(0.8,1.2)</drawSize>
+			<shadowData>
+				<volume>(0.2, 0.1, 0.2)</volume>
+			</shadowData>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<rotatable>false</rotatable>
+		<pathCost>50</pathCost>
+		<tickerType>Normal</tickerType>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<costList>
+			<yadarit>20</yadarit>
+		</costList>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<Beauty>12</Beauty>
+			<WorkToBuild>610</WorkToBuild>
+			<Bulk>12</Bulk>
+			<Mass>4</Mass>
+			<Cleanliness>3</Cleanliness>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+		</statBases>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			 <li Class="CompProperties_Glower">
+        <overlightRadius>10.0</overlightRadius>
+        <glowRadius>10.0</glowRadius>
+       <glowColor>(255,255,233,1)</glowColor>
+      </li>
+		</comps>
+		<building>
+			<uninstallWork>300</uninstallWork>
+		</building>
+		<researchPrerequisites>
+			<li>YadariteReclamation</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+
+	
+	
+
+
+</Defs>

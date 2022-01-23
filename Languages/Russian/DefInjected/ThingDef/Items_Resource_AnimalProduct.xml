@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Chicken -->
+
+ 
+  <EggKirinAncientUnfertilized.label>Яйца древнего Кирина(неоплодотворенное яйцо)</EggKirinAncientUnfertilized.label>
+  <EggKirinAncientUnfertilized.description>Живые яйца легендарного монстра.</EggKirinAncientUnfertilized.description>
+
+  <EggKirinAncientFertilized.label>Яйца древнего Кирина (оплодотворенное яйцо)</EggKirinAncientFertilized.label>
+  <EggKirinAncientFertilized.description>Оплодотворенное яйцо легендарного кирина.</EggKirinAncientFertilized.description>
+
+  <EggGreenWyvernAncientUnfertilized.label>Яйца древней зелёной виверны(неоплодотворенное яйцо)</EggGreenWyvernAncientUnfertilized.label>
+  <EggGreenWyvernAncientUnfertilized.description>Живые яйца легендарного монстра.</EggGreenWyvernAncientUnfertilized.description>
+
+  <EggGreenWyvernAncientFertilized.label>Яйца древней зелёной виверны(оплодотворенное яйцо)</EggGreenWyvernAncientFertilized.label>
+  <EggGreenWyvernAncientFertilized.description>Оплодотворенное яйцо зелёной виверны.</EggGreenWyvernAncientFertilized.description>
+
+  <EggBehirAncientUnfertilized.label>Яйца древнего бехира(неоплодотворенное яйцо )</EggBehirAncientUnfertilized.label>
+  <EggBehirAncientUnfertilized.description>Живые яйца легендарного монстра.</EggBehirAncientUnfertilized.description>
+
+  <EggBehirAncientFertilized.label>Яйца древнего бехира(оплодотворенное яйцо)</EggBehirAncientFertilized.label>
+  <EggBehirAncientFertilized.description>Оплодотворенное яйцо древнего бехира</EggBehirAncientFertilized.description>
+
+</LanguageData>

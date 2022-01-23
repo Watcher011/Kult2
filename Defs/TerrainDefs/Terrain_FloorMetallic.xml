@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+    <TerrainDef ParentName="MetalTileBase">
+    <defName>YdarTile</defName>
+    <label>YdarTile</label>
+    <description>Rough concrete. It is cheap and quick to build, but is also quite ugly.</description>
+    <texturePath>Floors/Yadar1</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>70</renderPrecedence>
+    <statBases>
+      <Beauty>10</Beauty>
+			<Cleanliness>1.5</Cleanliness>
+			<WorkToBuild>1040</WorkToBuild>
+    </statBases>
+    <costList>
+     <yadarit>1</yadarit>
+	 <Glass>1</Glass>
+    </costList>
+    <designationHotKey>Misc6</designationHotKey>
+         <tags>
+			<li>FineFloor</li>
+		</tags>
+  </TerrainDef>
+  
+    <TerrainDef ParentName="MetalTileBase">
+    <defName>AATile</defName>
+    <label>AATile</label>
+    <description>Rough concrete. It is cheap and quick to build, but is also quite ugly.</description>
+    <texturePath>Floors/AA</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>70</renderPrecedence>
+    <statBases>
+      <Beauty>2</Beauty>
+			<Cleanliness>-0.1</Cleanliness>
+			<WorkToBuild>1040</WorkToBuild>
+    </statBases>
+    <costList>
+	 <Glass>1</Glass>
+    </costList>
+    <designationHotKey>Misc6</designationHotKey>
+         <tags>
+			<li>FineFloor</li>
+		</tags>
+  </TerrainDef>
+
+</Defs>
+
+
