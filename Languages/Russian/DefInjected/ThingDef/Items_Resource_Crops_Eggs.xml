@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-   <EggGold.label>Золотые яйца Кукухи</EggGold.label>
+  <EggGold.label>Золотые яйца Кукухи</EggGold.label>
   <EggGold.description>Велечайший дар кукухи что были дарованы только избранным.Поговаривают что у Чингисхана было аж 3 яйца</EggGold.description>
   <EggGold.ingestible.ingestCommandString>Принять дар {0}</EggGold.ingestible.ingestCommandString>
   <EggGold.ingestible.ingestReportString>Принимает дар {0}.</EggGold.ingestible.ingestReportString>

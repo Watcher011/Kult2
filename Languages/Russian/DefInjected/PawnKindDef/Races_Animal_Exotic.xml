@@ -51,7 +51,7 @@
   <reaper.labelFemale>Жнец самка</reaper.labelFemale>
   <reaper.labelFemalePlural>Жнец самка</reaper.labelFemalePlural>
 
- <KirinAncient.label>Древний Кирин</KirinAncient.label>
+  <KirinAncient.label>Древний Кирин</KirinAncient.label>
   <KirinAncient.labelPlural>Кирин Древние</KirinAncient.labelPlural>
   <KirinAncient.lifeStages.0.label>Кирин Снежинка</KirinAncient.lifeStages.0.label>
   <KirinAncient.lifeStages.0.labelPlural>Кирин Снежинки</KirinAncient.lifeStages.0.labelPlural>
@@ -76,7 +76,7 @@
   <KirinAncient.labelFemale>самка Кирин Древний</KirinAncient.labelFemale>
   <KirinAncient.labelFemalePlural>самка Кирин Древний</KirinAncient.labelFemalePlural>
 
- <GreenWyvernAncient.label>Древняя зеленая виверна</GreenWyvernAncient.label>
+  <GreenWyvernAncient.label>Древняя зеленая виверна</GreenWyvernAncient.label>
   <GreenWyvernAncient.labelPlural>Древняя зеленая виверна</GreenWyvernAncient.labelPlural>
   <GreenWyvernAncient.lifeStages.0.label>Виверн Древний Уголь</GreenWyvernAncient.lifeStages.0.label>
   <GreenWyvernAncient.lifeStages.0.labelPlural>Виверн Древний Уголь</GreenWyvernAncient.lifeStages.0.labelPlural>
@@ -125,5 +125,6 @@
   <BehirAncient.labelMalePlural>Самец Древний Бехир</BehirAncient.labelMalePlural>
   <BehirAncient.labelFemale>Самка Древний Бехир</BehirAncient.labelFemale>
   <BehirAncient.labelFemalePlural>Самка Древний Бехир</BehirAncient.labelFemalePlural>
+
 
 </LanguageData>

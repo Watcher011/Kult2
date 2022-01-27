@@ -15,14 +15,17 @@
 				<offset>(0,0,0)</offset>
 			</shadowData>
 		</graphicData>
+		 <altitudeLayer>Building</altitudeLayer>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
 		<fillPercent>0.9</fillPercent>
 		<statBases>
 			<MaxHitPoints>40</MaxHitPoints>
 			<WorkToBuild>6500</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<Beauty>-60</Beauty>
+			<Mass>70</Mass>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<description>A Fuel Power Plant that produces electricity. Can be fueled with yadarit.</description>
@@ -81,6 +84,7 @@
 		</comps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
+		 <designationHotKey>Misc3</designationHotKey>
 		<researchPrerequisites>
 			<li>YadariteReclamation</li>
 		</researchPrerequisites>
@@ -109,6 +113,7 @@
 				<offset>(0,0,0)</offset>
 			</shadowData>
 		</graphicData>
+		 <altitudeLayer>Building</altitudeLayer>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.9</fillPercent>
@@ -117,6 +122,7 @@
 			<WorkToBuild>6500</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<Beauty>-60</Beauty>
+			<Mass>170</Mass>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<description>A Fuel Power Plant that produces electricity. Can be fueled with yadarit.</description>
@@ -184,6 +190,7 @@
 		</comps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
+		 <designationHotKey>Misc3</designationHotKey>
 		<researchPrerequisites>
 			<li>YadariteReclamation</li>
 		</researchPrerequisites>
@@ -212,6 +219,7 @@
 				<offset>(0,0,0)</offset>
 			</shadowData>
 		</graphicData>
+		 <altitudeLayer>Building</altitudeLayer>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<passability>PassThroughOnly</passability>
 		<fillPercent>0.9</fillPercent>
@@ -220,6 +228,7 @@
 			<WorkToBuild>6500</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<Beauty>-60</Beauty>
+			<Mass>370</Mass>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<description>A Fuel Power Plant that produces electricity. Can be fueled with yadarit.</description>
@@ -287,6 +296,7 @@
 		</comps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
+		 <designationHotKey>Misc3</designationHotKey>
 		<researchPrerequisites>
 			<li>YadariteReclamation</li>
 		</researchPrerequisites>

@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-   <TorchLampCold.label>Лампа с Хладокамнем</TorchLampCold.label>
+  <TorchLampCold.label>Лампа с Хладокамнем</TorchLampCold.label>
   <TorchLampCold.description>Небольшая колба, что содержит в себе горящий Кристал хладокамня. Горит ярко, но не долго. Позволяет опустить температуру до -5 градусов.</TorchLampCold.description>
+
 
 </LanguageData>

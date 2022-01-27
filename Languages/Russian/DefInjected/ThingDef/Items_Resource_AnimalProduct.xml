@@ -3,7 +3,6 @@
 
   <!-- Chicken -->
 
- 
   <EggKirinAncientUnfertilized.label>Яйца древнего Кирина(неоплодотворенное яйцо)</EggKirinAncientUnfertilized.label>
   <EggKirinAncientUnfertilized.description>Живые яйца легендарного монстра.</EggKirinAncientUnfertilized.description>
 
@@ -21,5 +20,6 @@
 
   <EggBehirAncientFertilized.label>Яйца древнего бехира(оплодотворенное яйцо)</EggBehirAncientFertilized.label>
   <EggBehirAncientFertilized.description>Оплодотворенное яйцо древнего бехира</EggBehirAncientFertilized.description>
+
 
 </LanguageData>

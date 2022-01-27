@@ -173,7 +173,7 @@
 		 <Weapon_Parts>5</Weapon_Parts>
       </costList>
 		<researchPrerequisites>
-			<li>Mortars</li>
+			<li>YadariteReclamation</li>
 		</researchPrerequisites>
 		<designationCategory>Security</designationCategory>
 		<specialDisplayRadius>35</specialDisplayRadius>
