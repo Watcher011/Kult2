@@ -109,7 +109,7 @@
 		<statBases>
 			<MarketValue>240</MarketValue>
 		</statBases>
-		<ammoClass>GrenadeHE</ammoClass>
+		<ammoClass>Poison</ammoClass>
 		<generateAllowChance>0</generateAllowChance>
 		<detonateProjectile>Bullet_152mmHowitzerShell_Bio</detonateProjectile>
 		<comps>
@@ -117,14 +117,17 @@
 				<damageAmountBase>195</damageAmountBase>
 				<explosiveDamageType>Acid</explosiveDamageType>
 				<explosiveRadius>12</explosiveRadius>
+
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-					<Fragment_Small>22</Fragment_Small>
+					<Fragment_Small>10</Fragment_Small>
+					<Fragment_Large>4</Fragment_Large>
 				</fragments>
 			</li>
 		</comps>
 	</ThingDef>
+
 
 	<!-- ================== Projectiles ================== -->
 
@@ -209,24 +212,23 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>Bomb</damageDef>
-			<damageAmountBase>90</damageAmountBase>
-			<explosionRadius>2</explosionRadius>
-			<soundExplode>MortarBomb_Explode</soundExplode>
+			<damageDef>Plague</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<explosionRadius>10</explosionRadius>
+			<soundExplode>VegetativeState</soundExplode>
 		</projectile>
-		<comps>
+	<comps>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
 				<explosiveRadius>10</explosiveRadius>
-				<explosiveDamageType>Acid</explosiveDamageType>
-				<damageAmountBase>760</damageAmountBase>
-			</li>
-			<li Class="CombatExtended.CompProperties_Fragments">
-				<fragments>
-					<Fragment_Small>19</Fragment_Small>
-				</fragments>
+				<explosiveDamageType>VegetativeState</explosiveDamageType>
+				<damageAmountBase>10</damageAmountBase>
 			</li>
 		</comps>
 	</ThingDef>
+	
+	
+	
+	
 	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="AmmoRecipeBase">
@@ -285,7 +287,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_152mmHowitzerShell_HE>1</Ammo_152mmHowitzerShell_HE>
+			<Ammo_152mmHowitzerShell_HE>3</Ammo_152mmHowitzerShell_HE>
 		</products>
 		<researchPrerequisite>YadariteReclamation</researchPrerequisite>
 	</RecipeDef>
@@ -344,7 +346,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_152mmHowitzerShell_EMP>1</Ammo_152mmHowitzerShell_EMP>
+			<Ammo_152mmHowitzerShell_EMP>3</Ammo_152mmHowitzerShell_EMP>
 		</products>
 		<researchPrerequisite>YadariteReclamation</researchPrerequisite>
 	</RecipeDef>
@@ -352,7 +354,10 @@
 
 
 
-<RecipeDef ParentName="AmmoRecipeBase">
+
+	
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_152mmHowitzerShell_Bio</defName>
 		<label>make 152mm Bio  howitzer shells x1</label>
 		<description>Craft 152mm Bio  howitzer shells.</description>
@@ -406,7 +411,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_152mmHowitzerShell_Bio>1</Ammo_152mmHowitzerShell_Bio>
+			<Ammo_152mmHowitzerShell_Bio>3</Ammo_152mmHowitzerShell_Bio>
 		</products>
 		<researchPrerequisite>YadariteReclamation</researchPrerequisite>
 	</RecipeDef>
