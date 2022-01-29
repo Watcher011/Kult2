@@ -97,7 +97,51 @@
  
  
  
- 
+ <ThingDef ParentName="SK_ResourceBase">
+		<defName>YadareCell</defName>
+		<label>YadareCell</label>
+		<description>Compact yadarite battery, due to the specifics, can be used in devices with high power consumption.</description>
+		<graphicData>
+			<texPath>Things/Item/YadareCell</texPath>
+		    <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.8,0.4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<MarketValue>150</MarketValue>
+			<DeteriorationRate>0.02</DeteriorationRate>
+			<Flammability>5</Flammability>
+			<Mass>0.1</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.4</explosiveRadius>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<explosiveExpandPerStackcount>0.2</explosiveExpandPerStackcount>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<wickTicks>
+					<min>5</min>
+					<max>10</max>
+				</wickTicks>
+			</li>
+			<li Class="SK.CompProperties_ApplyHediffAround">
+				<hediff>Soporific</hediff>
+				<radius>4</radius>
+				<severityToAdd>0.05</severityToAdd>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>CTextiles</li>
+		</thingCategories>
+	</ThingDef>
+
  
  
  

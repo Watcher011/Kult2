@@ -4,5 +4,8 @@
   <yadarit.label>Ядарит</yadarit.label>
   <yadarit.description>Ядарит - таинственое вещество что обладает мистичискими свойствами и высокой научной ценностью.</yadarit.description>
 
+  <YadareCell.label>Ядарит Ядро</YadareCell.label>
+  <YadareCell.description>Компактный аккумулятор Ядарита, благодаря специфике, может использоваться в устройствах с высоким энергопотреблением(Хранить в экранированом помещении вдали от людей).</YadareCell.description>
+
 
 </LanguageData>

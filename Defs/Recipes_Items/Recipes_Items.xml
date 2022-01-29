@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<RecipeDef>
+		<defName>MakeYadareCell</defName>
+		<label>MakeYadareCell</label>
+		<description>MakeYadareCell. Produces 1.</description>
+		<jobString>Assembling YadareCell components.</jobString>
+		<workAmount>6500</workAmount>
+		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<recipeUsers>
+			<li>TableElectronics</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>HCMBar</li>
+					</categories>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Glass</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>yadarit</li>
+					</thingDefs>
+				</filter>
+				<count>220</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SilverBar</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Glass</li>
+				<li>ComponentIndustrial</li>
+				<li>SilverBar</li>
+			</thingDefs>
+			<categories>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<YadareCell>1</YadareCell>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+	</RecipeDef>
+
+
+</Defs>

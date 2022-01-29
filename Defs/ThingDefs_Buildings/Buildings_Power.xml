@@ -238,6 +238,7 @@
 		</stuffCategories>
 		<costStuffCount>350</costStuffCount>
 		<costList>
+		    <YadareCell>1</YadareCell>
 			<ReinforcedConcrete>30</ReinforcedConcrete>
 			<ComponentIndustrial>15</ComponentIndustrial>
 			<Mechanism>10</Mechanism>
@@ -301,6 +302,84 @@
 			<li>YadariteReclamation</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="SK.Events.AccidentalExplosionExtension">
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>ShildGenerator</defName>
+		<label>Shild plant</label>
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Power/SH9</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<shadowData>
+				<volume>(1, 0.8, 1)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		 <altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<fillPercent>0.9</fillPercent>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToBuild>6500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-60</Beauty>
+			<Mass>70</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<description>A Fuel Power Plant that produces electricity. Can be fueled with yadarit.</description>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>370</costStuffCount>
+		<costList>
+		    <YadareCell>1</YadareCell>
+			<ReinforcedConcrete>30</ReinforcedConcrete>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<Mechanism>20</Mechanism>
+		</costList>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+			<uninstallWork>450</uninstallWork>
+		</building>
+		<comps>
+		 <li Class="CompProperties_ProjectileInterceptor">
+        <radius>8</radius>
+        <interceptGroundProjectiles>true</interceptGroundProjectiles>
+        <color>(0.4, 0.4, 0.4)</color>
+        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+        <activeSound>BulletShield_Ambience</activeSound>
+        <disarmedByEmpForTicks>1080</disarmedByEmpForTicks>
+        <chargeIntervalTicks>600000</chargeIntervalTicks>
+        <chargeDurationTicks>60000</chargeDurationTicks>
+      </li>
+			
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+	        <li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		 <designationHotKey>Misc3</designationHotKey>
+		<researchPrerequisites>
+			<li>YadariteReclamation</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<modExtensions>
 			<li Class="SK.Events.AccidentalExplosionExtension">
 			</li>

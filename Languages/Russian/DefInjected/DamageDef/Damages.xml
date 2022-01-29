@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Plague.label>Чума</Plague.label>
+  <Plague.deathMessage>{0} has melted to death.</Plague.deathMessage>
+
+  <VegetativeState.label>Вегетативное состояние</VegetativeState.label>
+  <VegetativeState.deathMessage>{0} has melted to death.</VegetativeState.deathMessage>
+
+  <HeartAttack.label>Сердечный приступ</HeartAttack.label>
+  <HeartAttack.deathMessage>{0} has melted to death.</HeartAttack.deathMessage>
+
+  <GutWorms.label>Паразиты</GutWorms.label>
+  <GutWorms.deathMessage>{0} has melted to death.</GutWorms.deathMessage>
+
+  <YadaritPoison.label>Отравление Ядаритом</YadaritPoison.label>
+  <YadaritPoison.deathMessage>{0} has melted to death.</YadaritPoison.deathMessage>
+
+
+</LanguageData>

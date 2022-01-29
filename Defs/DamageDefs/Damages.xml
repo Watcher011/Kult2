@@ -150,28 +150,43 @@
 	</DamageDef>
 	
 	
+	
+	
 	<DamageDef ParentName="LocalInjuryBase">
 		<defName>YadaritPoison</defName>
-		<label>Yadaritpoison</label>
+		<label>YadaritPoison</label>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>true</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} has been shot to death by an Yadarit.</deathMessage>
-		<hediff>Cut</hediff>
-		<hediffSolid>Crack</hediffSolid>
-		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
-		<impactSoundType>Bullet</impactSoundType>
-		<armorCategory>Sharp</armorCategory>
-		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
-		<buildingDamageFactor>0.05</buildingDamageFactor>
-		<plantDamageFactor>0.5</plantDamageFactor>
-		<isRanged>true</isRanged>
-		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<deathMessage>{0} has melted to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<!--There no protection against acid-->
+		<!-- <armorCategory>Heat</armorCategory> -->
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+		<defaultDamage>30</defaultDamage>
+		<defaultArmorPenetration>3</defaultArmorPenetration>
+		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+		<buildingDamageFactor>0.2</buildingDamageFactor>
+		<plantDamageFactor>0.3</plantDamageFactor>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(0.6, 0.9, 0.6)</explosionColorCenter>
+		<explosionColorEdge>(0.3, 0.65, 0.3)</explosionColorEdge>
+		<!--Ought to look for acid explosion sound-->
+		<soundExplosion>Explosion_Flame</soundExplosion>
+		<combatLogRules>Damage_Flame</combatLogRules>
 		<additionalHediffs>
 			<li>
 				<hediff>Soporific</hediff>
-				<severityPerDamageDealt>0.12</severityPerDamageDealt>
+				<severityPerDamageDealt>0.25</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 			</li>
 		</additionalHediffs>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
 	</DamageDef>
+	
+	
+	
 </Defs>
