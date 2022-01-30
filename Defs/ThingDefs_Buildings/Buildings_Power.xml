@@ -356,7 +356,7 @@
 		</building>
 		<comps>
 		 <li Class="CompProperties_ProjectileInterceptor">
-        <radius>8</radius>
+        <radius>6</radius>
         <interceptGroundProjectiles>true</interceptGroundProjectiles>
         <color>(0.4, 0.4, 0.4)</color>
         <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
