@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <mechandrid.label>Механодендрит</mechandrid.label>
+  <mechandrid.description>Похожие на щупальца манипуляторы, которые техножрец выпускает из тела, позволяют ему выполнять несколько задач одновременно, а во время войны держать смертоносный набор оружия.</mechandrid.description>
+
+
+  <!-- Bionic arm -->
+
+  <tent.label>Бионическая Тентакля</tent.label>
+  <tent.description>Инструмент что крайне полезен в быту</tent.description>
+
+
+</LanguageData>

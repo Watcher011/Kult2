@@ -5,5 +5,9 @@
   <MakeYadareCell.description>Сделать Ядарит ядро.1шт.</MakeYadareCell.description>
   <MakeYadareCell.jobString>Делает ядарит компоненты.</MakeYadareCell.jobString>
 
+  <MakeSealOfPurity.label>Сделать Печать Чистоты</MakeSealOfPurity.label>
+  <MakeSealOfPurity.description>Сделать Печать Чистоты.  1шт.</MakeSealOfPurity.description>
+  <MakeSealOfPurity.jobString>Производство печати.</MakeSealOfPurity.jobString>
+
 
 </LanguageData>

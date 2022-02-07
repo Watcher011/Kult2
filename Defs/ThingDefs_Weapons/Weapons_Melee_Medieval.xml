@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="WeaponMedievalBase">
+		<defName>Chainsword</defName>
+		<label>Chainsword</label>
+		<description>The Chainsword is the preferred close combat melee weapon of many of the military forces of the Imperium of Man and versions are also used by the warriors of the Orks and the Asuryani.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Chainsword</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<drawSize>(1.1,0.3)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<soundInteract>InteractMelee</soundInteract>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>NorbalMelee</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<tradeability>Sellable</tradeability>			
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<costList>
+		    <Plastic>30</Plastic>
+			<ComponentMedieval>5</ComponentMedieval>
+			<Mechanism>2</Mechanism>
+		</costList>
+		<statBases>
+			<WorkToMake>7500</WorkToMake>
+			<Bulk>6</Bulk>
+			<Mass>4.2</Mass>
+			<MeleeCounterParryBonus>1.2</MeleeCounterParryBonus>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.4</MeleeCritChance>
+			<MeleeParryChance>0.4</MeleeParryChance>
+			<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>pommel</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.2</cooldownTime>
+				<chanceFactor>0.1</chanceFactor>
+				<armorPenetrationBlunt>4</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1.4</cooldownTime>
+				<chanceFactor>0.5</chanceFactor>
+				<armorPenetrationBlunt>1.2</armorPenetrationBlunt>
+				<armorPenetrationSharp>4</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.5</cooldownTime>
+				<armorPenetrationBlunt>5.8</armorPenetrationBlunt>
+				<armorPenetrationSharp>3.2</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1,0.3</DrawSize>
+		  </li>
+		</modExtensions>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<thingCategories>
+			<li>SharpMelee</li>
+			<li>AgileMelee</li>
+		</thingCategories>
+		<recipeMaker>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+
+
+</Defs>

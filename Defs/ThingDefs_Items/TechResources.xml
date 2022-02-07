@@ -143,6 +143,45 @@
 	</ThingDef>
 
  
+ <ThingDef ParentName="SK_ResourceBase">
+		<defName>SealOfPurity</defName>
+		<label>sealofpurity </label>
+		<description>-/--/-.</description>
+		<graphicData>
+			<texPath>Things/Item/sealofpurity</texPath>
+		    <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<stackLimit>10</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>10</MaxHitPoints>
+			<MarketValue>350</MarketValue>
+			<DeteriorationRate>0.02</DeteriorationRate>
+			<Flammability>5</Flammability>
+			<Mass>0.1</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="SK.CompProperties_ApplyHediffAround">
+				<hediff>UnstoppablePassive</hediff>
+				<radius>4</radius>
+				<severityToAdd>0.05</severityToAdd>
+			</li>
+			 <li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,100,100,0)</glowColor>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>CTextiles</li>
+		</thingCategories>
+	</ThingDef>
+
  
  
  

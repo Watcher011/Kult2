@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- COLT M1911 -->
+	<ThingDef ParentName="BaseGun_ShortBarreled">
+		<defName>Bolt_Pistol</defName>
+		<label>Bolt Pistol</label>
+		<description>A Bolt Pistol is a smaller version of the Bolter in standard use by the Space Marines and other Imperial forces such as the Orders Militant of the Adepta Sororitas and certain members of the Astra Militarum and the Imperial Navy.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Bolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.4,0.4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.5</fillPercent>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<statBases>
+			<MarketValue>200</MarketValue>
+			<SightsEfficiency>0.9</SightsEfficiency>
+			<ShotSpread>0.15</ShotSpread>
+			<SwayFactor>1.4</SwayFactor>
+			<RangedWeapon_Cooldown>0.26</RangedWeapon_Cooldown>
+			<Bulk>2</Bulk>
+			<Mass>5.25</Mass>
+		</statBases>
+		<weaponTags>
+			<li>PT1</li>
+			<li>Gun</li>
+			<li>TierOnePistol</li>
+			<li>CE_Sidearm</li>
+			<li>CE_AI_Pistol</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<weaponClasses>
+		  <li>RangedLight</li>
+		</weaponClasses>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+				<warmupTime>0.27</warmupTime>
+				<range>28</range>
+				 <soundCast>RF_ShotARFifty</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>9</magazineSize>
+				<reloadTime>1.5</reloadTime>
+				<ammoSet>AmmoSet_50BMG</ammoSet>
+			</li>
+		</comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.4</DrawSize>
+		  </li>
+		</modExtensions>
+		<smeltProducts>
+			<Pistol_Component>1</Pistol_Component>
+			<Weapon_Parts>1</Weapon_Parts>
+		</smeltProducts>
+	</ThingDef>
+	<!-- SmithWesson M1917 -->
+	
+</Defs>

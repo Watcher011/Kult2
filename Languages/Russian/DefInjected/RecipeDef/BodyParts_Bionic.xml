@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Installmechandrid.label>Установить бионичиский Механодендрит</Installmechandrid.label>
+  <Installmechandrid.description>Установить бионичиский Механодендрит.</Installmechandrid.description>
+  <Installmechandrid.jobString>Установка бионичиского Механодендрита.</Installmechandrid.jobString>
+
+
+  <!-- Bionic arm -->
+
+  <Installtent.label>Имплантация Тентакли</Installtent.label>
+  <Installtent.description>Имплантация Тентакли.</Installtent.description>
+  <Installtent.jobString>Имплантация Тентакли.</Installtent.jobString>
+
+
+</LanguageData>

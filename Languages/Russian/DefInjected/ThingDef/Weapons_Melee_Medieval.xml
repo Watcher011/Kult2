@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Chainsword.label>Цепной меч</Chainsword.label>
+  <Chainsword.description>Цепной меч (он же цепник, он же пиломеч)— самый распространенный вид цепного оружия, представляющий собой ничто иное, как меч, оснащённый зубчатой цепью, проходящей по клинку, наподобие бензопилы. В большинстве таких мечей используются бритвенно-острые мономолекулярные зубцы..</Chainsword.description>
+  <Chainsword.tools.0.label>навершие</Chainsword.tools.0.label>
+  <Chainsword.tools.1.label>клинок</Chainsword.tools.1.label>
+  <Chainsword.tools.2.label>лезвие</Chainsword.tools.2.label>
+
+
+</LanguageData>
