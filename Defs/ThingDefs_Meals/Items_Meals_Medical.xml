@@ -27,7 +27,6 @@
 			<DeteriorationRate>3</DeteriorationRate>
 			<Flammability>1</Flammability>			
 		</statBases>
-		<size>(0.8,0.8)</size>
 		<stackLimit>5</stackLimit>
 		<thingCategories>
 			<li>Medicine</li>
