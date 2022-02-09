@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>Stimpak</defName>
+		<label>Stimpak</label>
+		<description>Stimpak.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Meal/Stimpak</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.8,0.8)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<statBases>
+			<Nutrition>0.07</Nutrition>	
+            <MaxHitPoints>60</MaxHitPoints>
+			<MarketValue>35</MarketValue>
+			<Mass>0.5</Mass>
+			<Bulk>0.6</Bulk>
+			<MedicalPotency>1.90</MedicalPotency>
+			<MedicalQualityMax>1.95</MedicalQualityMax>
+			<DeteriorationRate>3</DeteriorationRate>
+			<Flammability>1</Flammability>			
+		</statBases>
+		<size>(0.8,0.8)</size>
+		<stackLimit>5</stackLimit>
+		<thingCategories>
+			<li>Medicine</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<addictiveness>0</addictiveness>
+				<listOrder>1500</listOrder>
+				<overdoseSeverityOffset>0.18~0.34</overdoseSeverityOffset>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>HSKhumanitarianSuppliesTierFour</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+
+</Defs>
