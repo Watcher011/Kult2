@@ -14,7 +14,7 @@
 		<fillPercent>0.5</fillPercent>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<statBases>
-			<MarketValue>200</MarketValue>
+			<MarketValue>3200</MarketValue>
 			<SightsEfficiency>0.9</SightsEfficiency>
 			<ShotSpread>0.15</ShotSpread>
 			<SwayFactor>1.4</SwayFactor>
@@ -70,5 +70,71 @@
 		</smeltProducts>
 	</ThingDef>
 	<!-- SmithWesson M1917 -->
-	
+	 <ThingDef ParentName="BaseGun_ShortBarreled">
+        <defName>Gun_PlasmaFox</defName>
+        <label>C1 Ascension</label>
+        <description>A highly accurate Fox pistol.</description>
+        <graphicData>
+            <texPath>Things/Weapons/FoxPL</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.4,0.4)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <statBases>
+            <MarketValue>2600</MarketValue>
+            <SightsEfficiency>1.15</SightsEfficiency>
+            <ShotSpread>0.06</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+            <Bulk>3.20</Bulk>
+            <Mass>3.50</Mass>
+        </statBases>
+        <tradeability>Sellable</tradeability>
+        <soundInteract>InteractPlasma</soundInteract>
+		<techLevel>Spacer</techLevel>
+        <weaponTags>
+            <li>ADP2</li>
+            <li>AdvancedGun</li>
+            <li>TierTwoLow</li>
+            <li>Futuristic</li>
+		  <li>CE_Sidearm</li>
+		  <li>CE_AI_Pistol</li>
+		  <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+		<weaponClasses>
+			<li>Ultratech</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+        <thingCategories>
+            <li>Futuristic</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_Plasma</defaultProjectile>
+                <warmupTime>0.52</warmupTime>
+                <range>45</range>
+                <soundCast>Fire_UACPistol</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>15</magazineSize>
+                <reloadTime>1.80</reloadTime>
+                <ammoSet>AmmoSet_PlasmaBolt</ammoSet>
+            </li>
+        </comps>
+        <modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.4</DrawSize>
+		  </li>
+		</modExtensions>
+    </ThingDef>
 </Defs>

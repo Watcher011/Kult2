@@ -2,6 +2,7 @@
 <Defs>
 
 	
+	<!--
 	<RecipeDef ParentName="RangedWeaponRecipeBase">
 		<defName>Build_Bolt_Pistol</defName>
 		<label>Build Bolt Pistol</label>
@@ -75,6 +76,6 @@
 	</RecipeDef>
 
 
-	
+	-->
 
 </Defs>
