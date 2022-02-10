@@ -153,7 +153,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>2</magazineSize>
-				<reloadTime>16.5</reloadTime>
+				<reloadTime>36.5</reloadTime>
 				<ammoSet>AmmoSet_152mmHowitzerShell</ammoSet>
 			</li>
 		</comps>
