@@ -98,14 +98,6 @@
 				</filter>
 				<count>10</count>
 			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Honey</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
