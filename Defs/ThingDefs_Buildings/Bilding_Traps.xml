@@ -234,7 +234,7 @@
 			<Mechanism>12</Mechanism>
 			<Wire>5</Wire>
 		</costList>
-		<specialDisplayRadius>1</specialDisplayRadius>
+		<specialDisplayRadius>2</specialDisplayRadius>
 		<designationCategory>Security</designationCategory>
 		<building>
 			<ai_combatDangerous>false</ai_combatDangerous>
