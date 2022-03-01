@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_Balls.label>15-миллиметровые стальные шарики</Ammo_Balls.label>
+  <Ammo_Balls.description>Шарики из подшипников благодаря идеальной обработке и распространённости стали идеальным боеприпасом для некоторых кустарных видов оружия.</Ammo_Balls.description>
+
+
+  <!-- Projectiles -->
+
+  <Balls.label>15-миллиметровые стальные шарики</Balls.label>
+
+
+</LanguageData>

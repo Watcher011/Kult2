@@ -185,7 +185,7 @@
 				<recoilAmount>0.21</recoilAmount>
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Projectile_Arrow_Stone</defaultProjectile>
+				<defaultProjectile>Balls</defaultProjectile>
 				<warmupTime>0.50</warmupTime>
 				<range>30</range>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -200,7 +200,7 @@
 				<magazineSize>100</magazineSize>
 				<reloadTime>5.00</reloadTime>
 				<!-- <spawnUnloaded>false</spawnUnloaded> -->
-				<ammoSet>AmmoSet_Arrow</ammoSet>
+				<ammoSet>AmmoSet_Balls</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aimedBurstShotCount>3</aimedBurstShotCount>

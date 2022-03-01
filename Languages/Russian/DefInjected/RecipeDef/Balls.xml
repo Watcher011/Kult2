@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_Balls.label>Сделать 15-миллиметровые стальные шарики x100шт</MakeAmmo_Balls.label>
+  <MakeAmmo_Balls.description>Создаёт 100шт,15-миллиметровые стальные шарики.</MakeAmmo_Balls.description>
+  <MakeAmmo_Balls.jobString>Создаёт 15-миллиметровые стальные шарики.</MakeAmmo_Balls.jobString>
+
+
+</LanguageData>
