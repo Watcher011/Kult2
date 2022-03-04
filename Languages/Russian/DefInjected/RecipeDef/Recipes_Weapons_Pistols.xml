@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-
- <Build_Bolt_Pistol.label>Сделать Болт пистолет</Build_Bolt_Pistol.label>
- <Build_Bolt_Pistol.description>Болт-пистолет - пистолетная версия болтера.</Build_Bolt_Pistol.description>
+  <Build_Bolt_Pistol.label>Сделать Болт пистолет</Build_Bolt_Pistol.label>
+  <Build_Bolt_Pistol.description>Болт-пистолет - пистолетная версия болтера.</Build_Bolt_Pistol.description>
   <Build_Bolt_Pistol.jobString>Создание Болт пистолета</Build_Bolt_Pistol.jobString>
+
 
 </LanguageData>

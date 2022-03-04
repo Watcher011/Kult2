@@ -183,7 +183,39 @@
 	</ThingDef>
 
  
- 
+ <ThingDef ParentName="SK_ResourceBase">
+		<defName>Toolbox</defName>
+		<label>Toolbox</label>
+		<description>-/--/-.</description>
+		<graphicData>
+			<texPath>Things/Item/toolbox</texPath>
+		    <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.6)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>350</MarketValue>
+			<DeteriorationRate>0.02</DeteriorationRate>
+			<Flammability>5</Flammability>
+			<Mass>3.1</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			 <li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,100,100,0)</glowColor>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>CTextiles</li>
+		</thingCategories>
+	</ThingDef>
  
  
 </Defs>

@@ -1,6 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+<ThingDef Name="PowerFueled" ParentName="StandartBuilding" Abstract="True">
+		<thingClass>Building</thingClass>
+		<passability>PassThroughOnly</passability>
+		<tickerType>Normal</tickerType>
+		<surfaceType>Item</surfaceType>
+		<fillPercent>0.85</fillPercent>
+		<pathCost>90</pathCost>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<inspectorTabs>
+			<li>SK.ITab_Fuel</li>
+		</inspectorTabs>
+	</ThingDef>
 <ThingDef ParentName="PowerFueled">
 		<defName>YadaritVolgerGenerator</defName>
 		<label>Yadarit volger plant</label>
@@ -380,6 +392,114 @@
 			<li>YadariteReclamation</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="SK.Events.AccidentalExplosionExtension">
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	
+
+
+
+
+
+
+	
+	
+	<ThingDef ParentName="PowerFueled">
+		<defName>AIGenerator</defName>
+		<label>AI plant</label>
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Power/WoodFiredGeneratorAI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(1.8, 0.8, 1.8)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		 <altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<fillPercent>0.9</fillPercent>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<WorkToBuild>2100</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>The basic Steam Generator that produces electricity. Can be fueled with Ethanol Fuel, Charcoal, Kindling and wooden stuff.
+Power output: around 750 W.</description>
+		<size>(2,2)</size>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>110</costStuffCount>
+		<costList>
+			 <Toolbox>1</Toolbox>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<Mechanism>10</Mechanism>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Power">
+				<compClass>SK.CompPowerPlantFueled</compClass>
+				<basePowerConsumption>-780</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>WoodFiredGenerator_Ambience</soundAmbientProducingPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+			<li Class="SK.CompProperties_HeatPusherAdvanced">
+				<compClass>SK.CompHeatPusherAdvanced</compClass>
+				<heatPerSecond>30</heatPerSecond>
+				<heatPushMaxTemperature>75</heatPushMaxTemperature>
+			</li>
+			<li Class="SK.CompFueled_Properties">
+				<operatingTemp>1000</operatingTemp>
+				<drawfirefuel>false</drawfirefuel>
+				<canAutoBurn>true</canAutoBurn>
+				<smokeDrawOffset>(0,0,0.1)</smokeDrawOffset>
+				<smokesize>1.7</smokesize>
+				<smokespeeddelay>100</smokespeeddelay>
+				<fuelCapacity>10</fuelCapacity>
+				<burnFuelMultiplier>3.5</burnFuelMultiplier>
+				<smokeDensity>3</smokeDensity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+						<li>Kindling</li>
+						<li>Charcoal</li>
+					</thingDefs>
+					<categories>
+						<li>Wooden</li>
+					</categories>
+				</fuelFilter>
+			</li>
+			<li Class="SK.CompProperties_ApplyHediffAround">
+				<hediff>SmokeInhalation</hediff>
+				<radius>5</radius>
+				<severityToAdd>0.03</severityToAdd>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<modExtensions>
 			<li Class="SK.Events.AccidentalExplosionExtension">
 			</li>
