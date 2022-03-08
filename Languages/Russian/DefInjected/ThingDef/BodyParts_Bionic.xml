@@ -10,5 +10,11 @@
   <tent.label>Бионическая Тентакля</tent.label>
   <tent.description>Инструмент что крайне полезен в быту</tent.description>
 
+  <FrozenHeart.label>Ядро холода</FrozenHeart.label>
+  <FrozenHeart.description>Холодное на ощупь, и от него идет пар. Именно из таких сердец и появляются ледяные элементали, на родине их называют «Снеговики»</FrozenHeart.description>
+
+  <LavaHeart.label>Ядро пламени</LavaHeart.label>
+  <LavaHeart.description> Это сердце еще слегка бьется, оно обернуто в толстый слой мутно-красной жидкости.Последствия имплантации непредсказуемы</LavaHeart.description>
+
 
 </LanguageData>

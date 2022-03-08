@@ -15,5 +15,13 @@
   <tent.description>Бионичиский Тентакль,отличная замена руки</tent.description>
   <tent.labelNoun>Бионичиский Тентакль</tent.labelNoun>
 
+  <FrozenHeart.label>Морозное ядро</FrozenHeart.label>
+  <FrozenHeart.description>Вживление морозного ядра.</FrozenHeart.description>
+  <FrozenHeart.labelNoun>Морозное ядро</FrozenHeart.labelNoun>
+
+  <LavaHeart.label>Пламенное ядро</LavaHeart.label>
+  <LavaHeart.description>Вживление ядра из чистого пламени</LavaHeart.description>
+  <LavaHeart.labelNoun>Пламенное ядро</LavaHeart.labelNoun>
+
 
 </LanguageData>

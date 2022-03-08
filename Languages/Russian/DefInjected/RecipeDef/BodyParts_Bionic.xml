@@ -12,5 +12,13 @@
   <Installtent.description>Имплантация Тентакли.</Installtent.description>
   <Installtent.jobString>Имплантация Тентакли.</Installtent.jobString>
 
+  <InstallFrozenHeart.label>Имплантация  ядра</InstallFrozenHeart.label>
+  <InstallFrozenHeart.description>Имплантация  ядра.</InstallFrozenHeart.description>
+  <InstallFrozenHeart.jobString>Имплантация  ядра.</InstallFrozenHeart.jobString>
+
+  <InstallLavaHeart.label>Имплантация  ядра</InstallLavaHeart.label>
+  <InstallLavaHeart.description>Имплантация ядра.</InstallLavaHeart.description>
+  <InstallLavaHeart.jobString>Имплантация  ядра.</InstallLavaHeart.jobString>
+
 
 </LanguageData>

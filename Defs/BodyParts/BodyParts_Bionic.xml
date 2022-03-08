@@ -188,4 +188,190 @@
 		</skillRequirements>
   </RecipeDef>
 
+
+	<HediffDef ParentName="AddedBodyPartBase">
+    <defName>FrozenHeart</defName>
+    <label>FrozenHeart</label>
+    <labelNoun>a FrozenHeart</labelNoun>
+    <description>An installed Frozen Heart.</description>
+    <descriptionHyperlinks><ThingDef>tent</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>tent</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.5</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.29</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.08</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.17</offset>
+					</li>
+				</capMods>
+			</li>	 
+		</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>FrozenHeart</defName>
+    <label>FrozenHeart</label>
+	<graphicData>
+			<texPath>Things/Item/BodyPart/LF1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+    <description>AFrozen Heart recover from damage.</description>
+    <descriptionHyperlinks><RecipeDef>Installtent</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <LivingFrost>1</LivingFrost>
+      <ComponentSpacer>4</ComponentSpacer>
+	   <Mechanism>2</Mechanism>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>0.3</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallFrozenHeart</defName>
+    <label>install FrozenHeart</label>
+    <description>Install a FrozenHeart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>FrozenHeart</ThingDef>
+      <HediffDef>FrozenHeart</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Frozen Heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FrozenHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>FrozenHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>FrozenHeart</addsHediff>
+	<skillRequirements>
+			<Medicine>15</Medicine>
+		</skillRequirements>
+  </RecipeDef>
+
+
+
+
+
+
+
+<HediffDef ParentName="AddedBodyPartBase">
+    <defName>LavaHeart</defName>
+    <label>LavaHeart</label>
+    <labelNoun>a LavaHeart</labelNoun>
+    <description>An installed LavaHeart.</description>
+    <descriptionHyperlinks><ThingDef>tent</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>tent</spawnThingOnRemoved>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.3</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.29</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.19</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.17</offset>
+					</li>
+				</capMods>
+			</li>	 
+		</stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>LavaHeart</defName>
+    <label>LavaHeart</label>
+	<graphicData>
+			<texPath>Things/Item/BodyPart/LF2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+    <description>AFrozen Heart recover from damage.</description>
+    <descriptionHyperlinks><RecipeDef>Installtent</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <LivingFire>1</LivingFire>
+      <ComponentSpacer>3</ComponentSpacer>
+	   <Mechanism>5</Mechanism>
+    </costList>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <Mass>0.3</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallLavaHeart</defName>
+    <label>install LavaHeart</label>
+    <description>Install a LavaHeart.</description>
+    <descriptionHyperlinks>
+      <ThingDef>LavaHeart</ThingDef>
+      <HediffDef>LavaHeart</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing Lava Heart.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>LavaHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>LavaHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>LavaHeart</addsHediff>
+	<skillRequirements>
+			<Medicine>16</Medicine>
+		</skillRequirements>
+  </RecipeDef>
+
+
 </Defs>
