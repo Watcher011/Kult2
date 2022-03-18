@@ -433,6 +433,7 @@
 			<MaxHitPoints>450</MaxHitPoints>
 			<WorkToBuild>2100</WorkToBuild>
 			<Flammability>1.0</Flammability>
+			<Mass>270</Mass>
 		</statBases>
 		<description>The basic Steam Generator that produces electricity. Can be fueled with Ethanol Fuel, Charcoal, Kindling and wooden stuff.
 Power output: around 750 W.</description>
@@ -505,4 +506,13 @@ Power output: around 750 W.</description>
 			</li>
 		</modExtensions>
 	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </Defs>
