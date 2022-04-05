@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+   <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>Hels</defName>
+        <label>Hels Rifle</label>
+        <description>Ancient pattern military sniper rifle. Bolt action. Long range, great accuracy and power.</description>
+        <graphicData>
+           <texPath>Things/Weapons/Hels</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1650</MarketValue>
+            <SightsEfficiency>1.75</SightsEfficiency>
+            <ShotSpread>0.01</ShotSpread>
+            <SwayFactor>0.8</SwayFactor>
+            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+            <Bulk>11</Bulk>
+            <Mass>6.5</Mass>
+            <WorkToMake>30000</WorkToMake>
+        </statBases>
+        <weaponTags>
+            <li>SNIP1</li>
+            <li>SniperRifle</li>
+            <li>TierTwoSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SRifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Balls</defaultProjectile>
+                <warmupTime>2.1</warmupTime>
+                <range>65</range>
+                <soundCast>Shot_SniperRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+                <reloadTime>2</reloadTime>
+                  <ammoSet>AmmoSet_Balls</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+             <Mechanism>12</Mechanism>
+            <Weapon_Parts>5</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+  
+  
+  
+</Defs>

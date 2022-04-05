@@ -15,6 +15,7 @@
 		<label>Balls</label>
 		<ammoTypes>
 			<Ammo_Balls>Balls</Ammo_Balls>
+			<Ammo_Balls_YA>Balls_YA</Ammo_Balls_YA>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
@@ -33,7 +34,7 @@
 			<li>AmmoBalls</li>
 		</thingCategories>
 		<graphicData>
-			<texPath>Things/Projectile/Balls/Balls</texPath>
+			<texPath>Things/Ammo/Balls/Balls</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -45,13 +46,45 @@
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>
+		<stackLimit>200</stackLimit>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SmallAmmoBase">
+		<defName>Ammo_Balls_YA</defName>
+		<label>Balls_YA</label>
+		<description>The Balls of Yadarit.</description>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_FueledSmithy</li>
+			<li>CE_AutoEnableCrafting_ElectricSmithy</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoBalls</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Ammo/Balls/BallsYA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.5</MarketValue>
+			<Mass>0.012</Mass>
+			<Bulk>0.01</Bulk>
+		</statBases>
+		<ammoClass>ExplosiveAP</ammoClass>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+		</comps>
+		<stackLimit>200</stackLimit>
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseBalls" ParentName="SK_BaseBullet" Abstract="true">
 		<graphicData>
-			<texPath>Things/Projectile/Balls/Balls</texPath>
+			<texPath>Things/Ammo/Balls/Balls</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -71,7 +104,35 @@
 			<armorPenetrationSharp>2.9</armorPenetrationSharp>
 		</projectile>
 	</ThingDef>
+	
+<ThingDef Class="CombatExtended.AmmoDef" Name="BaseBalls_YA" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Ammo/Balls/BallsYA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>40</speed>
+			<dropsCasings>false</dropsCasings>
+		</projectile>
+	</ThingDef>
 
+<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBalls_YA">
+		<defName>Balls_YA</defName>
+		<label>Balls_YA</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>25</damageAmountBase>
+			<!-- <armorPenetrationBase>0.15</armorPenetrationBase> -->
+			<armorPenetrationBlunt>480</armorPenetrationBlunt>
+			<armorPenetrationSharp>19</armorPenetrationSharp>
+			<secondaryDamage>
+				<li>
+					<def>YadaritPoison</def>
+					<amount>3</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
 	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="AmmoRecipeNeolithicBase">
@@ -112,5 +173,56 @@
 			<Ammo_Balls>100</Ammo_Balls>
 		</products>
 	</RecipeDef>
+
+
+
+<RecipeDef ParentName="AmmoRecipeNeolithicBase">
+		<defName>MakeAmmo_Balls_YA</defName>
+		<label>make Balls ya x100</label>
+		<description>Craft 100 Balls.</description>
+		<jobString>Making poison Balls.</jobString>
+		<workAmount>500</workAmount>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workSkill>Crafting</workSkill>
+		<targetCountAdjustment>50</targetCountAdjustment>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Medicine>2</Medicine>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>50</count>
+			</li>
+			  <li>
+        <filter>
+          <thingDefs>
+            <li>YadareCell</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_Balls_YA>100</Ammo_Balls_YA>
+		</products>
+	</RecipeDef>
+
+
 
 </Defs>

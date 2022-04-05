@@ -132,7 +132,7 @@
 				</wickTicks>
 			</li>
 			<li Class="SK.CompProperties_ApplyHediffAround">
-				<hediff>Soporific</hediff>
+				<hediff>YadaritP</hediff>
 				<radius>4</radius>
 				<severityToAdd>0.05</severityToAdd>
 			</li>

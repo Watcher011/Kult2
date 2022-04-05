@@ -56,6 +56,101 @@
 
 	
 	
-
-
+<ThingDef ParentName="SK_LampBase">
+		<defName>LLamp</defName>
+		<label>L lamp</label>
+		<description>A bright and warm little fire, perfectly contained in a bowl. People need light to move and work at full speed.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Lights/LMP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<shadowData>
+				<volume>(0.4, 0.2, 0.4)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.35,0.35,0.3,0.3)</rect>
+			</damageData>
+			<drawSize>(1.2,1.4)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<pathCost>8</pathCost>
+		<tickerType>Normal</tickerType>
+		<drawerType>RealtimeOnly</drawerType>
+		<fillPercent>0.15</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>130</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Bulk>15</Bulk>
+			<Mass>5</Mass>
+			<MeditationFocusStrength>0.0</MeditationFocusStrength>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<costList>
+			<Mechanism>1</Mechanism>
+			<Glass>15</Glass>
+		</costList>
+		<soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="SK.CompFueled_Properties">
+				<factorByDifficulty>false</factorByDifficulty>
+				<operatingTemp>100</operatingTemp>
+				<fireDrawOffset>(0,0,0)</fireDrawOffset>
+				<fireDrawScale>0.4</fireDrawScale>
+				<fuelDrawOffset>(0,0.1,0.01)</fuelDrawOffset>
+				<fuelDrawScale>0.7</fuelDrawScale>
+				<fuelCapacity>10</fuelCapacity>
+				<burnFuelMultiplier>40</burnFuelMultiplier>
+				<canAutoBurn>true</canAutoBurn>
+				<smokeEnabled>false</smokeEnabled>
+				<effectOnWeather>true</effectOnWeather>
+				<smokeDensity>0</smokeDensity>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+						<li>Prometheum</li>
+						<li>FSX</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+			<li Class="CompProperties_FireOverlay">
+				<fireSize>0.2</fireSize>
+				<offset>(0,0,0)</offset>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(217,177,113,0)</glowColor>
+			</li>
+			<li Class="SK.CompProperties_HeatPusherAdvanced">
+				<compClass>SK.CompHeatPusherAdvanced</compClass>
+				<heatPerSecond>3.5</heatPerSecond>
+				<heatPushMaxTemperature>23</heatPushMaxTemperature>
+			</li>
+			
+		</comps>
+		<inspectorTabs>
+			<li>SK.ITab_Fuel</li>
+		</inspectorTabs>
+		<building>
+			<uninstallWork>150</uninstallWork>
+		</building>
+		<constructionSkillPrerequisite>2</constructionSkillPrerequisite>
+	</ThingDef>
 </Defs>

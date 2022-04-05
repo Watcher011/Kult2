@@ -312,6 +312,7 @@
 				<AridShrubland>0.02</AridShrubland>
 			   
 			</wildBiomes>
+			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
 			<executionRange>5</executionRange>
 			<predator>true</predator>
 			<maxPreyBodySize>1</maxPreyBodySize>
@@ -567,7 +568,7 @@
 			<baseBodySize>1.6</baseBodySize>
 			<baseHungerRate>2</baseHungerRate>
 			<baseHealthScale>8</baseHealthScale>
-			<foodType>OmnivoreAnimal, OvivoreAnimal, CarnivoreAnimal, CarnivoreAnimalStrict</foodType>
+			<foodType>OmnivoreRoughAnimal,DendrovoreAnimal,OmnivoreAnimal,AnimalProduct</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_KirinHide</leatherDef>
 			<gestationPeriodDays>22</gestationPeriodDays>
@@ -808,7 +809,7 @@
 			<baseBodySize>1.6</baseBodySize>
 			<baseHungerRate>1.5</baseHungerRate>
 			<baseHealthScale>9</baseHealthScale>
-			<foodType>OmnivoreAnimal, OvivoreAnimal, CarnivoreAnimal, CarnivoreAnimalStrict</foodType>
+			<foodType>OmnivoreRoughAnimal,DendrovoreAnimal,OmnivoreAnimal,AnimalProduct</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_FireDragonskin</leatherDef>
 			<trainability>Advanced</trainability>
@@ -1046,7 +1047,7 @@
 			<baseBodySize>1.6</baseBodySize>
 			<baseHungerRate>1.5</baseHungerRate>
 			<baseHealthScale>9</baseHealthScale>
-			<foodType>OmnivoreAnimal, OvivoreAnimal, CarnivoreAnimal, CarnivoreAnimalStrict</foodType>
+			<foodType>OmnivoreRoughAnimal,DendrovoreAnimal,OmnivoreAnimal,AnimalProduct</foodType>
 			<useMeatFrom>Muffalo</useMeatFrom>
 			<leatherDef>Leather_FireDragonskin</leatherDef>
 			<trainability>Advanced</trainability>

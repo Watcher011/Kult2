@@ -7,5 +7,9 @@
   <MakeAmmo_Balls.description>Создаёт 100шт,15-миллиметровые стальные шарики.</MakeAmmo_Balls.description>
   <MakeAmmo_Balls.jobString>Создаёт 15-миллиметровые стальные шарики.</MakeAmmo_Balls.jobString>
 
+  <MakeAmmo_Balls_YA.label>Сделать 15-миллиметровые стальные шарики облучённые ядаритом x100шт</MakeAmmo_Balls_YA.label>
+  <MakeAmmo_Balls_YA.description>Создаёт 100шт,15-миллиметровые стальные шарики облучённые ядаритом.</MakeAmmo_Balls_YA.description>
+  <MakeAmmo_Balls_YA.jobString>Создаёт 15-миллиметровые стальные шарики облучённые ядаритом.</MakeAmmo_Balls_YA.jobString>
+
 
 </LanguageData>

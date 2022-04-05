@@ -177,7 +177,7 @@
 		<combatLogRules>Damage_Flame</combatLogRules>
 		<additionalHediffs>
 			<li>
-				<hediff>Soporific</hediff>
+				<hediff>YadaritP</hediff>
 				<severityPerDamageDealt>0.25</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>

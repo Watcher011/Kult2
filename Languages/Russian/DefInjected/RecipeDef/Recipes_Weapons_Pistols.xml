@@ -5,5 +5,9 @@
   <Build_Bolt_Pistol.description>Болт-пистолет - пистолетная версия болтера.</Build_Bolt_Pistol.description>
   <Build_Bolt_Pistol.jobString>Создание Болт пистолета</Build_Bolt_Pistol.jobString>
 
+  <Build_Hels_Rifle.label>Сделать винтовку «Тихарь»</Build_Hels_Rifle.label>
+  <Build_Hels_Rifle.description>Сделать пневматичискую винтовку «Тихарь»</Build_Hels_Rifle.description>
+  <Build_Hels_Rifle.jobString>Делаем винтовку «Тихарь».</Build_Hels_Rifle.jobString>
+
 
 </LanguageData>
