@@ -126,7 +126,7 @@
             <AncientMilitaryCrate>0.0833</AncientMilitaryCrate>
             <AncientSpacerCrate>0.0833</AncientSpacerCrate>
             <AncientCrate>0.0833</AncientCrate>
-            <AIGenerator>0.2</AIGenerator>
+            <AIGenerator>0.002</AIGenerator>
 			 <AncientBarrel>0.2</AncientBarrel>
             <AncientStorageCylinder>0.2</AncientStorageCylinder>
             <AncientContainer>0.1</AncientContainer>
@@ -192,9 +192,9 @@
             <AncientRustedCarFrame>0.2</AncientRustedCarFrame>
             <AncientPodCar>0.2</AncientPodCar>
             <AncientWheel>0.3</AncientWheel>
-			 <Marker>0.25</Marker>
+			 <Marker>0.025</Marker>
             <AncientRustedEngineBlock>0.2</AncientRustedEngineBlock>
-			 <AIGenerator>0.2</AIGenerator>
+			 <AIGenerator>0.02</AIGenerator>
           </things>
           <indoorRuin>false</indoorRuin>
           <coveredCellsPer10Cells>0.5~1</coveredCellsPer10Cells>
@@ -279,8 +279,8 @@
             <AncientMegaCannonTripod>0.1</AncientMegaCannonTripod>
             <AncientSmallCrate>0.3</AncientSmallCrate>
             <AncientSecurityTurret>0.3</AncientSecurityTurret>
-			 <AIGenerator>0.2</AIGenerator>
-			  <Marker>0.25</Marker>
+			 <AIGenerator>0.02</AIGenerator>
+			  <Marker>0.025</Marker>
           </things>
           <indoorRuin>false</indoorRuin>
           <coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>

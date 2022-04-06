@@ -42,9 +42,6 @@
 			
 		</comps>
 		<race>
-		 <wildBiomes>
-				<BorealForest>0.04</BorealForest>
-			</wildBiomes>
 			<herdAnimal>true</herdAnimal>
 			<predator>true</predator>
 			<maxPreyBodySize>1.5</maxPreyBodySize>
@@ -307,11 +304,6 @@
 			</li>
 		</comps>
 		<race>
-		 <wildBiomes>
-				<TemperateForest>0.04</TemperateForest>
-				<AridShrubland>0.02</AridShrubland>
-			   
-			</wildBiomes>
 			<deathActionWorkerClass>DeathActionWorker_SmallExplosion</deathActionWorkerClass>
 			<executionRange>5</executionRange>
 			<predator>true</predator>
@@ -547,12 +539,6 @@
 			</li>
 		</tools>
 		<race>
-		<wildBiomes>
-				<Tundra>0.05</Tundra>
-				<ColdBog>0.05</ColdBog>
-			    <Desert>0.01</Desert>
-
-			</wildBiomes>
 			<executionRange>5</executionRange>
 			<predator>true</predator>
 			<maxPreyBodySize>1.4</maxPreyBodySize>
@@ -788,12 +774,6 @@
       </li>
 		</comps>
 		<race>
-		<wildBiomes>
-				<TropicalSwamp>0.03</TropicalSwamp>
-				<TemperateForest>0.04</TemperateForest>
-                <TropicalRainforest>0.02</TropicalRainforest>
-
-			</wildBiomes>
 			<predator>true</predator>
 			<maxPreyBodySize>1.5</maxPreyBodySize>
 			<herdMigrationAllowed>false</herdMigrationAllowed>
@@ -1027,11 +1007,6 @@
       </li>
 		</comps>
 		<race>
-		<wildBiomes>
-			    <Desert>0.01</Desert>
-                <TropicalRainforest>0.02</TropicalRainforest>
-
-			</wildBiomes>
 			<predator>true</predator>
 			<maxPreyBodySize>1.5</maxPreyBodySize>
 			<herdMigrationAllowed>false</herdMigrationAllowed>

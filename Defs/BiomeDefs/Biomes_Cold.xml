@@ -112,7 +112,7 @@
       <Plant_TreeBirch>1.5</Plant_TreeBirch>
       <Plant_TreePoplar>1.2</Plant_TreePoplar>
       <Plant_Berry>0.16</Plant_Berry>
-	    <YadaritPlant>0.02</YadaritPlant>
+	    <YadaritPlant>0.002</YadaritPlant>
       <Plant_HealrootWild>0.16</Plant_HealrootWild>
     </wildPlants>
     <wildAnimals>
@@ -138,6 +138,7 @@
       <Cougar>0.07</Cougar>
       <Lynx>0.07</Lynx>
       <Warg>0.07</Warg>
+	  <KirinAncient>0.07</KirinAncient>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
@@ -245,7 +246,7 @@
       <Plant_Dandelion>0.1</Plant_Dandelion>
       <Plant_TreePine>0.08</Plant_TreePine>
       <Plant_TreeBirch>0.08</Plant_TreeBirch>
-	    <YadaritPlant>0.02</YadaritPlant>
+	    <YadaritPlant>0.002</YadaritPlant>
       <Plant_Berry>0.07</Plant_Berry>
       <Plant_HealrootWild>0.05</Plant_HealrootWild>
     </wildPlants>
@@ -264,6 +265,7 @@
       <Warg>0.07</Warg>
       <Bear_Polar>0.07</Bear_Polar>
       <Bear_Grizzly>0.07</Bear_Grizzly>
+	    <KirinAncient>0.07</KirinAncient>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
@@ -401,7 +403,7 @@
       <Plant_Astragalus>0.1</Plant_Astragalus>
       <Plant_TreeWillow>0.6</Plant_TreeWillow>
       <Plant_TreeCypress>0.6</Plant_TreeCypress>
-	    <YadaritPlant>0.02</YadaritPlant>
+	    <YadaritPlant>0.002</YadaritPlant>
       <Plant_TreeMaple>0.6</Plant_TreeMaple>
       <Plant_Berry>0.07</Plant_Berry>
       <Plant_HealrootWild>0.05</Plant_HealrootWild>
@@ -430,6 +432,7 @@
       <Warg>0.07</Warg>
       <Bear_Polar>0.07</Bear_Polar>
       <Bear_Grizzly>0.07</Bear_Grizzly>
+	    <KirinAncient>0.07</KirinAncient>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
@@ -526,6 +529,7 @@
       <Fox_Arctic>0.1</Fox_Arctic>
       <Lynx>0.1</Lynx>
       <Megasloth>0.1</Megasloth>
+	   <KirinAncient>0.1</KirinAncient>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
@@ -622,6 +626,7 @@
       <Bear_Polar>0.1</Bear_Polar>
       <Wolf_Arctic>0.1</Wolf_Arctic>
       <Fox_Arctic>0.1</Fox_Arctic>
+	  <KirinAncient>0.1</KirinAncient>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>

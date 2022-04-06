@@ -87,7 +87,7 @@
       <Plant_Bush>0.7</Plant_Bush>
       <Plant_PincushionCactus>0.6</Plant_PincushionCactus>
       <Plant_Agave>0.2</Plant_Agave>
-	    <YadaritPlant>0.02</YadaritPlant>
+	    <YadaritPlant>0.002</YadaritPlant>
       <Plant_SaguaroCactus>0.26</Plant_SaguaroCactus>
       <Plant_TreeDrago>0.20</Plant_TreeDrago>
       <Plant_Berry>0.10</Plant_Berry>
@@ -111,6 +111,7 @@
       <Cougar>0.15</Cougar>
       <Fox_Fennec>0.15</Fox_Fennec>
       <Megasloth>0.1</Megasloth>
+	  <GreenWyvernAncient>0.8</GreenWyvernAncient>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
@@ -226,6 +227,7 @@
       <Gazelle>0.6</Gazelle>
       <Cougar>0.07</Cougar>
       <Fox_Fennec>0.07</Fox_Fennec>
+	  <reaper>0.7</reaper>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
@@ -325,6 +327,7 @@
       <Iguana>1.5</Iguana>
       <Dromedary>0.2</Dromedary>
       <Fox_Fennec>0.1</Fox_Fennec>
+	  <reaper>0.1</reaper>
     </wildAnimals>
     <allowedPackAnimals>
       <li>Muffalo</li>
