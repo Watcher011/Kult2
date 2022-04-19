@@ -33,16 +33,81 @@
         <defName>YadariteReclamation</defName>
         <label>YadariteReclamation</label>
         <description>these artifacts.</description>
-        <baseCost>1100</baseCost>
+        <baseCost>900</baseCost>
         <techLevel>Industrial</techLevel>
-        <prerequisites>
-            <li>Electricity</li>
-        </prerequisites>
-        <researchViewX>8</researchViewX>
+        <researchViewX>1</researchViewX>
         <researchViewY>18</researchViewY>
 		<tab>Buildings_SK</tab>
     </ResearchProjectDef>
     
-
+	
+	 <ResearchProjectDef ParentName="MedievalBase">
+        <defName>Homemede_defense</defName>
+        <label>Homemede defense</label>
+        <description>these artifacts.</description>
+        <baseCost>1300</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Pneumatics</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>20</researchViewY>
+		<tab>Buildings_SK</tab>
+    </ResearchProjectDef>
+	
+	  <ResearchProjectDef ParentName="MedievalBase">
+        <defName>YadaritePower</defName>
+        <label>YadaritePower</label>
+        <description>these artifacts.</description>
+        <baseCost>1100</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>YadariteReclamation</li>
+		     <li>Electricity</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>18</researchViewY>
+		<tab>Buildings_SK</tab>
+    </ResearchProjectDef>  
+	
+	
+	 <ResearchProjectDef ParentName="MedievalBase">
+        <defName>YadaritPR</defName>
+        <label>YadaritePR</label>
+        <description>these artifacts.</description>
+        <baseCost>100</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>YadaritePower</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>18</researchViewY>
+		<tab>Buildings_SK</tab>
+    </ResearchProjectDef>  
+	
+ <ResearchProjectDef ParentName="MedievalBase">
+        <defName>Pneumatics</defName>
+        <label>Pneumatics</label>
+        <description>these artifacts.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>20</researchViewY>
+		<tab>Buildings_SK</tab>
+    </ResearchProjectDef>
+ 
+ <ResearchProjectDef ParentName="MedievalBase">
+        <defName>Old_generators</defName>
+        <label>Manual</label>
+        <description>these artifacts.</description>
+        <baseCost>500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>17</researchViewY>
+		<tab>Buildings_SK</tab>
+    </ResearchProjectDef>
+	
+	
+ 
  
 </Defs>

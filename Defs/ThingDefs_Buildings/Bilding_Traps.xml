@@ -63,7 +63,7 @@
 			</li>
 		</modExtensions>
 		<researchPrerequisites>
-			<li>YadariteReclamation</li>
+			<li>Homemede_defense</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -131,7 +131,7 @@
 			</li>
 		</modExtensions>
 		<researchPrerequisites>
-			<li>YadariteReclamation</li>
+			<li>Homemede_defense</li>
 		</researchPrerequisites>
 	</ThingDef>
 
@@ -173,7 +173,7 @@
 		 <Weapon_Parts>5</Weapon_Parts>
       </costList>
 		<researchPrerequisites>
-			<li>YadariteReclamation</li>
+			<li>Homemede_defense</li>
 		</researchPrerequisites>
 		<designationCategory>Security</designationCategory>
 		<specialDisplayRadius>35</specialDisplayRadius>
@@ -250,6 +250,9 @@
 			<li>BuildingsSecurity</li>
 		</thingCategories>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>Pneumatics</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 

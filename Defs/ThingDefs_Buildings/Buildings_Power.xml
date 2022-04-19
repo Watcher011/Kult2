@@ -98,7 +98,7 @@
 		<designationCategory>Power</designationCategory>
 		 <designationHotKey>Misc3</designationHotKey>
 		<researchPrerequisites>
-			<li>YadariteReclamation</li>
+			<li>Old_generators</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<modExtensions>
@@ -186,8 +186,8 @@
 				</fuelFilter>
 			</li>
 			<li Class="SK.CompProperties_ApplyHediffAround">
-				<hediff>Acid_Poison</hediff>
-				<radius>4</radius>
+				<hediff>YadaritP</hediff>
+				<radius>2</radius>
 				<severityToAdd>0.01</severityToAdd>
 			</li>
 			 <li Class="CompProperties_FireOverlay">
@@ -204,7 +204,7 @@
 		<designationCategory>Power</designationCategory>
 		 <designationHotKey>Misc3</designationHotKey>
 		<researchPrerequisites>
-			<li>YadariteReclamation</li>
+			<li>YadaritePower</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 		<modExtensions>
@@ -293,8 +293,8 @@
 				</fuelFilter>
 			</li>
 			<li Class="SK.CompProperties_ApplyHediffAround">
-				<hediff>Acid_Poison</hediff>
-				<radius>4</radius>
+				<hediff>YadaritP</hediff>
+				<radius>3</radius>
 				<severityToAdd>0.01</severityToAdd>
 			</li>
 			<li Class="CompProperties_DarklightOverlay">
@@ -311,7 +311,7 @@
 		<designationCategory>Power</designationCategory>
 		 <designationHotKey>Misc3</designationHotKey>
 		<researchPrerequisites>
-			<li>YadariteReclamation</li>
+			<li>YadaritePower</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 		<modExtensions>
@@ -497,14 +497,14 @@ Power output: around 750 W.</description>
 		</comps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
-		<researchPrerequisites>
-			<li>Electricity</li>
-		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<modExtensions>
 			<li Class="SK.Events.AccidentalExplosionExtension">
 			</li>
 		</modExtensions>
+		<researchPrerequisites>
+			<li>Old_generators</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 	

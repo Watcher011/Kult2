@@ -140,6 +140,9 @@
 		<thingCategories>
 			<li>CTextiles</li>
 		</thingCategories>
+		<researchPrerequisites>
+			<li>YadaritePower</li>
+		</researchPrerequisites>
 	</ThingDef>
 
  

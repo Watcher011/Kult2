@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <YadaritP.label>Отравление Ядаритом</YadaritP.label>
-  <YadaritP.description>Отравление</YadaritP.description>
-  <YadaritP.stages.0.label>незаметное</YadaritP.stages.0.label>
-  <YadaritP.stages.1.label>начальное</YadaritP.stages.1.label>
-  <YadaritP.stages.2.label>прогрессирующие</YadaritP.stages.2.label>
-  <YadaritP.stages.3.label>среднее</YadaritP.stages.3.label>
-  <YadaritP.stages.4.label>тчжёлое</YadaritP.stages.4.label>
-  <YadaritP.stages.5.label>смертельное</YadaritP.stages.5.label>
+  <YadaritP.label>Поражение изотопом минерала Х0-74</YadaritP.label>
+  <YadaritP.description>Поражение элементом Х0-74.</YadaritP.description>
+  <YadaritP.stages.0.label>Лёгкая форма облучения .Кратковременное облучение неопасно для жизни и работы организма.</YadaritP.stages.0.label>
+  <YadaritP.stages.1.label>Начальная форма облучения .Начинаются изменения на клеточном уровне,в клетках начинается синтез белков не свойственных человеку.</YadaritP.stages.1.label>
+  <YadaritP.stages.2.label>Прогрессирующая форма облучения.Возникновение нарушений наружных слоев кожи ,резкое ухудшение самочувствия.</YadaritP.stages.2.label>
+  <YadaritP.stages.3.label>Средняя форма облучения .Многочисленные повреждения организма.Требуется применения специальных препаратов для невелирования изотопов ядарита в теле.</YadaritP.stages.3.label>
+  <YadaritP.stages.4.label>Тяжелая форма облучения .Поражение структуры ЦНС и разрушение красных кровяных клеток,Хаотичное деление Е2 клеток</YadaritP.stages.4.label>
+  <YadaritP.stages.5.label>Смертельная форма облучения .Поражено более 70% организма,Из Е2 клеток формируются грибницы Ядарита.Проростая сквозь кожу ,тело используется как инкубатор.Рекомендуется быстрое устранение пациента и стерилизация помещения для предотвращения распространения спор.</YadaritP.stages.5.label>
   <YadaritP.labelNoun>Распад ядарита</YadaritP.labelNoun>
 
 

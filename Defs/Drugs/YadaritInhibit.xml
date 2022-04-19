@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="DrugPillBase">
+		<defName>YadaritInhibit</defName>
+		<label>YadaritInhibit</label>
+		<description>Simple but effective way to cure food poisoning. Several doses of the drug are required until full healing. Caution, it could cause a diarrhea.</description>
+		 <descriptionHyperlinks><HediffDef>YadaritInhibitConsumed</HediffDef></descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/inhibit</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>640</WorkToMake>
+			<MarketValue>16</MarketValue>
+			<Mass>0.002</Mass>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+          			<hediffDef>YadaritInhibitConsumed</hediffDef>
+          			<severity>1.0</severity>
+        		</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+				<overdoseSeverityOffset>
+					<min>0.08</min>
+					<max>0.14</max>
+				</overdoseSeverityOffset>
+				<addictiveness>0</addictiveness>
+			</li>
+    	</comps>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>YadaritInhibitConsumed</defName>
+		<label>Yadarit Inhibit</label>
+		<description>Activated сarbon consumed</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.3</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		 <stages>
+         <li>
+        <statOffsets>
+        <WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
+		 <ImmunityGainSpeedFactor>0.9</ImmunityGainSpeedFactor>
+		   <PsychicSensitivity>0.4</PsychicSensitivity>
+       </statOffsets>
+	    </li>
+	   <li>
+				<minSeverity>0.01</minSeverity>
+				<label>resistance to Yadarit</label>
+				<statFactors>
+						<ToxicSensitivity>0.0</ToxicSensitivity>
+				</statFactors>
+				<makeImmuneTo>
+            		<li>YadaritP</li>
+				</makeImmuneTo>
+			</li>
+      </stages>
+	</HediffDef>
+</Defs>

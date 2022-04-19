@@ -119,4 +119,73 @@
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
 	</RecipeDef>
 
+
+
+<RecipeDef>
+		<defName>MakeYadaritInghibitor</defName>
+		<label>Make Yadarit Inghibitor</label>
+		<description>Make activated carbon pills from coal. Produces 9.</description>
+		<jobString>Making sctivated carbon</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>1780</workAmount>
+		<targetCountAdjustment>1</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Charcoal</li>
+						<li>Coal</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Beer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>yadarit</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Charcoal</li>
+				<li>Coal</li>
+				<li>Beer</li>
+				<li>yadarit</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<YadaritInhibit>9</YadaritInhibit>
+		</products>
+		<researchPrerequisite>DrugProduction</researchPrerequisite>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Medicine</workSkill>
+		<recipeUsers>
+			<li>meditable</li>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Medicine>3</Medicine>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<researchPrerequisites>
+			<li>YadaritPR</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+
+
+
 </Defs>

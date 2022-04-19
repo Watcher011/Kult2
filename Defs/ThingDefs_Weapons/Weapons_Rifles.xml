@@ -55,6 +55,9 @@
              <Mechanism>12</Mechanism>
             <Weapon_Parts>5</Weapon_Parts>
         </smeltProducts>
+		<researchPrerequisites>
+			<li>Pneumatics</li>
+		</researchPrerequisites>
     </ThingDef>
   
   
