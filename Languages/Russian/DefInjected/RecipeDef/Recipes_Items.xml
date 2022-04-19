@@ -6,8 +6,12 @@
   <MakeYadareCell.jobString>Делает ядарит компоненты.</MakeYadareCell.jobString>
 
   <MakeSealOfPurity.label>Сделать Печать Чистоты</MakeSealOfPurity.label>
-  <MakeSealOfPurity.description>Сделать Печать Чистоты.  1шт.</MakeSealOfPurity.description>
+  <MakeSealOfPurity.description>Сделать Печать Чистоты.1шт.</MakeSealOfPurity.description>
   <MakeSealOfPurity.jobString>Производство печати.</MakeSealOfPurity.jobString>
+
+  <MakeYadaritInghibitor.label>Производство ингибитора Ядарита</MakeYadaritInghibitor.label>
+  <MakeYadaritInghibitor.description>Синтез ингибитора Ядарита(9шт)</MakeYadaritInghibitor.description>
+  <MakeYadaritInghibitor.jobString>Синтезирует Ингибитор</MakeYadaritInghibitor.jobString>
 
 
 </LanguageData>
