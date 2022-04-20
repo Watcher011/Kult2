@@ -72,4 +72,80 @@
 			</li>
       </stages>
 	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="DrugPillBase">
+		<defName>EggGold</defName>
+		<label>GoldEgg</label>
+		<description>An Golden egg of a Kukuha</description>
+		 <descriptionHyperlinks><HediffDef>EggGoldConsumed</HediffDef></descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Resource/AnimalProductRaw/GoldEgg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+		    <MaxHitPoints>60</MaxHitPoints>
+			<WorkToMake>640</WorkToMake>
+			<MarketValue>16</MarketValue>
+			<Mass>0.02</Mass>
+			<Beauty>60</Beauty>
+			<Flammability>0.7</Flammability>
+			<SellPriceFactor>4</SellPriceFactor>
+		</statBases>
+		<techLevel>Industrial</techLevel>
+		<ingestible>
+			<maxNumToIngestAtOnce>3</maxNumToIngestAtOnce>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+          			<hediffDef>EggGoldConsumed</hediffDef>
+          			<severity>1.0</severity>
+        		</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+				<overdoseSeverityOffset>
+					<min>0.08</min>
+					<max>0.14</max>
+				</overdoseSeverityOffset>
+				<addictiveness>0</addictiveness>
+			</li>
+    	</comps>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>EggGoldConsumed</defName>
+		<label>EggGoldConsumed</label>
+		<description>Activated сarbon consumed</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.3</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		 <stages>
+         <li>
+        <statOffsets>
+        <WorkSpeedGlobal>0.75</WorkSpeedGlobal>
+		 <ImmunityGainSpeedFactor>-0.1</ImmunityGainSpeedFactor>
+		   <PsychicSensitivity>-0.1</PsychicSensitivity>
+		   <MoveSpeed>0.8</MoveSpeed>
+		   <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+       </statOffsets>
+	    </li>
+      </stages>
+	</HediffDef>
 </Defs>
