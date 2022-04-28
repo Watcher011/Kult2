@@ -206,11 +206,7 @@
                 <glowRadius>5</glowRadius>
                 <glowColor>(255,255,255, 0)</glowColor>
             </li>
-			 <li Class="CompProperties_Facility">
 		</comps>
-		 <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
-        </placeWorkers>
 		<stuffCategories>
 			<li>StrongMetallic</li>
 			<li>Precious</li>
