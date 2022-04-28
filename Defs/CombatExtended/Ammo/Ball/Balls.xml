@@ -98,7 +98,7 @@
 		<defName>Balls</defName>
 		<label>Balls</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>5</damageAmountBase>
+			<damageAmountBase>15</damageAmountBase>
 			<!-- <armorPenetrationBase>0.15</armorPenetrationBase> -->
 			<armorPenetrationBlunt>2</armorPenetrationBlunt>
 			<armorPenetrationSharp>2.9</armorPenetrationSharp>

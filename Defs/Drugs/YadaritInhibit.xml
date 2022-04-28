@@ -119,6 +119,11 @@
 				</overdoseSeverityOffset>
 				<addictiveness>0</addictiveness>
 			</li>
+			<li Class="CompProperties_Glower">
+        <overlightRadius>10.0</overlightRadius>
+        <glowRadius>10.0</glowRadius>
+       <glowColor>(255,255,233,1)</glowColor>
+      </li>
     	</comps>
 	</ThingDef>
 
@@ -132,7 +137,7 @@
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.3</severityPerDay>
+				<severityPerDay>-1.0</severityPerDay>
 				<showDaysToRecover>true</showDaysToRecover>
 			</li>
 		</comps>
@@ -146,6 +151,22 @@
 		   <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
        </statOffsets>
 	    </li>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.7</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.3</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.60</offset>
+					</li>
+				</capMods>
+			</li>	 
       </stages>
 	</HediffDef>
 </Defs>
