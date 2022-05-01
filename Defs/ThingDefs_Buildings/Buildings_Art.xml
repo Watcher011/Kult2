@@ -364,19 +364,12 @@
                 <glowRadius>5</glowRadius>
                 <glowColor>(255,0, 0, 0)</glowColor>
             </li>
-		   <li Class="CompProperties_Refuelable">
-              <fuelConsumptionRate>0.08</fuelConsumptionRate>
-              <fuelCapacity>3</fuelCapacity>
-              <fuelConsumptionPerTickInRain>0.06</fuelConsumptionPerTickInRain>
-               <fuelFilter>
-                   <thingDefs>
-                     <li>Skull</li>
-                   </thingDefs>
-               </fuelFilter>
-              <initialFuelPercent>1</initialFuelPercent>
-			  <destroyOnNoFuel>true</destroyOnNoFuel>
-               <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
-            </li>
+		  <li Class="CompProperties_SpawnerFilth">
+				<filthDef>Tears_of_Enemies</filthDef>
+				<spawnCountOnSpawn>5</spawnCountOnSpawn>
+				<spawnMtbHours>24</spawnMtbHours>
+				<spawnRadius>2</spawnRadius>
+			</li>
 		</comps>
 		<tickerType>Normal</tickerType>
 		<stuffCategories>
@@ -698,7 +691,7 @@
 				<glowColor>(255,255,0,0)</glowColor>
 			</li>
 			<li Class="CompProperties_SpawnerFilth">
-				<filthDef>Filth_Blood</filthDef>
+				<filthDef>Tears_of_Enemies</filthDef>
 				<spawnCountOnSpawn>5</spawnCountOnSpawn>
 				<spawnMtbHours>24</spawnMtbHours>
 				<spawnRadius>2</spawnRadius>
