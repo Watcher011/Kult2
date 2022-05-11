@@ -108,57 +108,7 @@
 	</ThingDef>	
 	
 	
-<ThingDef ParentName="BaseGun_Turret">
-		<defName>Gun_ArtTurret</defName>
-		<label>152mm Art Cannon</label>
-		<description>152mm Art cannon to a turret base.</description>
-		<graphicData>
-			<texPath>Things/Building/Security/Art_Top</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<soundInteract>Artillery_ShellLoaded</soundInteract>
-		<techLevel>Industrial</techLevel>
-		<statBases>
-			<MarketValue>4000</MarketValue>
-			<SightsEfficiency>2.8</SightsEfficiency>
-			<ShotSpread>0.22</ShotSpread>
-			<SwayFactor>1.0</SwayFactor>
-			<RangedWeapon_Cooldown>6.5</RangedWeapon_Cooldown>
-		</statBases>
-		<weaponTags>
-			<li>Artillery</li>
-			<li>Artillery_BaseDestroyer</li>
-		</weaponTags>
-		<verbs>
-			<li Class="CombatExtended.VerbPropertiesCE">
-				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
-				<forceNormalTimeSpeed>true</forceNormalTimeSpeed>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_152mmHowitzerShell_HE</defaultProjectile>
-				<circularError>1.75</circularError>
-				<warmupTime>1.00</warmupTime>
-				<minRange>10</minRange>
-				<range>740</range>
-				<soundCast>120mm</soundCast>
-				<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<burstShotCount>2</burstShotCount>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>20</muzzleFlashScale>
-				<indirectFirePenalty>0.1</indirectFirePenalty>
-			</li>
-		</verbs>
-		<comps>
-			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>2</magazineSize>
-				<reloadTime>36.5</reloadTime>
-				<ammoSet>AmmoSet_152mmHowitzerShell</ammoSet>
-			</li>
-		</comps>
-	</ThingDef>
-		
+
 		
 		
 		

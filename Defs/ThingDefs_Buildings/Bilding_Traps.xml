@@ -135,63 +135,6 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-<ThingDef ParentName="TurretMannedBase">
-		<defName>155mmArt</defName>
-		<label>155mm howitzer</label>
-	   <description>The howitzer can fire Excalibur (155mm HowitzerShell) projectiles with an effective range of up to 740 cells, and a circular probable deviation from the target of 5-8 cells.</description>
-		<graphicData>
-			<texPath>Things/Building/Security/Timeture</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3.5,3.5)</drawSize>
-			<shadowData>
-				<volume>(0.3, 0.6, 0.3)</volume>
-			</shadowData>
-		</graphicData>
-		<uiIconPath>Things/Building/Security/Icon_ico</uiIconPath>
-		<hasInteractionCell>True</hasInteractionCell>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<statBases>
-			<MaxHitPoints>180</MaxHitPoints>
-			<Flammability>0.5</Flammability>
-			<WorkToBuild>2800</WorkToBuild>
-			<Mass>400</Mass>
-			<Bulk>400</Bulk>
-		</statBases>
-		<techLevel>Ultra</techLevel>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-		</placeWorkers>
-	
-		<size>(3,3)</size>
-		<stuffCategories>
-			<li>RuggedMetallic</li>
-		</stuffCategories>
-		<costStuffCount>130</costStuffCount>
-		 <costList>
-        <ComponentIndustrial>8</ComponentIndustrial>
-        <ReinforcedBarrel>2</ReinforcedBarrel>
-		 <Weapon_Parts>5</Weapon_Parts>
-      </costList>
-		<researchPrerequisites>
-			<li>Homemede_defense</li>
-		</researchPrerequisites>
-		<designationCategory>Security</designationCategory>
-		<specialDisplayRadius>35</specialDisplayRadius>
-		<building>
-			<turretGunDef>Gun_ArtTurret</turretGunDef>
-			<turretTopDrawSize>6</turretTopDrawSize>
-			<buildingTags>
-				<li>Artillery</li>
-				<li>Artillery_BaseDestroyer</li>
-				<li>Artillery_MannedMortar</li>
-			</buildingTags>
-		</building>
-		<minifiedDef>Minified_RLGun</minifiedDef>	
-		<thingCategories>
-			<li>BuildingsSecurity</li>
-		</thingCategories>
-		<constructionSkillPrerequisite>16</constructionSkillPrerequisite>
-	</ThingDef>
 
 
 <ThingDef ParentName="TurretBase">

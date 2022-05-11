@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Shell_HighExplosive.label>81mm осколочный снаряд (HE)</Shell_HighExplosive.label>
+  <Shell_HighExplosive.description>Снаряд, заполненный взрывчатым веществом. Может быть использован как для стрельбы из миномёта, так и для изготовления мин. При повреждении взрывается.</Shell_HighExplosive.description>
+
+  <Shell_Incendiary.label>81mm зажигательный снаряд (Incendiary)</Shell_Incendiary.label>
+  <Shell_Incendiary.description>Снаряд, заполненный горючей смесью, с небольшим количеством взрывчатого вещества. При взрыве вызывает пожары. Может быть использован как для стрельбы из миномёта, так и для изготовления мин. При повреждении взрывается.</Shell_Incendiary.description>
+
+  <Shell_EMP.label>81mm ЭМИ-снаряд(EMP)</Shell_EMP.label>
+  <Shell_EMP.description>Снаряд с источником питания, электроникой и антенной. При срабатывании взрывателя генерируется электромагнитный импульс (ЭМИ) высокой мощности, выводящий из строя всю электронику в радиусе поражения. Может быть использован как для стрельбы из миномёта, так и для изготовления мин. При повреждении взрывается.</Shell_EMP.description>
+
+  <Shell_Bio.label>81mm Био-снаряд (Bio)</Shell_Bio.label>
+  <Shell_Bio.description>Снаряд, заполненный концентрироваными спорами ядарита. Может быть использован как для стрельбы из миномёта, так и для изготовления мин. При повреждении взрывается..</Shell_Bio.description>
+
+  <Shell_Firefoam.label>81mm пенный снаряд (Firefoam)</Shell_Firefoam.label>
+  <Shell_Firefoam.description>Снаряд, заполненный пожарной пеной, находящейся под высоким давлением. Может быть использован как для стрельбы из миномёта, так и для изготовления мин. При повреждении взрывается.</Shell_Firefoam.description>
+
+  <Shell_Smoke.label>81mm дымовой снаряд (Smoke)</Shell_Smoke.label>
+  <Shell_Smoke.description>Снаряд, образующий при разрыве густое облако дыма, маскирующее цели и препятствующее наведению турелей. Может быть использован как для стрельбы из миномёта, так и для изготовления мин. При повреждении взрывается.</Shell_Smoke.description>
+
+  <Shell_AntigrainWarhead.label>81mm гранульный снаряд (Anti)</Shell_AntigrainWarhead.label>
+  <Shell_AntigrainWarhead.description>Сверхвысокотехнологичный боевой снаряд, используемый в военной технике утопических миров. В боевой части находится гранула антиматерии. При детонации происходит взрыв большой силы с последующим возгоранием. Может быть использован как для стрельбы из миномёта, так и для изготовления мин. При повреждении взрывается.</Shell_AntigrainWarhead.description>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_81mmMortarShell_HE.label>81mm осколочный снаряд (HE)</Bullet_81mmMortarShell_HE.label>
+  <Bullet_81mmMortarShell_Bio.label>81mm Био-снаряд (Bio)</Bullet_81mmMortarShell_Bio.label>
+  <Bullet_81mmMortarShell_Incendiary.label>81mm зажигательный снаряд(Incendiary)</Bullet_81mmMortarShell_Incendiary.label>
+  <Bullet_81mmMortarShell_EMP.label>81mm ЭМИ-снаряд(EMP)</Bullet_81mmMortarShell_EMP.label>
+  <Bullet_81mmMortarShell_FireFoam.label>81mm пенный снаряд(FireFoam)</Bullet_81mmMortarShell_FireFoam.label>
+  <Bullet_81mmMortarShell_Smoke.label>81mm дымовой снаряд (Smoke)</Bullet_81mmMortarShell_Smoke.label>
+  <Bullet_81mmMortarShell_Antigrain.label>81mm гранульный снаряд (Anti)</Bullet_81mmMortarShell_Antigrain.label>
+
+
+</LanguageData>

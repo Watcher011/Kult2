@@ -13,10 +13,10 @@
 		<lethalSeverity>1</lethalSeverity>
 		<makesSickThought>true</makesSickThought>
 		<scenarioCanAdd>false</scenarioCanAdd>
-		<isBad>false</isBad>
+		<isBad>true</isBad>
 		<comps>
 		<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>-0.008</severityPerDayNotImmune>
+				<severityPerDayNotImmune>-0.01</severityPerDayNotImmune>
 			</li>
 			<li Class="SK.HediffCompProperties_FleshOnly"/>
 			  <li Class="HediffCompProperties_DissolveGearOnDeath">
@@ -36,7 +36,7 @@
 			</li>
 			<li>
 				<label>initial</label>
-				<minSeverity>0.02</minSeverity>
+				<minSeverity>0</minSeverity>
 				<capMods>
 					<li>
 						<capacity>BloodFiltration</capacity>
@@ -44,145 +44,125 @@
 					</li>
 					<li>
 						<capacity>Consciousness</capacity>
-						<offset>-0.15</offset>
+						<offset>-0.10</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>-0.15</offset>
+						<offset>-0.10</offset>
 					</li>
 				</capMods>
 			</li>
 			<li>
 				<label>minor</label>
-				<minSeverity>0.2</minSeverity>
+				<minSeverity>0.1</minSeverity>
+				<painOffset>0.2</painOffset>
+				<vomitMtbDays>0.1</vomitMtbDays>
 				<capMods>
 					<li>
 						<capacity>BloodFiltration</capacity>
-						<offset>-0.40</offset>
+						<offset>-0.20</offset>
 					</li>
 					<li>
 						<capacity>Consciousness</capacity>
-						<offset>-0.4</offset>
+						<offset>-0.20</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>-0.4</offset>
+						<offset>-0.20</offset>
 					</li>
 				</capMods>
 			</li>
 			<li>
 				<label>moderate</label>
-				<minSeverity>0.40</minSeverity>
-				<vomitMtbDays>5</vomitMtbDays>
+				<minSeverity>0.2</minSeverity>
+				<vomitMtbDays>0.03</vomitMtbDays>
+				<painOffset>0.3</painOffset>
 				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.30</offset>
+					</li>
+						<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.30</offset>
+					</li>
+				</capMods>
+				
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.4</minSeverity>
+				<vomitMtbDays>0.05</vomitMtbDays>
+					<painOffset>0.8</painOffset>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>-0.35</offset>
+					</li>
+						<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.35</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.35</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.35</offset>
+					</li>
+				</capMods>
+				
+			</li>
+			<li>
+				<label>extreme</label>
+				<minSeverity>0.5</minSeverity>
+				<vomitMtbDays>0.01</vomitMtbDays>
+					<painOffset>0.9</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.30</setMax>
+					</li>
 					<li>
 						<capacity>BloodFiltration</capacity>
 						<offset>-0.60</offset>
 					</li>
 						<li>
 						<capacity>Consciousness</capacity>
-						<offset>-0.6</offset>
+						<offset>-0.60</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>-0.6</offset>
+						<offset>-0.60</offset>
 					</li>
 					<li>
 						<capacity>Breathing</capacity>
-						<offset>-0.6</offset>
+						<offset>-0.60</offset>
 					</li>
 				</capMods>
 				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>Dementia</hediff>
-						<mtbDays>146</mtbDays>
-						<partsToAffect>
-							<li>Brain</li>
-						</partsToAffect>
-					</li>
-					<li Class="HediffGiver_Random">
-						<hediff>Carcinoma</hediff>
-						<mtbDays>438</mtbDays>
-						<canAffectAnyLivePart>true</canAffectAnyLivePart>
-					</li>
-				</hediffGivers>
-			</li>
-			<li>
-				<label>serious</label>
-				<minSeverity>0.60</minSeverity>
-				<vomitMtbDays>1</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>BloodFiltration</capacity>
-						<offset>-0.80</offset>
-					</li>
-						<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.8</offset>
-					</li>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>-0.8</offset>
-					</li>
-					<li>
-						<capacity>Breathing</capacity>
-						<offset>-0.8</offset>
-					</li>
-				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>Dementia</hediff>
-						<mtbDays>37</mtbDays>
-						<partsToAffect>
-							<li>Brain</li>
-						</partsToAffect>
-					</li>
-					<li Class="HediffGiver_Random">
-						<hediff>Carcinoma</hediff>
-						<mtbDays>111</mtbDays>
-						<canAffectAnyLivePart>true</canAffectAnyLivePart>
-					</li>
-				</hediffGivers>
-			</li>
-			<li>
-				<label>extreme</label>
-				<minSeverity>0.80</minSeverity>
-				<vomitMtbDays>0.5</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>0.10</setMax>
-					</li>
-					<li>
-						<capacity>BloodFiltration</capacity>
-						<offset>-0.90</offset>
-					</li>
-						<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.9</offset>
-					</li>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>-0.9</offset>
-					</li>
-					<li>
-						<capacity>Breathing</capacity>
-						<offset>-0.9</offset>
-					</li>
-				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>Dementia</hediff>
-						<mtbDays>13</mtbDays>
-						<partsToAffect>
-							<li>Brain</li>
-						</partsToAffect>
-					</li>
-					<li Class="HediffGiver_Random">
-						<hediff>Carcinoma</hediff>
-						<mtbDays>39</mtbDays>
-						<canAffectAnyLivePart>true</canAffectAnyLivePart>
-					</li>
+				<li Class="HediffGiver_RandomDrugEffect">
+        <hediff>Carcinoma</hediff>
+        <severityToMtbDaysCurve>
+          <points>
+            <li>(0.45, 99999)</li>
+            <li>(0.5, 60)</li>
+            <li>(1, 45)</li>
+          </points>
+        </severityToMtbDaysCurve>
+        <partsToAffect>
+          <li>Liver</li>
+        </partsToAffect>
+      </li>
 				</hediffGivers>
 			</li>
 		</stages>

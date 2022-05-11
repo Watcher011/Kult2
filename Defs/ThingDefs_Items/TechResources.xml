@@ -133,7 +133,7 @@
 			</li>
 			<li Class="SK.CompProperties_ApplyHediffAround">
 				<hediff>YadaritP</hediff>
-				<radius>1</radius>
+				<radius>3</radius>
 				<severityToAdd>0.05</severityToAdd>
 			</li>
 		</comps>

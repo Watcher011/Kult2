@@ -13,5 +13,9 @@
   <MakeYadaritInghibitor.description>Синтез ингибитора Ядарита(9шт)</MakeYadaritInghibitor.description>
   <MakeYadaritInghibitor.jobString>Синтезирует Ингибитор</MakeYadaritInghibitor.jobString>
 
+  <MakeGrenadeYadar.label>Сделать хим гранату</MakeGrenadeYadar.label>
+  <MakeGrenadeYadar.description>Смесь ядарита и взрывчатки , это безумие ? нет это граната !</MakeGrenadeYadar.description>
+  <MakeGrenadeYadar.jobString>Создаёт ящик Пандоры.</MakeGrenadeYadar.jobString>
+
 
 </LanguageData>

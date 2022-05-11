@@ -263,7 +263,7 @@
       <Flammability>2.0</Flammability>
     </statBases>
     <graphicData>
-      <texPath>Things/Filth/Spatter</texPath>
+      <texPath>Things/Filth/PoolSoft</texPath>
       <color>(139, 0, 255, 190)</color>
 	   <drawSize>2</drawSize>
     </graphicData>

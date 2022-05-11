@@ -107,12 +107,12 @@
 	
 <ThingDef Class="CombatExtended.AmmoDef" Name="BaseBalls_YA" ParentName="SK_BaseBullet" Abstract="true">
 		<graphicData>
-			<texPath>Things/Ammo/Balls/BallsYA</texPath>
+			<texPath>Things/Ammo/Balls/BallsYAs</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>Bullet</damageDef>
-			<speed>40</speed>
+			<damageDef>YadaritPoison</damageDef>
+			<speed>20</speed>
 			<dropsCasings>false</dropsCasings>
 		</projectile>
 	</ThingDef>
@@ -121,16 +121,13 @@
 		<defName>Balls_YA</defName>
 		<label>Balls_YA</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+		   <pelletCount>10</pelletCount>
+			<spreadMult>345.4</spreadMult>
 			<damageAmountBase>25</damageAmountBase>
 			<!-- <armorPenetrationBase>0.15</armorPenetrationBase> -->
 			<armorPenetrationBlunt>480</armorPenetrationBlunt>
 			<armorPenetrationSharp>19</armorPenetrationSharp>
-			<secondaryDamage>
-				<li>
-					<def>YadaritPoison</def>
-					<amount>3</amount>
-				</li>
-			</secondaryDamage>
+			
 		</projectile>
 	</ThingDef>
 	<!-- ==================== Recipes ========================== -->
