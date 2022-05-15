@@ -21,5 +21,8 @@
   <Old_generators.label>Обрывки чертежей старых механизмов</Old_generators.label>
   <Old_generators.description>После вдумчивого изучения наши специалисты смогли воссоздать технологию постройки довоенных генераторов. Понимание основ позволило нам также строить компактные версии генераторов с применением изотопов Ядарита</Old_generators.description>
 
+  <InDevelopment.label>Development</InDevelopment.label>
+  <InDevelopment.description>these artifacts.</InDevelopment.description>
+
 
 </LanguageData>

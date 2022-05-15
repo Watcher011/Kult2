@@ -164,11 +164,11 @@
 		<!--There no protection against acid-->
 		<!-- <armorCategory>Heat</armorCategory> -->
 		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
-		<defaultDamage>30</defaultDamage>
+		<defaultDamage>10</defaultDamage>
 		<defaultArmorPenetration>3</defaultArmorPenetration>
 		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
-		<buildingDamageFactor>0.2</buildingDamageFactor>
-		<plantDamageFactor>0.3</plantDamageFactor>
+		<buildingDamageFactor>0.4</buildingDamageFactor>
+		<plantDamageFactor>0.9</plantDamageFactor>
 		<explosionCellFleck>BlastDry</explosionCellFleck>
 		<explosionColorCenter>(0.6, 0.9, 0.6)</explosionColorCenter>
 		<explosionColorEdge>(0.3, 0.65, 0.3)</explosionColorEdge>
@@ -177,8 +177,8 @@
 		<combatLogRules>Damage_Flame</combatLogRules>
 		<additionalHediffs>
 			<li>
-				<hediff>YadaritP</hediff>
-				<severityPerDamageDealt>0.25</severityPerDamageDealt>
+				<hediff>Acid_Yadarit</hediff>
+				<severityPerDamageDealt>0.2</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
 				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
 			</li>

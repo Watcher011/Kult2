@@ -84,7 +84,10 @@
 		<defName>EggGold</defName>
 		<label>GoldEgg</label>
 		<description>An Golden egg of a Kukuha</description>
-		 <descriptionHyperlinks><HediffDef>EggGoldConsumed</HediffDef></descriptionHyperlinks>
+		 <descriptionHyperlinks>
+		 <HediffDef>EggGoldConsumed</HediffDef>
+		 <HediffDef>EggGoldAddiction</HediffDef>
+		 </descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/Resource/AnimalProductRaw/GoldEgg</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -112,12 +115,15 @@
 		</ingestible>
 		<comps>
 			<li Class="CompProperties_Drug">
-				<listOrder>1000</listOrder>
+				 <chemical>EggGoldchemical</chemical>
+                 <addictiveness>0.020</addictiveness>
+                 <needLevelOffset>0.9</needLevelOffset>
+                 <listOrder>1010</listOrder>
 				<overdoseSeverityOffset>
 					<min>0.08</min>
 					<max>0.14</max>
 				</overdoseSeverityOffset>
-				<addictiveness>0</addictiveness>
+				<largeOverdoseChance>0.1</largeOverdoseChance>
 			</li>
 			<li Class="CompProperties_Glower">
         <overlightRadius>10.0</overlightRadius>
@@ -127,10 +133,78 @@
     	</comps>
 	</ThingDef>
 
+
+ <ChemicalDef>
+    <defName>EggGoldchemical</defName>
+    <label>Kult attended</label>
+    <addictionHediff>EggGoldAddiction</addictionHediff>
+    <canBinge>false</canBinge>
+  </ChemicalDef>
+
+ <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>Chemical_EggGold</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>EggGold</label>
+    <description>--/---/--</description>
+    <listPriority>45</listPriority>
+    <fallPerDay>0.15</fallPerDay>
+  </NeedDef>
+
+ <HediffDef ParentName="AddictionBase">
+    <defName>EggGoldAddiction</defName>
+    <label>EggGold</label>
+    <description>--/2/--</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>Chemical_EggGold</causesNeed>
+    <everCurableByItem>false</everCurableByItem>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>Kult_attended</label>
+        <painOffset>0</painOffset>
+        <lifeThreatening>false</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.8</setMax>
+          </li>
+        </capMods>
+		 <hediffGivers>
+            <li Class="HediffGiver_Random">
+              <hediff>Watcher</hediff>
+              <partsToAffect>
+                <li>Brain</li>
+              </partsToAffect>
+            </li>
+          </hediffGivers>
+      </li>
+	  
+    </stages>
+  </HediffDef>
+
+<ThoughtDef>
+    <defName>Watcher_near</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+	 <hediff>EggGoldAddiction</hediff>
+	   <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>(O_o)Cult-Near</label>
+        <description>(O_o)</description>
+        <baseMoodEffect>14</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+
+
+
 	<HediffDef>
 		<defName>EggGoldConsumed</defName>
 		<label>EggGoldConsumed</label>
-		<description>Activated сarbon consumed</description>
+		<description>EggGoldConsumed</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>

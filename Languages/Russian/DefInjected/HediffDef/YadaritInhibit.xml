@@ -5,6 +5,10 @@
   <YadaritInhibitConsumed.description>Прототип препарата что позволяет кратковременно невилировать вредные соединения изотопа ХО-74/А2.</YadaritInhibitConsumed.description>
   <YadaritInhibitConsumed.stages.1.label>Ингибитор нейтрализует вредоносное воздействие Ядарита</YadaritInhibitConsumed.stages.1.label>
 
+  <EggGoldAddiction.label>Внимание Культа</EggGoldAddiction.label>
+  <EggGoldAddiction.description>Частое употребление Даров Кукухи раздвинуло границы сознания.Порой вы чувствуете в голове чужие мысли,сторонние взгляды,и в голове возникает мысль,,Культ Рядом-Мы Наблюдаем,,</EggGoldAddiction.description>
+  <EggGoldAddiction.stages.1.label>Поощерение культа Культа</EggGoldAddiction.stages.1.label>
+
   <EggGoldConsumed.label>Золотые яйца Кукухи</EggGoldConsumed.label>
   <EggGoldConsumed.description>Велечайший дар кукухи что были дарованы только избранным!</EggGoldConsumed.description>
 

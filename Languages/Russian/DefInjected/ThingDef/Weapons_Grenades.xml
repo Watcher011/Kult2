@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-
   <!-- Yadarit -->
 
   <Proj_GrenadeYadar.label>Химичиская граната</Proj_GrenadeYadar.label>
@@ -10,7 +9,5 @@
   <Weapon_GrenadeYadarit.description>Граната наполненая пыльцой ядарита.Оружие для уничтожения всего что дышит , идеально для устранения групп врагов(Учтите что вещи покрытые ядарит пылью уничтожаются)</Weapon_GrenadeYadarit.description>
   <Weapon_GrenadeYadarit.verbs.0.label>Бросает Хим гранату!!!</Weapon_GrenadeYadarit.verbs.0.label>
 
-
- 
 
 </LanguageData>

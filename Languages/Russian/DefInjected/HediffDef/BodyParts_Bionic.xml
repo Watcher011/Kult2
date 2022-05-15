@@ -23,5 +23,9 @@
   <LavaHeart.description>Вживление ядра из чистого пламени</LavaHeart.description>
   <LavaHeart.labelNoun>Пламенное ядро</LavaHeart.labelNoun>
 
+  <Watcher.label>Присутствие Наблюдателя</Watcher.label>
+  <Watcher.description>Наблюдатель Культа был выделен вам в помощь.</Watcher.description>
+  <Watcher.labelNoun>Поддержкаа Наблюдателя</Watcher.labelNoun>
+
 
 </LanguageData>

@@ -7,9 +7,9 @@
   <MakeShell_HighExplosive.description>Craft 81mm HE mortar shells.</MakeShell_HighExplosive.description>
   <MakeShell_HighExplosive.jobString>Making 81mm HE mortar shells.</MakeShell_HighExplosive.jobString>
 
-  <MakeShell_Bio.label>make 81mm Bio mortar shells x1</MakeShell_Bio.label>
-  <MakeShell_Bio.description>Craft 81mm Bio mortar shells.</MakeShell_Bio.description>
-  <MakeShell_Bio.jobString>Making 81mm Bio mortar shells.</MakeShell_Bio.jobString>
+  <MakeShell_Bio.label>Сделать 81мм хим снаряд</MakeShell_Bio.label>
+  <MakeShell_Bio.description>Создание 81мм хим снаряда</MakeShell_Bio.description>
+  <MakeShell_Bio.jobString>Создание 81мм хим снаряда</MakeShell_Bio.jobString>
 
   <MakeShell_Incendiary.label>make 81mm incendiary mortar shells x1</MakeShell_Incendiary.label>
   <MakeShell_Incendiary.description>Craft 81mm incendiary mortar shells.</MakeShell_Incendiary.description>

@@ -108,6 +108,16 @@
     </ResearchProjectDef>
 	
 	
- 
+  <ResearchProjectDef ParentName="MedievalBase">
+        <defName>InDevelopment</defName>
+        <label>Development</label>
+        <description>these artifacts.</description>
+        <baseCost>500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <researchViewX>1</researchViewX>
+        <researchViewY>21</researchViewY>
+		<tab>Buildings_SK</tab>
+    </ResearchProjectDef>
+	
  
 </Defs>

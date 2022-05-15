@@ -299,8 +299,7 @@
 			<WorkToMake>10000</WorkToMake>
 			<Bulk>50</Bulk>
 			<Mass>30</Mass>
-			<TerrorSource>45</TerrorSource>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+			<TerrorSource MayRequire="Ludeon.RimWorld.Ideology">30</TerrorSource>
 		</statBases>
 		<size>(2,2)</size>
 		<comps>
@@ -346,7 +345,7 @@
 			<WorkToMake>10000</WorkToMake>
 			<Bulk>50</Bulk>
 			<Mass>30</Mass>
-			<TerrorSource>85</TerrorSource>
+			<TerrorSource MayRequire="Ludeon.RimWorld.Ideology">30</TerrorSource>
 			<JoyGainFactor>1.2</JoyGainFactor>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">50</StyleDominance>
 		</statBases>
@@ -409,7 +408,7 @@
 			<WorkToMake>10000</WorkToMake>
 			<Bulk>50</Bulk>
 			<Mass>30</Mass>
-			<TerrorSource>45</TerrorSource>
+			<TerrorSource>5</TerrorSource>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
 		<size>(1,1)</size>
@@ -487,7 +486,7 @@
 			<WorkToMake>10000</WorkToMake>
 			<Bulk>50</Bulk>
 			<Mass>30</Mass>
-			<TerrorSource>85</TerrorSource>
+			<TerrorSource>35</TerrorSource>
 			<JoyGainFactor>1.2</JoyGainFactor>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">50</StyleDominance>
 		</statBases>
@@ -543,7 +542,7 @@
 			<WorkToMake>10000</WorkToMake>
 			<Bulk>50</Bulk>
 			<Mass>30</Mass>
-			<TerrorSource>45</TerrorSource>
+			<TerrorSource>30</TerrorSource>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
 		</statBases>
 		<size>(1,1)</size>
@@ -683,7 +682,7 @@
 			<WorkToMake>25000</WorkToMake>
 			<Bulk>260</Bulk>
 			<Mass>220</Mass>
-			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+			<TerrorSource MayRequire="Ludeon.RimWorld.Ideology">30</TerrorSource>
 		</statBases>
 		 <comps>
 			<li Class="CompProperties_Glower">

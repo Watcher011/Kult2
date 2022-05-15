@@ -109,7 +109,7 @@
     <displayWound>true</displayWound>
     <addedPartProps>
       <solid>true</solid>
-      <partEfficiency>2</partEfficiency>
+      <partEfficiency>1.3</partEfficiency>
       <betterThanNatural>true</betterThanNatural>
     </addedPartProps>
 	<stages>
@@ -117,7 +117,7 @@
 				<capMods>
 					<li>
 						<capacity>Manipulation</capacity>
-						<offset>0.9</offset>
+						<offset>0.6</offset>
 					</li>
 					<li>
 						<capacity>Moving</capacity>
@@ -128,7 +128,7 @@
 						<offset>0.05</offset>
 					</li>
 				</capMods>
-			</li>	 
+			</li>		
 		</stages>
   </HediffDef>
 
@@ -372,6 +372,33 @@
 			<Medicine>16</Medicine>
 		</skillRequirements>
   </RecipeDef>
+
+
+
+
+
+<HediffDef ParentName="AddedBodyPartBase">
+    <defName>Watcher</defName>
+    <label>Watcher</label>
+    <labelNoun>Watcher</labelNoun>
+    <description>Watcher//.</description>
+    <woundAnchorRange>0</woundAnchorRange>
+    <displayWound>true</displayWound>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.2</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+	<stages>
+		<li>
+				<statOffsets>
+					<NightVisionEfficiency_Implant>1.2</NightVisionEfficiency_Implant>
+				</statOffsets>	
+			</li>
+			
+		</stages>
+  </HediffDef>
+
 
 
 </Defs>
