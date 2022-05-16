@@ -1111,6 +1111,7 @@
 			<li>TrapIED_EMP</li>
 			<li>TrapIED_Firefoam</li>
 			<li>TrapIED_AntigrainWarhead</li>
+			<li>TrapIED_Yadarit</li>
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>

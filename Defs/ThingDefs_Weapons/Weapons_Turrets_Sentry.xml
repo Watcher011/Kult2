@@ -161,4 +161,60 @@
 	</ThingDef>
 	
 	
+	
+	
+	
+	
+
+	
+	
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_Radio</defName>
+		<label>Radio gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretImprovisedTime1_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>-------------</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>4400</MarketValue>
+			<SightsEfficiency>1.65</SightsEfficiency>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>1.30</SwayFactor>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+
+				<recoilAmount>0.45</recoilAmount>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_Xray</defaultProjectile>
+				<burstShotCount>2</burstShotCount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<warmupTime>1.90</warmupTime>
+				<minRange>3</minRange>
+				<range>60</range>
+				<soundCast>LaserBeam</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+				<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>80</magazineSize>
+				<reloadTime>5.00</reloadTime>
+				<!-- <spawnUnloaded>false</spawnUnloaded> -->
+				<ammoSet>AmmoSet_XLaser</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>Snapshot</aiAimMode>
+				<noSnapshot>true</noSnapshot>
+				<noSingleShot>true</noSingleShot>
+			</li>
+		</comps>
+	</ThingDef>
+
 </Defs>

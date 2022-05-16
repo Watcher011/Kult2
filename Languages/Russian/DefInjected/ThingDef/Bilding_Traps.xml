@@ -10,5 +10,11 @@
   <Turret_Arr.label>«Тихарь»</Turret_Arr.label>
   <Turret_Arr.description>«Тихарь» — пневматическое, мультикомпрессионное оружие . Оснащен встроенным в приклад баллоном со сжатым воздухом, насосом поршневого типа и манометром давления.</Turret_Arr.description>
 
+  <Turret_xray.label>Прототип Ядарит излучателя</Turret_xray.label>
+  <Turret_xray.description>Прототип Излучателя .Благодаря прорыву в Ядарит технологии удалось создать сфокусированый луч ядарит излучения.Для инициализации реакции в камере Вильсона , перед выстрелом следуетпоместить Ядарит стержни и подать на них разряд высокой частоты...</Turret_xray.description>
+
+  <TrapIED_Yadarit.label>Взрывное устройство с Ядаритом</TrapIED_Yadarit.label>
+  <TrapIED_Yadarit.description>Взрывное устройство с применением токсичного минерала</TrapIED_Yadarit.description>
+
 
 </LanguageData>

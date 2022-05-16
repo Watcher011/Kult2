@@ -200,10 +200,104 @@
 
 
 
+<ThingDef ParentName="TurretBase">
+		<defName>Turret_xray</defName>
+		<label>sentry xray turret</label>
+		<graphicData>
+			<texPath>Things/Building/Security/TurretImprovised1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<uiIconPath>Things/Building/Security/TurretImprovised3</uiIconPath>
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>16</Mass>
+			<Bulk>20</Bulk>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>700</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<description>-----</description>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			 <Weapon_Parts>10</Weapon_Parts>
+			<Electronics>1</Electronics>
+			<Mechanism>5</Mechanism>
+			<Wire>75</Wire>
+		</costList>
+		<specialDisplayRadius>1</specialDisplayRadius>
+		<designationCategory>Security</designationCategory>
+		<building>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>Gun_Radio</turretGunDef>
+			<turretTopDrawSize>3</turretTopDrawSize>
+		</building>
+		<designationHotKey>Misc1</designationHotKey>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
+		<minifiedDef>MinifiedTurretGun</minifiedDef>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="SK.Events.AccidentalExplosionExtension">
+			</li>
+		</modExtensions>
+		<researchPrerequisites>
+			<li>InDevelopment</li>
+		</researchPrerequisites>
+	</ThingDef>
 
 
-
-
+<ThingDef ParentName="SK_TrapIEDBase">
+		<defName>TrapIED_Yadarit</defName>
+		<label>IED Yadarit trap</label>
+		<thingClass>Building_TrapExplosive</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/IEDYadarit</texPath>
+		</graphicData>
+		<description>Explosives mixed into an incendiary paste with a chemical trigger for dispersal. Its chemical trigger is simple and reliable.</description>
+		<costList>
+			<yadarit>5</yadarit>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Wire>2</Wire>
+			<Mechanism>1</Mechanism>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>YadaritPoison</explosiveDamageType>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<wickTicks>
+					<min>15</min>
+					<max>15</max>
+				</wickTicks>
+			</li>
+		</comps>
+		<specialDisplayRadius>3.9</specialDisplayRadius>
+		<researchPrerequisites>
+			<li>IED_C1</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
 
 
 

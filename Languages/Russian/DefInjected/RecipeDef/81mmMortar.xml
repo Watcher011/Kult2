@@ -3,29 +3,29 @@
 
   <!-- Projectiles -->
 
-  <MakeShell_HighExplosive.label>make 81mm HE mortar shells x1</MakeShell_HighExplosive.label>
-  <MakeShell_HighExplosive.description>Craft 81mm HE mortar shells.</MakeShell_HighExplosive.description>
-  <MakeShell_HighExplosive.jobString>Making 81mm HE mortar shells.</MakeShell_HighExplosive.jobString>
+  <MakeShell_HighExplosive.label>Сделать 81mm осколочный снаряд x1</MakeShell_HighExplosive.label>
+  <MakeShell_HighExplosive.description>Сделать 81mm осколочный снаряд.</MakeShell_HighExplosive.description>
+  <MakeShell_HighExplosive.jobString>Делает 81mm осколочный снаряд.</MakeShell_HighExplosive.jobString>
 
   <MakeShell_Bio.label>Сделать 81мм хим снаряд</MakeShell_Bio.label>
   <MakeShell_Bio.description>Создание 81мм хим снаряда</MakeShell_Bio.description>
   <MakeShell_Bio.jobString>Создание 81мм хим снаряда</MakeShell_Bio.jobString>
 
-  <MakeShell_Incendiary.label>make 81mm incendiary mortar shells x1</MakeShell_Incendiary.label>
-  <MakeShell_Incendiary.description>Craft 81mm incendiary mortar shells.</MakeShell_Incendiary.description>
-  <MakeShell_Incendiary.jobString>Making 81mm incendiary mortar shells.</MakeShell_Incendiary.jobString>
+  <MakeShell_Incendiary.label>Сделать 81mm зажигательный снаряд x1</MakeShell_Incendiary.label>
+  <MakeShell_Incendiary.description>Сделать 81mm зажигательный снаряд.</MakeShell_Incendiary.description>
+  <MakeShell_Incendiary.jobString>Делает 81mm зажигательный снаряд.</MakeShell_Incendiary.jobString>
 
-  <MakeShell_EMP.label>make 81mm EMP mortar shells x1</MakeShell_EMP.label>
-  <MakeShell_EMP.description>Craft 81mm EMP mortar shells.</MakeShell_EMP.description>
-  <MakeShell_EMP.jobString>Making 81mm EMP mortar shells.</MakeShell_EMP.jobString>
+  <MakeShell_EMP.label>Сделать 81mm ЭМИ снаряд</MakeShell_EMP.label>
+  <MakeShell_EMP.description>Сделать 81mm ЭМИ снаряд.</MakeShell_EMP.description>
+  <MakeShell_EMP.jobString>Делает 81mm ЭМИ снаряд.</MakeShell_EMP.jobString>
 
-  <MakeShell_Firefoam.label>make 81mm firefoam mortar shells x1</MakeShell_Firefoam.label>
-  <MakeShell_Firefoam.description>Craft 81mm firefoam mortar shells.</MakeShell_Firefoam.description>
-  <MakeShell_Firefoam.jobString>Making 81mm firefoam mortar shells.</MakeShell_Firefoam.jobString>
+  <MakeShell_Firefoam.label>Сделать 81mm пенный снаряд</MakeShell_Firefoam.label>
+  <MakeShell_Firefoam.description>Сделать 81mm пенный снаряд.</MakeShell_Firefoam.description>
+  <MakeShell_Firefoam.jobString>Делает 81mm пенный снаряд.</MakeShell_Firefoam.jobString>
 
-  <MakeShell_Smoke.label>make 81mm smoke mortar shells x1</MakeShell_Smoke.label>
-  <MakeShell_Smoke.description>Craft 81mm smoke mortar shells.</MakeShell_Smoke.description>
-  <MakeShell_Smoke.jobString>Making 81mm smoke mortar shells.</MakeShell_Smoke.jobString>
+  <MakeShell_Smoke.label>Сделать 81mm дымовой снаряд х1</MakeShell_Smoke.label>
+  <MakeShell_Smoke.description>Сделать 81mm дымовой снаряд.</MakeShell_Smoke.description>
+  <MakeShell_Smoke.jobString>Делает 81mm дымовой снаряд.</MakeShell_Smoke.jobString>
 
 
 </LanguageData>

@@ -1,14 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <YadaritInhibit.label>Ингибитор Х0-74</YadaritInhibit.label>
-  <YadaritInhibit.description>Прототип препарата что позволяет кратковременно невилировать вредные соединения изотопа ХО-74/А2.Препарат не был испытан на людях - применять на свой страх и риск.Предположительное действия ингибитора 1-3х дней.</YadaritInhibit.description>
+  <YadaritInhibit.label>YadaritInhibit</YadaritInhibit.label>
+  <YadaritInhibit.description>Simple but effective way to cure food poisoning. Several doses of the drug are required until full healing. Caution, it could cause a diarrhea.</YadaritInhibit.description>
 
-  <EggGold.label>Золотые яйца Кукухи</EggGold.label>
-  <EggGold.description>Велечайший дар кукухи что были дарованы только избранным. Частое употребление может открыть грани неведомого</EggGold.description>
+  <EggGold.label>GoldEgg</EggGold.label>
+  <EggGold.description>An Golden egg of a Kukuha</EggGold.description>
 
-
- <Watcher_near.label>Поддержка Наблюдателя</Watcher_near.label>
-  <Watcher_near.description>Голос в голове что поддерживает и успокаевает.<Watcher_near.description>
 
 </LanguageData>

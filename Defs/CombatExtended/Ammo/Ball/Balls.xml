@@ -218,6 +218,7 @@
 		<products>
 			<Ammo_Balls_YA>100</Ammo_Balls_YA>
 		</products>
+		<researchPrerequisite>InDevelopment</researchPrerequisite>
 	</RecipeDef>
 
 

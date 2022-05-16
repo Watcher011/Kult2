@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Recipes -->
+
+  <MakeAmmo_XLaser.label>Сделать Ядарит стержни</MakeAmmo_XLaser.label>
+  <MakeAmmo_XLaser.description>Обогатить 140 Ядарит стержней.</MakeAmmo_XLaser.description>
+  <MakeAmmo_XLaser.jobString>Обогащает Ядарит.</MakeAmmo_XLaser.jobString>
+
+
+</LanguageData>

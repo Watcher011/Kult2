@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ammo -->
+
+  <Ammo_XLaser.label>Набор Ядарит Стержней</Ammo_XLaser.label>
+
+
+  <!-- Projectiles -->
+
+  <Bullet_Xray.label>Ядарит Излучение</Bullet_Xray.label>
+
+
+</LanguageData>

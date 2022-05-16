@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoXray</defName>
+		<label>Charged Xray</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/xray</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_XLaser</defName>
+		<label>XLaser beam</label>
+		<ammoTypes>
+			<Ammo_XLaser>Bullet_Xray</Ammo_XLaser>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SpacerSmallAmmoBase">
+		<defName>Ammo_XLaser</defName>
+		<label>Charged xlaser charge pack</label>
+		<tradeTags>
+			<li>CE_AutoEnableCrafting</li>
+			<li>CE_AutoEnableTrade_Sellable</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoXray</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Ammo/xray/xray</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>0.01</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+		<ammoClass>LaserUST</ammoClass>
+	</ThingDef>  
+
+	
+	<!-- ================== Projectiles ================== -->
+    <ThingDef Class="CombatExtended.AmmoDef" Name="BaseXray" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/xrayBul</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Microwave</damageDef>
+			<speed>24</speed>
+			<dropsCasings>false</dropsCasings>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>1</damageAmountBase>
+				<explosiveDamageType>YadaritPoison</explosiveDamageType>
+				<explosiveRadius>2.5</explosiveRadius>						
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseXray">
+		<defName>Bullet_Xray</defName>
+		<label>Xray beam</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>35</damageAmountBase>
+			<!-- <armorPenetrationBase>0.15</armorPenetrationBase> -->
+			<armorPenetrationBlunt>12</armorPenetrationBlunt>
+			<armorPenetrationSharp>12.9</armorPenetrationSharp>
+		</projectile>
+	</ThingDef>
+
+	
+	
+	
+	
+	
+	
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_XLaser</defName>
+		<label>make CXLaser beam cartridge x40</label>
+		<description>Craft 40 Charged Laser beam cartridges.</description>
+		<jobString>Making Charged Laser beam cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						  <li>YadareCell</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>YadareCell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_XLaser>140</Ammo_XLaser>
+		</products>
+		<researchPrerequisite>InDevelopment</researchPrerequisite>
+	</RecipeDef>
+
+	
+</Defs>
