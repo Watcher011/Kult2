@@ -169,12 +169,12 @@
 		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
 		<buildingDamageFactor>0.4</buildingDamageFactor>
 		<plantDamageFactor>0.9</plantDamageFactor>
-		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionCellFleck>BlastMicrowave</explosionCellFleck>
 		<explosionColorCenter>(0.6, 0.9, 0.6)</explosionColorCenter>
-		<explosionColorEdge>(0.3, 0.65, 0.3)</explosionColorEdge>
+		<explosionColorEdge>(0.3, 0.2, 0.3)</explosionColorEdge>
 		<!--Ought to look for acid explosion sound-->
 		<soundExplosion>Explosion_Flame</soundExplosion>
-		<combatLogRules>Damage_Flame</combatLogRules>
+		<combatLogRules>Damage_Bomb</combatLogRules>
 		<additionalHediffs>
 			<li>
 				<hediff>Acid_Yadarit</hediff>
@@ -187,6 +187,39 @@
 		<damageEffecter>Impact_Toxic</damageEffecter>
 	</DamageDef>
 	
-	
+	<DamageDef ParentName="LocalInjuryBase">
+		<defName>ENDPulse</defName>
+		<label>END Pulse</label>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>true</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has melted to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<!--There no protection against acid-->
+		<!-- <armorCategory>Heat</armorCategory> -->
+		<canUseDeflectMetalEffect>true</canUseDeflectMetalEffect>
+		<defaultDamage>4100</defaultDamage>
+		<defaultArmorPenetration>300</defaultArmorPenetration>
+		<explosionHeatEnergyPerCell>150</explosionHeatEnergyPerCell>
+		<buildingDamageFactor>400</buildingDamageFactor>
+		<plantDamageFactor>300</plantDamageFactor>
+		<explosionCellFleck>BlastFlame</explosionCellFleck>
+		<explosionColorCenter>(0.6, 0.9, 0.6)</explosionColorCenter>
+		<explosionColorEdge>(0.3, 0.2, 0.3)</explosionColorEdge>
+		<!--Ought to look for acid explosion sound-->
+		<soundExplosion>Explosion_Flame</soundExplosion>
+		<combatLogRules>Damage_EMP</combatLogRules>
+		<additionalHediffs>
+			<li>
+				<hediff>Acid_Yadarit</hediff>
+				<severityPerDamageDealt>1</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+				<victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+			</li>
+		</additionalHediffs>
+		<impactSoundType>Toxic</impactSoundType>
+		<damageEffecter>Impact_Toxic</damageEffecter>
+	</DamageDef>
 	
 </Defs>

@@ -299,6 +299,56 @@
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
 
+<ThingDef ParentName="SK_TrapIEDBase">
+		<defName>XBomb</defName>
+		<label>X-01 Bomb</label>
+		<description>X-01 Bomb</description>
+		<thingClass>Building_TrapExplosive</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/X01</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,1)</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<building>
+			<expandHomeArea>false</expandHomeArea>
+		</building>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>Ignite</useJob>
+				<useLabel>Game over</useLabel>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>400</explosiveRadius>
+				<explosiveDamageType>ENDPulse</explosiveDamageType>
+				<damageAmountBase>1056</damageAmountBase>
+				<startWickOnDamageTaken>
+					<li>Flame</li>
+				</startWickOnDamageTaken>
+				<startWickHitPointsPercent>0.8</startWickHitPointsPercent>
+				<destroyThingOnExplosionSize>1</destroyThingOnExplosionSize>
+				<wickTicks>
+					<min>1</min>
+					<max>2</max>
+				</wickTicks>
+			</li>
+		</comps>
+		<costList>
+			<yadarit>150</yadarit>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Wire>20</Wire>
+			<Mechanism>1</Mechanism>
+		</costList>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Flammability>4.0</Flammability>
+		</statBases>
+		<researchPrerequisites>
+			<li>InDevelopment</li>
+		</researchPrerequisites>
+	</ThingDef>
 
 
 </Defs>

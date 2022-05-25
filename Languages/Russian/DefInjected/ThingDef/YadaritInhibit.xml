@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <YadaritInhibit.label>YadaritInhibit</YadaritInhibit.label>
-  <YadaritInhibit.description>Simple but effective way to cure food poisoning. Several doses of the drug are required until full healing. Caution, it could cause a diarrhea.</YadaritInhibit.description>
+  <YadaritInhibit.label>Ингибитор Х0-74</YadaritInhibit.label>
+  <YadaritInhibit.description>Прототип препарата что позволяет кратковременно невилировать вредные соединения изотопа ХО-74/А2</YadaritInhibit.description>
 
-  <EggGold.label>GoldEgg</EggGold.label>
-  <EggGold.description>An Golden egg of a Kukuha</EggGold.description>
+  <EggGold.label>Золотые яйца</EggGold.label>
+  <EggGold.description>Золотые яйца Кукухи</EggGold.description>
 
 
 </LanguageData>

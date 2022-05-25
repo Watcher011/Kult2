@@ -27,5 +27,17 @@
   <Watcher.description>Наблюдатель Культа был выделен вам в помощь.</Watcher.description>
   <Watcher.labelNoun>Поддержкаа Наблюдателя</Watcher.labelNoun>
 
+  <EyeYadarit.label>Кристализация глаза</EyeYadarit.label>
+  <EyeYadarit.description>Частицы ядарита попав в клетки глаза начали прогрессирующий рост злокачественного образования.</EyeYadarit.description>
+  <EyeYadarit.labelNoun>Глаз пораженный ядаритом</EyeYadarit.labelNoun>
+
+  <YadaritHeart.label>Кристализация сердца</YadaritHeart.label>
+  <YadaritHeart.description>Ядарит начал изменеия в клетках сердечной мышцы,кровоток только ускорит распространиение изотопа.</YadaritHeart.description>
+  <YadaritHeart.labelNoun>Сердце пораженное ядаритом</YadaritHeart.labelNoun>
+
+  <YadaritLiver.label>Кристализация печени</YadaritLiver.label>
+  <YadaritLiver.description>Печень поврежденна изотопами ядарита ,требуется срочное лечение/пересадка</YadaritLiver.description>
+  <YadaritLiver.labelNoun>Печень пораженная ядаритом</YadaritLiver.labelNoun>
+
 
 </LanguageData>

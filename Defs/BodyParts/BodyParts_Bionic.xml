@@ -397,8 +397,73 @@
 			</li>
 			
 		</stages>
+
   </HediffDef>
 
 
+<HediffDef ParentName="HediffBodyPartBase_Basic">
+		<defName>EyeYadarit</defName>
+		<label>eye Yadarit</label>
+		<description>Covers the eye socket.</description>
+		<labelNoun>an eye patch</labelNoun>
+		<defaultLabelColor>(0.3,0.65,0.55)</defaultLabelColor>
+		<addedPartProps>
+			<partEfficiency>0.6</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>	 
+		</stages>
+	</HediffDef>
+
+<HediffDef ParentName="HediffBodyPartBase_Basic">
+		<defName>YadaritHeart</defName>
+		<label>Yadarit heart</label>
+		<description>alternative.</description>
+		<labelNoun>a Yadarit heart</labelNoun>
+		<defaultLabelColor>(0.3,0.45,0.15)</defaultLabelColor>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.50</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>		
+		</stages>
+	</HediffDef>	
+
+<HediffDef ParentName="HediffBodyPartBase_Basic">
+		<defName>YadaritLiver</defName>
+		<label>Yadarit liver</label>
+		<description>alternative.</description>
+		<labelNoun>a Yadarit liver</labelNoun>
+		<defaultLabelColor>(0.7,0.35,0.25)</defaultLabelColor>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.69</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.12</offset>
+					</li>
+				</capMods>
+			</li>		
+		</stages>
+	</HediffDef>	
 
 </Defs>

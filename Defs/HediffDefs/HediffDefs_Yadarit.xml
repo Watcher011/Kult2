@@ -44,7 +44,7 @@
 					</li>
 					<li>
 						<capacity>Consciousness</capacity>
-						<offset>-0.10</offset>
+						<offset>-0.010</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
@@ -64,13 +64,21 @@
 					</li>
 					<li>
 						<capacity>Consciousness</capacity>
-						<offset>-0.20</offset>
+						<offset>-0.020</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
 						<offset>-0.20</offset>
 					</li>
 				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>YadaritLiver</hediff>
+						<partsToAffect>
+							<li>Liver</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
 			</li>
 			<li>
 				<label>moderate</label>
@@ -84,7 +92,7 @@
 					</li>
 						<li>
 						<capacity>Consciousness</capacity>
-						<offset>-0.30</offset>
+						<offset>-0.030</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
@@ -95,7 +103,14 @@
 						<offset>-0.30</offset>
 					</li>
 				</capMods>
-				
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>EyeYadarit</hediff>
+						<partsToAffect>
+							<li>Eye</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
 			</li>
 			<li>
 				<label>serious</label>
@@ -109,7 +124,7 @@
 					</li>
 						<li>
 						<capacity>Consciousness</capacity>
-						<offset>-0.35</offset>
+						<offset>-0.035</offset>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
@@ -118,55 +133,169 @@
 					<li>
 						<capacity>Breathing</capacity>
 						<offset>-0.35</offset>
-					</li>
-				</capMods>
-				
-			</li>
-			<li>
-				<label>extreme</label>
-				<minSeverity>0.5</minSeverity>
-				<vomitMtbDays>0.01</vomitMtbDays>
-					<painOffset>0.9</painOffset>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>0.30</setMax>
-					</li>
-					<li>
-						<capacity>BloodFiltration</capacity>
-						<offset>-0.60</offset>
-					</li>
-						<li>
-						<capacity>Consciousness</capacity>
-						<offset>-0.60</offset>
-					</li>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>-0.60</offset>
-					</li>
-					<li>
-						<capacity>Breathing</capacity>
-						<offset>-0.60</offset>
 					</li>
 				</capMods>
 				<hediffGivers>
-				<li Class="HediffGiver_RandomDrugEffect">
-        <hediff>Carcinoma</hediff>
-        <severityToMtbDaysCurve>
-          <points>
-            <li>(0.45, 99999)</li>
-            <li>(0.5, 60)</li>
-            <li>(1, 45)</li>
-          </points>
-        </severityToMtbDaysCurve>
-        <partsToAffect>
-          <li>Liver</li>
-        </partsToAffect>
-      </li>
+					<li Class="HediffGiver_Random">
+						<hediff>YadaritHeart</hediff>
+						<partsToAffect>
+							<li>Heart</li>
+						</partsToAffect>
+					</li>
 				</hediffGivers>
 			</li>
+			<li>
+				<label>extreme</label>
+				<minSeverity>0.9</minSeverity>
+				<vomitMtbDays>0.01</vomitMtbDays>
+					<painOffset>0.0</painOffset>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>1.1</offset>
+					</li>
+						<li>
+						<capacity>Consciousness</capacity>
+						<offset>1.1</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>1.1</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>1.1</offset>
+					</li>
+				</capMods>
+				 
+        
+      </li>
+
 		</stages>
 	</HediffDef>
+	
+	 <RecipeDef ParentName="SurgeryFlesh">
+    <defName>CureYAd</defName>
+    <label>cure Yadarit</label>
+    <description>This special medical operation cures blood rot by a massive infusion of bacteriophage mechanites.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Curing Yadarit rot.</jobString>
+    <workAmount>2000</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>false</isViolation>
+    <targetsBodyPart>false</targetsBodyPart>
+    <removesHediff>YadaritP</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully cured {1}'s blood rot.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>YadaritInhibit</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+   
+	<researchPrerequisite>YadaritPR</researchPrerequisite>
+  </RecipeDef>
+  
+  
+   <RecipeDef ParentName="SurgeryFlesh">
+    <defName>CureEye</defName>
+    <label>cure EyeYadarit</label>
+    <description>This special medical operation cures blood rot by a massive infusion of bacteriophage mechanites.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Curing eye rot.</jobString>
+    <workAmount>2000</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>false</isViolation>
+    <targetsBodyPart>true</targetsBodyPart>
+    <removesHediff>EyeYadarit</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully cured {1}'s blood rot.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>YadaritInhibit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+   
+	<researchPrerequisite>YadaritPR</researchPrerequisite>
+  </RecipeDef>
+  
+    <RecipeDef ParentName="SurgeryFlesh">
+    <defName>CureHeart</defName>
+    <label>cure HeartYadarit</label>
+    <description>This special medical operation cures blood rot by a massive infusion of bacteriophage mechanites.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Curing Yadarit rot.</jobString>
+    <workAmount>2000</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>false</isViolation>
+    <targetsBodyPart>true</targetsBodyPart>
+    <removesHediff>YadaritHeart</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully cured {1}'s blood rot.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>YadaritInhibit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+   
+	<researchPrerequisite>YadaritPR</researchPrerequisite>
+  </RecipeDef>
+  
+	
+ <RecipeDef ParentName="SurgeryFlesh">
+    <defName>CureLiver</defName>
+    <label>cure HeartLiver</label>
+    <description>This special medical operation cures blood rot by a massive infusion of bacteriophage mechanites.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Curing Yadarit rot.</jobString>
+    <workAmount>2000</workAmount>
+    <hideBodyPartNames>true</hideBodyPartNames>
+    <isViolation>false</isViolation>
+    <targetsBodyPart>true</targetsBodyPart>
+    <removesHediff>YadaritLiver</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully cured {1}'s blood rot.</successfullyRemovedHediffMessage>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>YadaritInhibit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    
+	<researchPrerequisite>YadaritPR</researchPrerequisite>
+  </RecipeDef>	
+	
 	
 	
 	
@@ -293,5 +422,15 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 </Defs>

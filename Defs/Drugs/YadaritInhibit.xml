@@ -4,7 +4,7 @@
 		<defName>YadaritInhibit</defName>
 		<label>YadaritInhibit</label>
 		<description>Simple but effective way to cure food poisoning. Several doses of the drug are required until full healing. Caution, it could cause a diarrhea.</description>
-		 <descriptionHyperlinks><HediffDef>YadaritInhibitConsumed</HediffDef></descriptionHyperlinks>
+		 <descriptionHyperlinks><HediffDef>YadaritP</HediffDef></descriptionHyperlinks>
 		<graphicData>
 			<texPath>Things/Item/inhibit</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -43,13 +43,15 @@
 		<label>Yadarit Inhibit</label>
 		<description>Activated сarbon consumed</description>
 		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<defaultLabelColor>(1,0.5,0.5)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
+		 
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.3</severityPerDay>
 				<showDaysToRecover>true</showDaysToRecover>
+				
 			</li>
 		</comps>
 		 <stages>

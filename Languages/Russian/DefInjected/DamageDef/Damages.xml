@@ -16,5 +16,8 @@
   <YadaritPoison.label>Отравление Ядаритом</YadaritPoison.label>
   <YadaritPoison.deathMessage>{0} has melted to death.</YadaritPoison.deathMessage>
 
+  <ENDPulse.label>Ядарит импульс</ENDPulse.label>
+  <ENDPulse.deathMessage>{0} has melted to death.</ENDPulse.deathMessage>
+
 
 </LanguageData>
