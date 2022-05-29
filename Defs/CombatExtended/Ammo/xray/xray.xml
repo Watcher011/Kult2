@@ -39,7 +39,7 @@
 			<Mass>0.01</Mass>
 			<Bulk>0.02</Bulk>
 		</statBases>
-		<ammoClass>LaserUST</ammoClass>
+		<ammoClass>YadRay</ammoClass>
 	</ThingDef>  
 
 	

@@ -11,5 +11,9 @@
   <MakeAmmo_Balls_YA.description>Создаёт 100шт,15-миллиметровые стальные шарики облучённые ядаритом.</MakeAmmo_Balls_YA.description>
   <MakeAmmo_Balls_YA.jobString>Создаёт 15-миллиметровые стальные шарики облучённые ядаритом.</MakeAmmo_Balls_YA.jobString>
 
+  <MakeAmmo_Balls_RU.label>Сделать 15-миллиметровые Резиновые шарики  x100шт</MakeAmmo_Balls_RU.label>
+  <MakeAmmo_Balls_RU.description>Создаёт 100 шт,15-миллиметровые резиновын шарики.</MakeAmmo_Balls_RU.description>
+  <MakeAmmo_Balls_RU.jobString>Создаёт 15-миллиметровые резиновые шарики.</MakeAmmo_Balls_RU.jobString>
+
 
 </LanguageData>

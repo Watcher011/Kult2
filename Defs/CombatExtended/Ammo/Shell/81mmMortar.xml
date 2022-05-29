@@ -127,7 +127,7 @@
 			<Mass>5.27</Mass>
 			<Bulk>8.17</Bulk>
 		</statBases>
-		<ammoClass>Poison</ammoClass>
+		<ammoClass>YadPOI</ammoClass>
 		<detonateProjectile>Bullet_81mmMortarShell_Bio</detonateProjectile>
 	</ThingDef>
 

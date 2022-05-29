@@ -283,12 +283,12 @@
 				<drawfirefuel>false</drawfirefuel>
 				<smokeDrawOffset>(0.2,1.5,0.5)</smokeDrawOffset>
 				<smokesize>1.4</smokesize>
-				<fuelCapacity>80</fuelCapacity>
+				<fuelCapacity>1</fuelCapacity>
 				<burnFuelMultiplier>100</burnFuelMultiplier>
 				<smokeDensity>4</smokeDensity>
 				<fuelFilter>
 					<thingDefs>
-						<li>yadarit</li>
+						<li>YadareCell</li>
 					</thingDefs>
 				</fuelFilter>
 			</li>
@@ -343,7 +343,7 @@
 		<surfaceType>Item</surfaceType>
 		<fillPercent>0.9</fillPercent>
 		<statBases>
-			<MaxHitPoints>40</MaxHitPoints>
+			<MaxHitPoints>1400</MaxHitPoints>
 			<WorkToBuild>6500</WorkToBuild>
 			<Flammability>1.0</Flammability>
 			<Beauty>-60</Beauty>
@@ -358,9 +358,9 @@
 		<costStuffCount>370</costStuffCount>
 		<costList>
 		    <YadareCell>1</YadareCell>
-			<ReinforcedConcrete>30</ReinforcedConcrete>
-			<ComponentIndustrial>15</ComponentIndustrial>
-			<Mechanism>20</Mechanism>
+			<BroadshieldCore>1</BroadshieldCore>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Mechanism>2</Mechanism>
 		</costList>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>

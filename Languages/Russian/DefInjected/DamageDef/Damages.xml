@@ -19,5 +19,8 @@
   <ENDPulse.label>Ядарит импульс</ENDPulse.label>
   <ENDPulse.deathMessage>{0} has melted to death.</ENDPulse.deathMessage>
 
+  <SanShockKL.label>Болевой Шок</SanShockKL.label>
+  <SanShockKL.deathMessage>{0} shocked to death.</SanShockKL.deathMessage>
+
 
 </LanguageData>

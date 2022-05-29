@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Rubber.label>Резиновые</Rubber.label>
+  <Rubber.labelShort>RB</Rubber.labelShort>
+  <Rubber.description>Снаряды что временно выводят противника из строя не убивая его</Rubber.description>
+
+  <YadRay.label>Ядарит-Излучение</YadRay.label>
+  <YadRay.labelShort>YR</YadRay.labelShort>
+  <YadRay.description>Снаряды что генерируют губительное излучение Ядарита или его производные.</YadRay.description>
+
+  <YadPOI.label>Токсичные</YadPOI.label>
+  <YadPOI.labelShort>YP</YadPOI.labelShort>
+  <YadPOI.description>Боеприпасы что содержат токсичные частицы Ядарита или его производные.</YadPOI.description>
+
+
+</LanguageData>

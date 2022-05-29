@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+   <CombatExtended.AmmoCategoryDef>
+    <defName>Rubber</defName>
+    <label>full metal jacket</label>
+    <labelShort>RB</labelShort>
+    <description>The soft lead core is encased in a harder metal coating, combining a medium amount of stopping power and armor penetration.</description>
+  </CombatExtended.AmmoCategoryDef>
+
+   <CombatExtended.AmmoCategoryDef>
+    <defName>YadRay</defName>
+    <label>YadRay</label>
+    <labelShort>YR</labelShort>
+    <description>Features a hardened steel penetrator core for increased armor penetration.</description>
+  </CombatExtended.AmmoCategoryDef>
+
+
+ <CombatExtended.AmmoCategoryDef>
+    <defName>YadPOI</defName>
+    <label>YadPOI</label>
+    <labelShort>YP</labelShort>
+    <description>Features a hardened steel penetrator core for increased armor penetration.</description>
+  </CombatExtended.AmmoCategoryDef>
+</Defs>
