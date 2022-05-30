@@ -188,7 +188,7 @@
 			<li Class="SK.CompProperties_ApplyHediffAround">
 				<hediff>YadaritP</hediff>
 				<radius>2</radius>
-				<severityToAdd>0.01</severityToAdd>
+				<severityToAdd>0.001</severityToAdd>
 			</li>
 			 <li Class="CompProperties_FireOverlay">
                   <fireSize>0.8</fireSize>
@@ -294,8 +294,8 @@
 			</li>
 			<li Class="SK.CompProperties_ApplyHediffAround">
 				<hediff>YadaritP</hediff>
-				<radius>3</radius>
-				<severityToAdd>0.01</severityToAdd>
+				<radius>2</radius>
+				<severityToAdd>0.005</severityToAdd>
 			</li>
 			<li Class="CompProperties_DarklightOverlay">
 				<fireSize>0.5</fireSize>

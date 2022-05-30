@@ -16,7 +16,7 @@
 		<isBad>true</isBad>
 		<comps>
 		<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>-0.01</severityPerDayNotImmune>
+				<severityPerDayNotImmune>-0.03</severityPerDayNotImmune>
 			</li>
 			<li Class="SK.HediffCompProperties_FleshOnly"/>
 			  <li Class="HediffCompProperties_DissolveGearOnDeath">
