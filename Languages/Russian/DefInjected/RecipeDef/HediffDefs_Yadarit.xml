@@ -4,22 +4,22 @@
   <CureYAd.label>Лечение Излучения Х0-74</CureYAd.label>
   <CureYAd.description>Терапия из последовательного приёма ингибитора с различными добавками позволяет вывести частицы минерала из организма с малейшими последствиями.</CureYAd.description>
   <CureYAd.jobString>Излучение Х0-74 невилировано.</CureYAd.jobString>
-  <CureYAd.successfullyRemovedHediffMessage>{0} успешно прошел терапию {1}.</CureYAd.successfullyRemovedHediffMessage>
+  <CureYAd.successfullyRemovedHediffMessage>{0} успешно провёл терапию у {1}.</CureYAd.successfullyRemovedHediffMessage>
 
   <CureEye.label>Лечение глазного яблока от ядарита</CureEye.label>
   <CureEye.description>Путём хирургического вмешательства будут удалены пораженные частицы глазного яблока.</CureEye.description>
   <CureEye.jobString>Последствия излучения Х0-74 невилированны.</CureEye.jobString>
-  <CureEye.successfullyRemovedHediffMessage>{0} успешно прошел терапию ,глаза удалось спасти{1}.</CureEye.successfullyRemovedHediffMessage>
+  <CureEye.successfullyRemovedHediffMessage>{0} успешно провёл терапию ,глаза удалось спасти у{1}.</CureEye.successfullyRemovedHediffMessage>
 
   <CureHeart.label>Лечение кристалического сердца</CureHeart.label>
   <CureHeart.description>Путём введения хим раствора ингибитора непосредственно в сердечную мышцу вероятно есть шанс на остановку роста грибницы.</CureHeart.description>
   <CureHeart.jobString>Последствия излучения Х0-74 невилированны.</CureHeart.jobString>
-  <CureHeart.successfullyRemovedHediffMessage>{0} успешно прошел терапию, сердце работает исправно {1}.</CureHeart.successfullyRemovedHediffMessage>
+  <CureHeart.successfullyRemovedHediffMessage>{0} успешно провёл терапию, сердце работает исправно у {1}.</CureHeart.successfullyRemovedHediffMessage>
 
   <CureLiver.label>Очистка печени от ядарита</CureLiver.label>
   <CureLiver.description>Очистка крови и применение хим терапии позволило очистить печень от большенства злокачественных образований.</CureLiver.description>
   <CureLiver.jobString>Последствия излучения Х0-74 невилированны.</CureLiver.jobString>
-  <CureLiver.successfullyRemovedHediffMessage>{0} успешно прошел терапию, печень работает исправно {1}.</CureLiver.successfullyRemovedHediffMessage>
+  <CureLiver.successfullyRemovedHediffMessage>{0} успешно провёл терапию, печень работает исправно у {1}.</CureLiver.successfullyRemovedHediffMessage>
 
 
 </LanguageData>

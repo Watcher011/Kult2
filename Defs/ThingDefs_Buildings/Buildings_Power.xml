@@ -279,16 +279,16 @@
 			</li>
 			<li Class="SK.CompFueled_Properties">
 				<canAutoBurn>true</canAutoBurn>
-				<operatingTemp>305</operatingTemp>
+				<operatingTemp>300</operatingTemp>
 				<drawfirefuel>false</drawfirefuel>
 				<smokeDrawOffset>(0.2,1.5,0.5)</smokeDrawOffset>
 				<smokesize>1.4</smokesize>
-				<fuelCapacity>1</fuelCapacity>
-				<burnFuelMultiplier>100</burnFuelMultiplier>
-				<smokeDensity>4</smokeDensity>
+				<fuelCapacity>15</fuelCapacity>
+				<burnFuelMultiplier>90</burnFuelMultiplier>
+				<smokeDensity>6</smokeDensity>
 				<fuelFilter>
 					<thingDefs>
-						<li>YadareCell</li>
+						<li>yadarit</li>
 					</thingDefs>
 				</fuelFilter>
 			</li>
@@ -370,7 +370,7 @@
 		 <li Class="CompProperties_ProjectileInterceptor">
         <radius>6</radius>
         <interceptGroundProjectiles>true</interceptGroundProjectiles>
-        <color>(0.4, 0.4, 0.4)</color>
+        <color>(0.6, 0.6, 0.6)</color>
         <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
         <activeSound>BulletShield_Ambience</activeSound>
         <disarmedByEmpForTicks>1080</disarmedByEmpForTicks>

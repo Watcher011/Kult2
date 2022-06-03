@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ___________________CheeseBasin_____________________ -->
+
+  <Make_YadaritCore.label>Сделать Ядарит ядро</Make_YadaritCore.label>
+  <Make_YadaritCore.description>Сделать Ядарит ядро.Синтез длится 10 дней.</Make_YadaritCore.description>
+
+  <!--[Duplicated] <MakeAmmo_XLaser_long.label>make CXLaser beam cartridge x140</MakeAmmo_XLaser_long.label>-->
+  <!--[Duplicated] <MakeAmmo_XLaser_long.description>Craft 140 Charged Laser beam cartridges.</MakeAmmo_XLaser_long.description>-->
+  <!--[Duplicated] <MakeAmmo_XLaser_long.jobString>Making Charged Laser beam cartridges.</MakeAmmo_XLaser_long.jobString>-->
+
+  <MakeAmmo_XLaser_long.label>Сделать Ядарит стержни x140</MakeAmmo_XLaser_long.label>
+  <MakeAmmo_XLaser_long.description>Создаёт Ядарит стержни .</MakeAmmo_XLaser_long.description>
+  <MakeAmmo_XLaser_long.jobString>Производит ядарит стержни.</MakeAmmo_XLaser_long.jobString>
+
+
+</LanguageData>

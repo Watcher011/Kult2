@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--___________________CheeseBasin_____________________-->
+	<RecipeDef Name="Make_YadaritcoreBase" Abstract="True">
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>yadarit</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>YadaritBasin</li>
+		</recipeUsers>
+		
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>0</min>
+			<max>90</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>0</min>
+			<max>75</max>
+		</temperatureIdeal>
+		<processDays>10</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.5</speedAboveSafe>
+		<sunFactor>
+			<min>1</min>
+			<max>1</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>1</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>1</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1</max>
+		</windFactor>
+		<graphicSuffix>_sin</graphicSuffix>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="Make_YadaritcoreBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_YadaritCore</defName>
+		<label>make Yadarit Core</label>
+		<description>Make Yadarit core. Takes 4 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>yadarit</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<products>
+			<YadareCell>3</YadareCell>
+		</products>
+	</RecipeDef>
+
+	
+<RecipeDef ParentName="Make_YadaritcoreBase" Class="UniversalFermenterSK.RecipeDef_UF">
+	<defName>MakeAmmo_XLaser_long</defName>
+		<label>make CXLaser beam cartridge x140</label>
+		<description>Craft 140 Charged Laser beam cartridges.</description>
+		<jobString>Making Charged Laser beam cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						  <li>YadareCell</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>YadareCell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_XLaser>140</Ammo_XLaser>
+		</products>
+		<researchPrerequisite>InDevelopment</researchPrerequisite>
+	</RecipeDef>
+
+
+<RecipeDef ParentName="Make_YadaritcoreBase" Class="UniversalFermenterSK.RecipeDef_UF">
+	<defName>MakeAmmo_XLaser_long</defName>
+		<label>make CXLaser beam cartridge x140</label>
+		<description>Craft 140 Charged Laser beam cartridges.</description>
+		<jobString>Making Charged Laser beam cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						  <li>YadareCell</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+			</categories>
+			<thingDefs>
+				<li>YadareCell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_XLaser>140</Ammo_XLaser>
+		</products>
+		<researchPrerequisite>InDevelopment</researchPrerequisite>
+	</RecipeDef>
+</Defs>

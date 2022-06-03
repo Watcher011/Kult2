@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <MakeYadareCell.label>Сделать Ядарит ядро</MakeYadareCell.label>
-  <MakeYadareCell.description>Сделать Ядарит ядро.1шт.</MakeYadareCell.description>
-  <MakeYadareCell.jobString>Делает ядарит компоненты.</MakeYadareCell.jobString>
-
   <MakeSealOfPurity.label>Сделать Печать Чистоты</MakeSealOfPurity.label>
   <MakeSealOfPurity.description>Сделать Печать Чистоты.1шт.</MakeSealOfPurity.description>
   <MakeSealOfPurity.jobString>Производство печати.</MakeSealOfPurity.jobString>
@@ -17,5 +13,9 @@
   <MakeGrenadeYadar.description>Смесь ядарита и взрывчатки , это безумие ? нет это граната !</MakeGrenadeYadar.description>
   <MakeGrenadeYadar.jobString>Создаёт ящик Пандоры.</MakeGrenadeYadar.jobString>
 
+
+  <!--<MakeYadareCell.label>Сделать Ядарит ядро</MakeYadareCell.label>-->
+  <!--<MakeYadareCell.description>Сделать Ядарит ядро.1шт.</MakeYadareCell.description>-->
+  <!--<MakeYadareCell.jobString>Делает ядарит компоненты.</MakeYadareCell.jobString>-->
 
 </LanguageData>
