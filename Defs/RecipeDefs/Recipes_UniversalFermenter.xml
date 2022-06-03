@@ -63,43 +63,6 @@
 	</RecipeDef>
 
 	
-<RecipeDef ParentName="Make_YadaritcoreBase" Class="UniversalFermenterSK.RecipeDef_UF">
-	<defName>MakeAmmo_XLaser_long</defName>
-		<label>make CXLaser beam cartridge x140</label>
-		<description>Craft 140 Charged Laser beam cartridges.</description>
-		<jobString>Making Charged Laser beam cartridges.</jobString>
-		<ingredients>
-			<li>
-				<filter>
-					<categories>
-						<li>SLDBar</li>
-					</categories>
-				</filter>
-				<count>30</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						  <li>YadareCell</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<categories>
-				<li>SLDBar</li>
-			</categories>
-			<thingDefs>
-				<li>YadareCell</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<products>
-			<Ammo_XLaser>140</Ammo_XLaser>
-		</products>
-		<researchPrerequisite>InDevelopment</researchPrerequisite>
-	</RecipeDef>
-
 
 <RecipeDef ParentName="Make_YadaritcoreBase" Class="UniversalFermenterSK.RecipeDef_UF">
 	<defName>MakeAmmo_XLaser_long</defName>
