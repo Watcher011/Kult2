@@ -6,6 +6,7 @@
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>yadarit</li>
+				<li>yadaritRaW</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<recipeUsers>
@@ -62,6 +63,26 @@
 		</products>
 	</RecipeDef>
 
+	
+	
+	<RecipeDef ParentName="Make_YadaritcoreBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Yadarit</defName>
+		<label>make Yadarit </label>
+		<description>Make Yadarit. Takes 4 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>yadaritRaW</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+		</ingredients>
+		<products>
+			<yadarit>50</yadarit>
+		</products>
+	</RecipeDef>
 	
 
 <RecipeDef ParentName="Make_YadaritcoreBase" Class="UniversalFermenterSK.RecipeDef_UF">

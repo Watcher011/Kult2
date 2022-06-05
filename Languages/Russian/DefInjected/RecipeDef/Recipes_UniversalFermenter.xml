@@ -5,7 +5,11 @@
 
   <Make_YadaritCore.label>Сделать Ядарит ядро</Make_YadaritCore.label>
   <Make_YadaritCore.description>Сделать Ядарит ядро.Синтез длится 10 дней.</Make_YadaritCore.description>
-
+  
+  
+<Make_Yadarit.label>Очистить Ядарит</Make_Yadarit.label>
+  <Make_Yadarit.description>Убрать сторроние примиси из ядарита.Очистка длится 10 дней.</Make_Yadarit.description>
+  
   <!--[Duplicated] <MakeAmmo_XLaser_long.label>make CXLaser beam cartridge x140</MakeAmmo_XLaser_long.label>-->
   <!--[Duplicated] <MakeAmmo_XLaser_long.description>Craft 140 Charged Laser beam cartridges.</MakeAmmo_XLaser_long.description>-->
   <!--[Duplicated] <MakeAmmo_XLaser_long.jobString>Making Charged Laser beam cartridges.</MakeAmmo_XLaser_long.jobString>-->

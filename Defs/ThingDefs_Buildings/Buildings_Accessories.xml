@@ -22,9 +22,9 @@
 		<stuffCategories>
 			<li>Woody</li>
 		</stuffCategories>
-		<costStuffCount>70</costStuffCount>
+		<costStuffCount>30</costStuffCount>
 		<costList>
-			<yadarit>20</yadarit>
+			<yadaritRaW>20</yadaritRaW>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<statBases>

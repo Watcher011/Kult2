@@ -1,21 +1,83 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<!-- Copyright 2019, 2020, K
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-    
-        http://www.apache.org/licenses/LICENSE-2.0
-    
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
 
 <Defs>
+
+<ThingDef ParentName="SK_ResourceBase">
+		 <defName>yadarit</defName>
+        <label>yadarit</label>
+		  <description>Yadarite is a mysterious substance that has mystical properties and high scientific value.</description>
+        <graphicData>
+            <texPath>Things/Item/yadarit</texPath>
+		    <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.3)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<stackLimit>150</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>350</MarketValue>
+			<DeteriorationRate>0.02</DeteriorationRate>
+			<Flammability>5</Flammability>
+			<Mass>3.1</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			 <li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,135,160,0)</glowColor>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="SK_ResourceBase">
+		 <defName>yadaritRaW</defName>
+        <label>yadaritrRaW</label>
+		  <description>Yadarite is a mysterious substance that has mystical properties and high scientific value 1.</description>
+        <graphicData>
+            <texPath>Things/Item/yadaritRaW</texPath>
+		    <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<stackLimit>100</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>350</MarketValue>
+			<DeteriorationRate>0.02</DeteriorationRate>
+			<Flammability>1</Flammability>
+			<Mass>3.1</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<comps>
+			 <li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,135,160,0)</glowColor>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
+	
+	
+	
+	
+	
+ <!--
     <ThingDef ParentName="SK_ResourceBase">
         <defName>yadarit</defName>
         <label>yadarit</label>
@@ -95,7 +157,7 @@
 	
     </ThingDef>
  
- 
+ -->
  
  <ThingDef ParentName="SK_ResourceBase">
 		<defName>YadareCell</defName>
@@ -220,5 +282,59 @@
 		</thingCategories>
 	</ThingDef>
  
+ 
+ 
+ 
+ <ThingDef ParentName="SK_ResourceBase">
+		<defName>DangerCore</defName>
+		<label>DangerCore</label>
+		<description>Danger Yadarit Core</description>
+		<graphicData>
+			<texPath>Things/Item/core</texPath>
+		    <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(0.6)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<fillPercent>0.35</fillPercent>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>false</useHitPoints>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<MarketValue>350</MarketValue>
+			<DeteriorationRate>0.02</DeteriorationRate>
+			<Flammability>5</Flammability>
+			<Mass>3.1</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<specialDisplayRadius>10.9</specialDisplayRadius>
+		<comps>
+			 <li Class="CompProperties_Glower">
+				<glowRadius>10</glowRadius>
+				<glowColor>(255,200,200,0)</glowColor>
+			</li>
+			<li Class="SK.CompProperties_ApplyHediffAround">
+				<hediff>Acid_Yadarit</hediff>
+				<radius>10</radius>
+				<severityToAdd>1</severityToAdd>
+			</li>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>260000</lifespanTicks>
+			</li>
+			 <li Class="CompProperties_PlantHarmRadius">
+        <radiusPerDayCurve>
+          <points>
+            <li>0  , 1</li>
+            <li>1.5, 18</li>
+            <li>6  , 40</li>
+            <li>20 , 100</li>
+          </points>
+        </radiusPerDayCurve>
+      </li>
+		</comps>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+	</ThingDef>
  
 </Defs>

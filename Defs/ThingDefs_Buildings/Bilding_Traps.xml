@@ -298,6 +298,45 @@
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SK_TrapIEDBase">
+		<defName>TrapIED_Yadarit_CORE</defName>
+		<label>IEDYadaritcoretrap</label>
+		<thingClass>Building_TrapExplosive</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/Bios</texPath>
+			<drawSize>(0.9,0.5)</drawSize>
+		</graphicData>
+		<description>Explosives mixed into an incendiary paste with a chemical trigger for dispersal. Its chemical trigger is simple and reliable.</description>
+		<costList>
+			<YadareCell>1</YadareCell>
+			<Mechanism>1</Mechanism>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.9</explosiveRadius>
+				<explosiveDamageType>YadaritPoison</explosiveDamageType>
+				<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+				<wickTicks>
+					<min>15</min>
+					<max>15</max>
+				</wickTicks>
+			</li>
+		</comps>
+		<specialDisplayRadius>10</specialDisplayRadius>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>InDevelopment</li>
+		</researchPrerequisites>
+		 <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <killedLeavings>
+      <DangerCore>1</DangerCore>
+    </killedLeavings>
+	</ThingDef>
 
 <ThingDef ParentName="SK_TrapIEDBase">
 		<defName>XBomb</defName>
@@ -335,7 +374,7 @@
 			</li>
 		</comps>
 		<costList>
-			<yadarit>150</yadarit>
+			<YadareCell>3</YadareCell>
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<Wire>20</Wire>
 			<Mechanism>1</Mechanism>
@@ -348,6 +387,10 @@
 		<researchPrerequisites>
 			<li>InDevelopment</li>
 		</researchPrerequisites>
+		 <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <killedLeavings>
+      <DangerCore>1</DangerCore>
+    </killedLeavings>
 	</ThingDef>
 
 

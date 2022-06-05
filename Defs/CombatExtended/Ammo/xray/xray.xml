@@ -80,7 +80,7 @@
 	
 	
 	
-	<!-- ==================== Recipes ========================== -->
+	<!-- ==================== Recipes ========================== 
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_XLaser</defName>
@@ -127,6 +127,6 @@
 		</products>
 		<researchPrerequisite>InDevelopment</researchPrerequisite>
 	</RecipeDef>
-
+-->
 	
 </Defs>

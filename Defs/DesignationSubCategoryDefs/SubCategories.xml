@@ -1112,6 +1112,8 @@
 			<li>TrapIED_Firefoam</li>
 			<li>TrapIED_AntigrainWarhead</li>
 			<li>TrapIED_Yadarit</li>
+			<li>TrapIED_Yadarit_CORE</li>
+			<li>XBomb</li>
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>

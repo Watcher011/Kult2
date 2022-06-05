@@ -84,7 +84,7 @@
 				<smokeDensity>4</smokeDensity>
 				<fuelFilter>
 					<thingDefs>
-						<li>yadarit</li>
+						<li>yadaritRaW</li>
 					</thingDefs>
 				</fuelFilter>
 			</li>
@@ -318,6 +318,10 @@
 			<li Class="SK.Events.AccidentalExplosionExtension">
 			</li>
 		</modExtensions>
+		 <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <killedLeavings>
+      <DangerCore>1</DangerCore>
+    </killedLeavings>
 	</ThingDef>
 	
 	
