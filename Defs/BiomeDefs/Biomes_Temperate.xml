@@ -116,6 +116,7 @@
       <Plant_TreePoplar>0.5</Plant_TreePoplar>
       <Plant_Berry>0.05</Plant_Berry>
 	    <YadaritPlant>0.002</YadaritPlant>
+		<CristalPlant>0.002</CristalPlant>
       <Plant_HealrootWild>0.05</Plant_HealrootWild>
     </wildPlants>
     <wildAnimals>
@@ -275,6 +276,7 @@
       <Plant_TreeMaple>1.0</Plant_TreeMaple>
       <Plant_Berry>0.05</Plant_Berry>
 	    <YadaritPlant>0.002</YadaritPlant>
+		<CristalPlant>0.002</CristalPlant>
       <Plant_HealrootWild>0.05</Plant_HealrootWild>
     </wildPlants>
     <wildAnimals>

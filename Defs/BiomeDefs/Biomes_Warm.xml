@@ -117,6 +117,7 @@
       <Plant_ShrubLow>2.0</Plant_ShrubLow>
       <Plant_Alocasia>0.8</Plant_Alocasia>
 	   <YadaritPlant>0.001</YadaritPlant>
+	   <CristalPlant>0.002</CristalPlant>
       <Plant_TreeCecropia>0.3</Plant_TreeCecropia>
       <Plant_TreePalm>0.3</Plant_TreePalm>
       <Plant_TreeBamboo>0.3</Plant_TreeBamboo>
@@ -293,6 +294,7 @@
       <Plant_Clivia>0.07</Plant_Clivia>
       <Plant_Berry>0.05</Plant_Berry>
 	   <YadaritPlant>0.002</YadaritPlant>
+	   <CristalPlant>0.002</CristalPlant>
       <Plant_Rafflesia>0.0008</Plant_Rafflesia>
     </wildPlants>
     <wildAnimals>

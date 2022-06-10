@@ -55,7 +55,7 @@
 		<techLevel>Spacer</techLevel>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
-			<MarketValue>350</MarketValue>
+			<MarketValue>50</MarketValue>
 			<DeteriorationRate>0.02</DeteriorationRate>
 			<Flammability>1</Flammability>
 			<Mass>3.1</Mass>

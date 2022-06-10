@@ -28,7 +28,7 @@
 			<fertilityMin>0.5</fertilityMin>
 			<visualSizeRange>
 				<min>0.2</min>
-				<max>0.9</max>
+				<max>0.5</max>
 			</visualSizeRange>
 			<wildOrder>2</wildOrder>
 			<purpose>Beauty</purpose>
@@ -42,6 +42,48 @@
       	  
     </comps>
 	</ThingDef>
+
+
+<ThingDef ParentName="SK_DeciduousPlantDef">
+		<defName>CristalPlant</defName>
+		<label>CristalPlant</label>
+		<description>CristalPlant.</description>
+		<graphicData>
+			<texPath>Things/Trees/Cristal/Cristal</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<plant>
+			<sowMinSkill>19</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags>
+			<immatureGraphicPath>Things/Trees/Cristal/Cristal</immatureGraphicPath>
+			<harvestedThingDef>Coldstone</harvestedThingDef>
+			<harvestTag>Standard</harvestTag>
+			<harvestYield>65</harvestYield>
+			<topWindExposure>0.1</topWindExposure>
+			<growDays>35</growDays>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<fertilityMin>0.5</fertilityMin>
+			<visualSizeRange>
+				<min>0.1</min>
+				<max>1.9</max>
+			</visualSizeRange>
+			<wildOrder>2</wildOrder>
+			<purpose>Beauty</purpose>
+			<humanFoodPlant>false</humanFoodPlant>
+		</plant>
+		 <comps>
+        	<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(229,206,233,1)</glowColor>
+			</li>
+			<li Class="CompProperties_GiveThoughtToAllMapPawnsOnDestroy">
+        <message>The cristal tree has died and emitted a disturbing  scream.</message>
+      </li>
+    </comps>
+	</ThingDef>
+
 
 
 </Defs>
