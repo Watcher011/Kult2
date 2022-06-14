@@ -10,9 +10,8 @@
 <Make_Yadarit.label>Очистить Ядарит</Make_Yadarit.label>
   <Make_Yadarit.description>Убрать сторроние примиси из ядарита.Очистка длится 10 дней.</Make_Yadarit.description>
   
-  <!--[Duplicated] <MakeAmmo_XLaser_long.label>make CXLaser beam cartridge x140</MakeAmmo_XLaser_long.label>-->
-  <!--[Duplicated] <MakeAmmo_XLaser_long.description>Craft 140 Charged Laser beam cartridges.</MakeAmmo_XLaser_long.description>-->
-  <!--[Duplicated] <MakeAmmo_XLaser_long.jobString>Making Charged Laser beam cartridges.</MakeAmmo_XLaser_long.jobString>-->
+  <Make_Plasteel.label>Выплавить сталь</Make_Plasteel.label>
+<Make_Plasteel.description>Запуск процесса глубокой переплавки , процедура длительная (выплавка стали эффективней на 25% ).</Make_Plasteel.description>
 
   <MakeAmmo_XLaser_long.label>Сделать Ядарит стержни x140</MakeAmmo_XLaser_long.label>
   <MakeAmmo_XLaser_long.description>Создаёт Ядарит стержни .</MakeAmmo_XLaser_long.description>

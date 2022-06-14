@@ -10,5 +10,6 @@
   <YadaritBasin.label>Камера обогащения Ядарита</YadaritBasin.label>
   <YadaritBasin.description>Прототип камеры что симулирует условия при которох было полученно первое Ядарит ядро..</YadaritBasin.description>
 
-
+<DresserBasin.label>Прототип Мартеновской печи</DresserBasin.label>
+  <DresserBasin.description>Прототип камеры что превращает железную руду в отличную сталь..</DresserBasin.description>
 </LanguageData>

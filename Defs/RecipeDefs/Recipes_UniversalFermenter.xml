@@ -121,4 +121,85 @@
 		</products>
 		<researchPrerequisite>InDevelopment</researchPrerequisite>
 	</RecipeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<RecipeDef Name="Make_stealBase" Abstract="True">
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Coal</li>
+				<li>Charcoal</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>DresserBasin</li>
+		</recipeUsers>
+		
+		<!-- RecipeDef_UF fields -->
+		<temperatureSafe>
+			<min>-90</min>
+			<max>190</max>
+		</temperatureSafe>
+		<temperatureIdeal>
+			<min>0</min>
+			<max>75</max>
+		</temperatureIdeal>
+		<processDays>3</processDays>
+		<speedBelowSafe>0.05</speedBelowSafe>
+		<speedAboveSafe>0.5</speedAboveSafe>
+		<sunFactor>
+			<min>1</min>
+			<max>1</max>
+		</sunFactor>
+		<rainFactor>
+			<min>1</min>
+			<max>1</max>
+		</rainFactor>
+		<snowFactor>
+			<min>1</min>
+			<max>1</max>
+		</snowFactor>
+		<windFactor>
+			<min>1</min>
+			<max>1</max>
+		</windFactor>
+		<graphicSuffix>_sins</graphicSuffix>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="Make_stealBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Plasteel</defName>
+		<label>make Plasteel</label>
+		<description>Make Plasteel. Takes 3 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Charcoal</li>
+						<li>Coal</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<Plasteel>55</Plasteel>
+		</products>
+	</RecipeDef>
+	
 </Defs>

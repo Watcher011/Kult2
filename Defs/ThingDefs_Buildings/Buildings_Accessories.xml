@@ -220,4 +220,77 @@
 		<barScale>(1.1, 1.1)</barScale>
 		<slotsCount>1</slotsCount>
 	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="UniversalFermenterBase" Class="UniversalFermenterSK.ThingDef_UF">
+		<defName>DresserBasin</defName>
+		<label>Dresser basin</label>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/Furniture/FU</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<fillPercent>0.45</fillPercent>
+		<pathCost>60</pathCost>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>60</Mass>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<description>Basin for creating yadarit core from yadarit.</description>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<costList>
+			<Mechanism>3</Mechanism>
+			<AdvMechanism>1</AdvMechanism>
+			<Electronics>1</Electronics>
+			<Wire>5</Wire>
+		</costList>
+		<size>(2,2)</size>
+		<building>
+			<uninstallWork>650</uninstallWork>
+		</building>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+			<li Class="SK.CompProperties_HeatPusherAdvanced">
+				<compClass>SK.CompHeatPusherAdvanced</compClass>
+				<heatPerSecond>30</heatPerSecond>
+				<heatPushMaxTemperature>75</heatPushMaxTemperature>
+			</li>
+		</comps>
+		<tickerType>Rare</tickerType>
+		<rotatable>false</rotatable>
+		<designationCategory>Production</designationCategory>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>YadariteReclamation</li>
+		</researchPrerequisites>
+		<!-- ThingDef_UF fields -->
+		<showProductIcon>false</showProductIcon>
+		<barOffset>(-0.4, -0.52)</barOffset>
+		<barScale>(1, 0.5)</barScale>
+		<slotsCount>4</slotsCount>
+	</ThingDef>
 </Defs>
