@@ -256,10 +256,9 @@
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
-		<costStuffCount>70</costStuffCount>
+		<costStuffCount>170</costStuffCount>
 		<costList>
 			<Mechanism>3</Mechanism>
-			<AdvMechanism>1</AdvMechanism>
 			<Electronics>1</Electronics>
 			<Wire>5</Wire>
 		</costList>

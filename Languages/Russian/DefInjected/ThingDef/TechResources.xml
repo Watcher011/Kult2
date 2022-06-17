@@ -3,25 +3,101 @@
 
   <yadarit.label>Ядарит</yadarit.label>
   <yadarit.description>Ядарит - таинственое вещество что обладает мистичискими свойствами и высокой научной ценностью.</yadarit.description>
-  
-  
+
   <yadaritRaW.label>Сырой Ядарит</yadaritRaW.label>
   <yadaritRaW.description> Сырой Ядарит - Минерал с множеством сторроних примесей,не опасен для человека.</yadaritRaW.description>
 
+
+  <!-- <ThingDef ParentName="SK_ResourceBase">
+        <defName>yadarit</defName>
+        <label>yadarit</label>
+        <description>Yadarite is a mysterious substance that has mystical properties and high scientific value.</description>
+        <graphicData>
+            <texPath>Things/Item/Yadarit</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>First</resourceReadoutPriority>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <resourceReadoutAlwaysShow>false</resourceReadoutAlwaysShow>
+        <tradeability>Sellable</tradeability>
+        <smeltable>true</smeltable>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <statBases>
+		<MaxHitPoints>700</MaxHitPoints>
+      <MarketValue>10</MarketValue>
+      <Flammability>1.5</Flammability>
+      <Mass>0.5</Mass>
+      <Bulk>1</Bulk>
+            <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.15</BluntDamageMultiplier>
+            <StuffPower_Armor_Sharp>0.15</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.27</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.15</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+        </statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<deepCommonality>1.2</deepCommonality>
+		<deepCountPerCell>100</deepCountPerCell>
+		<deepCountPerPortion>20</deepCountPerPortion>
+		<deepLumpSizeRange>
+			<min>32</min>
+			<max>78</max>
+		</deepLumpSizeRange>
+		<designateHaulable>true</designateHaulable>
+		 <drawGUIOverlay>true</drawGUIOverlay>
+        <stackLimit>100</stackLimit>
+        <smallVolume>false</smallVolume>
+        <stuffProps>
+            <categories>
+                <li>Metallic</li>
+            </categories>
+            <color>(50, 202,50)</color>
+            <commonality>0.1</commonality>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <statOffsets>
+                <Beauty>8</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>00.8</MaxHitPoints>
+				 <MarketValue>5</MarketValue>
+                <Flammability>1.5</Flammability>
+                <Beauty>1</Beauty>
+                <WorkToMake>2.5</WorkToMake>
+                <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		 <tickerType>Normal</tickerType>
+    <comps>
+    <li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(229,106,233,0)</glowColor>
+			</li>	
+    </comps>
+	
+    </ThingDef> -->
+
   <YadareCell.label>Ядарит Ядро</YadareCell.label>
   <YadareCell.description>Компактный аккумулятор Ядарита, благодаря специфике, может использоваться в устройствах с высоким энергопотреблением(Хранить в экранированом помещении вдали от людей).</YadareCell.description>
-
-
-
-<DangerCore.label>Нестабильное Ядарит ядро</DangerCore.label>
-  <DangerCore.description>Ядро ядарита лишенное защитной оболочки .Крайне опасный Изотоп с быстрым периудом распада(ОСТОРОЖНО! НЕ ПОДХОДИТЬ ЖИВЫМ ОБЪЕКТАМ!(Ядро отравляет площадь радиусом в 32клетки уничтожая растения/Зона смертельного поражения людей 10 клеток)).</DangerCore.description>
-  
 
   <SealOfPurity.label>Печать Чистоты</SealOfPurity.label>
   <SealOfPurity.description>Печать Чистоты используется Имперскими воинами. Она наносится на оружие, доспехи и транспортные средства. Печать чистоты представляет собой восковую печать, которой закреплен пергамент с надписями и молитвами. Обычно печать чистоты наносится на видное место на броне и символизирует, что владелец не несет на себе ни малейшей скверны Хаоса</SealOfPurity.description>
 
   <Toolbox.label>Инструментальный ящик</Toolbox.label>
   <Toolbox.description>Небольшой ящик наполненный инструментами и расходниками для обслуживания генераторов , увы время привела в негодность часть набора</Toolbox.description>
+
+  <DangerCore.label>Нестабильное Ядарит ядро</DangerCore.label>
+  <DangerCore.description>Ядро ядарита лишенное защитной оболочки .Крайне опасный Изотоп с быстрым периудом распада(ОСТОРОЖНО! НЕ ПОДХОДИТЬ ЖИВЫМ ОБЪЕКТАМ!(Ядро отравляет площадь радиусом в 32клетки уничтожая растения/Зона смертельного поражения людей 10 клеток)).</DangerCore.description>
 
 
 </LanguageData>

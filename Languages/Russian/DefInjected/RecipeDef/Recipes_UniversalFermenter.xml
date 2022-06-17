@@ -5,17 +5,19 @@
 
   <Make_YadaritCore.label>Сделать Ядарит ядро</Make_YadaritCore.label>
   <Make_YadaritCore.description>Сделать Ядарит ядро.Синтез длится 10 дней.</Make_YadaritCore.description>
-  
-  
-<Make_Yadarit.label>Очистить Ядарит</Make_Yadarit.label>
+
+  <Make_Yadarit.label>Очистить Ядарит</Make_Yadarit.label>
   <Make_Yadarit.description>Убрать сторроние примиси из ядарита.Очистка длится 10 дней.</Make_Yadarit.description>
-  
-  <Make_Plasteel.label>Выплавить сталь</Make_Plasteel.label>
-<Make_Plasteel.description>Запуск процесса глубокой переплавки , процедура длительная (выплавка стали эффективней на 25% ).</Make_Plasteel.description>
 
   <MakeAmmo_XLaser_long.label>Сделать Ядарит стержни x140</MakeAmmo_XLaser_long.label>
   <MakeAmmo_XLaser_long.description>Создаёт Ядарит стержни .</MakeAmmo_XLaser_long.description>
   <MakeAmmo_XLaser_long.jobString>Производит ядарит стержни.</MakeAmmo_XLaser_long.jobString>
+
+  <Make_Plasteel.label>Выплавить сталь</Make_Plasteel.label>
+  <Make_Plasteel.description>Запуск процесса глубокой переплавки , процедура длительная (выплавка стали эффективней на 25% ).</Make_Plasteel.description>
+
+  <Make_Yadarit_alloy.label>Создать Сплав Ядарита</Make_Yadarit_alloy.label>
+  <Make_Yadarit_alloy.description>Выплавить Ядристаль - на переплавку требуется 3 дня</Make_Yadarit_alloy.description>
 
 
 </LanguageData>

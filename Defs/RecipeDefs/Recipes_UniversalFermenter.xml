@@ -15,12 +15,12 @@
 		
 		<!-- RecipeDef_UF fields -->
 		<temperatureSafe>
-			<min>0</min>
-			<max>90</max>
+			<min>-50</min>
+			<max>0</max>
 		</temperatureSafe>
 		<temperatureIdeal>
-			<min>0</min>
-			<max>75</max>
+			<min>-40</min>
+			<max>-5</max>
 		</temperatureIdeal>
 		<processDays>10</processDays>
 		<speedBelowSafe>0.05</speedBelowSafe>
@@ -56,6 +56,22 @@
 					</thingDefs>
 				</filter>
 				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Glass</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentSpacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<products>
@@ -202,4 +218,33 @@
 		</products>
 	</RecipeDef>
 	
+	
+	
+	<RecipeDef ParentName="Make_stealBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_Yadarit_alloy</defName>
+		<label>make Yadarit alloy</label>
+		<description>Make Yadarit alloy. Takes 3 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>yadaritRaW</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<products>
+			<YadaritBar>100</YadaritBar>
+		</products>
+	</RecipeDef>
 </Defs>
