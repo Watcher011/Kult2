@@ -33,7 +33,7 @@
         <defName>YadariteReclamation</defName>
         <label>YadariteReclamation</label>
         <description>these artifacts.</description>
-        <baseCost>900</baseCost>
+        <baseCost>300</baseCost>
         <techLevel>Industrial</techLevel>
         <researchViewX>1</researchViewX>
         <researchViewY>18</researchViewY>
@@ -45,7 +45,7 @@
         <defName>Homemede_defense</defName>
         <label>Homemede defense</label>
         <description>these artifacts.</description>
-        <baseCost>1300</baseCost>
+        <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Pneumatics</li>
@@ -100,7 +100,7 @@
         <defName>Old_generators</defName>
         <label>Manual</label>
         <description>these artifacts.</description>
-        <baseCost>500</baseCost>
+        <baseCost>400</baseCost>
         <techLevel>Industrial</techLevel>
         <researchViewX>1</researchViewX>
         <researchViewY>17</researchViewY>
@@ -112,7 +112,7 @@
         <defName>InDevelopment</defName>
         <label>Development</label>
         <description>these artifacts.</description>
-        <baseCost>500</baseCost>
+        <baseCost>100</baseCost>
         <techLevel>Industrial</techLevel>
         <researchViewX>1</researchViewX>
         <researchViewY>21</researchViewY>

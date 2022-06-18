@@ -19,5 +19,8 @@
   <Make_Yadarit_alloy.label>Создать Сплав Ядарита</Make_Yadarit_alloy.label>
   <Make_Yadarit_alloy.description>Выплавить Ядристаль - на переплавку требуется 3 дня</Make_Yadarit_alloy.description>
 
+  <Make_fanes.label>Сделать зубья</Make_fanes.label>
+  <Make_fanes.description>Сделать зубья из Ядарит стали.Требуется 3 дня</Make_fanes.description>
+
 
 </LanguageData>

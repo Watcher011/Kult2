@@ -15,7 +15,7 @@
 			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
 			<LeatherAmount>20</LeatherAmount>
 			<ImmunityGainSpeed>2.5</ImmunityGainSpeed>
-			<MarketValue>800</MarketValue>
+			<MarketValue>400</MarketValue>
 			<MeatAmount>70</MeatAmount>
 			<MeleeDodgeChance>0.15</MeleeDodgeChance>
 			<MeleeCritChance>0</MeleeCritChance>
@@ -101,7 +101,7 @@
 		<defName>GG</defName>
 		<label>GG</label>
 		<race>GG</race>
-		<combatPower>1000</combatPower>
+		<combatPower>800</combatPower>
 		<ecoSystemWeight>0.9</ecoSystemWeight>
 		<wildGroupSize>2~4</wildGroupSize>
 		<lifeStages>

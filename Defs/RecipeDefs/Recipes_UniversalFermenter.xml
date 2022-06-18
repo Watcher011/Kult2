@@ -247,4 +247,26 @@
 			<YadaritBar>100</YadaritBar>
 		</products>
 	</RecipeDef>
+	
+	
+	
+	
+	<RecipeDef ParentName="Make_stealBase" Class="UniversalFermenterSK.RecipeDef_UF">
+		<defName>Make_fanes</defName>
+		<label>make fanes</label>
+		<description>Make fanes. Takes 3 days to make</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>YadaritBar</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<Fanes>10</Fanes>
+		</products>
+	</RecipeDef>
 </Defs>
