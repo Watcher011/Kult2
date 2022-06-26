@@ -118,14 +118,14 @@
 		</stuffCategories>
 		<costStuffCount>45</costStuffCount>
 		<costList>
-		    <Fanes>20</Fanes>
-			<ComponentMedieval>5</ComponentMedieval>
+		   <Rubber>10</Rubber>
+            <Plastic>30</Plastic>
 			<Mechanism>2</Mechanism>
 		</costList>
 		<statBases>
 			<WorkToMake>7500</WorkToMake>
 			<Bulk>6</Bulk>
-			<Mass>4.2</Mass>
+			<Mass>2.2</Mass>
 			<MeleeCounterParryBonus>1.2</MeleeCounterParryBonus>
 		</statBases>
 		<equippedAngleOffset>-65</equippedAngleOffset>
@@ -138,9 +138,9 @@
 			<li Class="CombatExtended.ToolCE">
 				<label>point</label>
 				<capacities>
-					<li>Stab</li>
+					<li>Poke</li>
 				</capacities>
-				<power>11</power>
+				<power>5</power>
 				<cooldownTime>1.4</cooldownTime>
 				<chanceFactor>0.5</chanceFactor>
 				<armorPenetrationBlunt>1.2</armorPenetrationBlunt>
@@ -152,7 +152,7 @@
 				<capacities>
 					<li>Cut</li>
 				</capacities>
-				<power>14</power>
+				<power>3</power>
 				<cooldownTime>1.5</cooldownTime>
 				<armorPenetrationBlunt>5.8</armorPenetrationBlunt>
 				<armorPenetrationSharp>3.2</armorPenetrationSharp>
@@ -168,8 +168,9 @@
 				<chanceFactor>30</chanceFactor>
 				<armorPenetrationSharp>6</armorPenetrationSharp>
 				<armorPenetrationBlunt>6</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			</li>
+			
 		</tools>
 		<modExtensions>
 		  <li Class="CombatExtended.GunDrawExtension">

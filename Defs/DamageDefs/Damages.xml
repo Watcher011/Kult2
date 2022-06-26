@@ -231,7 +231,7 @@
 		<makesBlood>false</makesBlood>
 		<canInterruptJobs>true</canInterruptJobs>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} shocked to death.</deathMessage>
+		<deathMessage>{0}  to death.</deathMessage>
 		<defaultDamage>7</defaultDamage>
 		<defaultStoppingPower>1</defaultStoppingPower>
 		<defaultArmorPenetration>0.1</defaultArmorPenetration>

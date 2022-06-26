@@ -7,5 +7,10 @@
   <Chainsword.tools.1.label>клинок</Chainsword.tools.1.label>
   <Chainsword.tools.2.label>лезвие</Chainsword.tools.2.label>
 
+  <Tentsword.label>Яростная тентакля</Tentsword.label>
+  <Tentsword.description>Пока в чехле на вид обычный меч,но стоит толко извлечь из ножен ,как любой противник пожелеет о встрече с Яростной Тентаклей!!!</Tentsword.description>
+  <Tentsword.tools.0.label>Щупальце</Tentsword.tools.0.label>
+  <Tentsword.tools.1.label>Крюки</Tentsword.tools.1.label>
+  <Tentsword.tools.2.label>Электро-присоски</Tentsword.tools.2.label>
 
 </LanguageData>

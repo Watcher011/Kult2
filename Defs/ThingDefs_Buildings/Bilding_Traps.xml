@@ -162,7 +162,7 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerTrader</compClass>
-				<basePowerConsumption>100</basePowerConsumption>
+				<basePowerConsumption>400</basePowerConsumption>
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -171,18 +171,18 @@
 		<stuffCategories>
 			<li>RuggedMetallic</li>
 		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>70</costStuffCount>
 		<costList>
 			 <Weapon_Parts>3</Weapon_Parts>
-			<Mechanism>12</Mechanism>
-			<Wire>5</Wire>
+			<Mechanism>5</Mechanism>
+			<Wire>10</Wire>
 		</costList>
-		<specialDisplayRadius>2</specialDisplayRadius>
+		<specialDisplayRadius>1</specialDisplayRadius>
 		<designationCategory>Security</designationCategory>
 		<building>
 			<ai_combatDangerous>false</ai_combatDangerous>
 			<turretGunDef>Gun_AAA</turretGunDef>
-			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretTopDrawSize>1</turretTopDrawSize>
 		</building>
 		<designationHotKey>Misc1</designationHotKey>
 		<tradeTags>
