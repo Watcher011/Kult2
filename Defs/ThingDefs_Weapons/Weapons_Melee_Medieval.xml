@@ -88,9 +88,9 @@
 			<li>SharpMelee</li>
 			<li>AgileMelee</li>
 		</thingCategories>
-		<recipeMaker>
-			<researchPrerequisite>Smithing</researchPrerequisite>
-		</recipeMaker>
+		<researchPrerequisites>
+			<li>InDevelopment</li>
+		</researchPrerequisites>
 	</ThingDef>
 	
 	
@@ -184,9 +184,9 @@
 			<li>SharpMelee</li>
 			<li>AgileMelee</li>
 		</thingCategories>
-		<recipeMaker>
-			<researchPrerequisite>Smithing</researchPrerequisite>
-		</recipeMaker>
+		<researchPrerequisites>
+			<li>InDevelopment</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 

@@ -153,9 +153,11 @@
 				<ammoSet>AmmoSet_Balls</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
-				<aimedBurstShotCount>5</aimedBurstShotCount>
-				<aiUseBurstMode>FALSE</aiUseBurstMode>
-				<aiAimMode>Snapshot</aiAimMode>
+				<aimedBurstShotCount>4</aimedBurstShotCount>
+				 <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <noSingleShot>FALSE</noSingleShot>
+				<noSnapshot>true</noSnapshot>
 			</li>
 		</comps>
 	</ThingDef>

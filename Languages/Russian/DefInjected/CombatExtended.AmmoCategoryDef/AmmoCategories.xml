@@ -4,6 +4,10 @@
   <Rubber.label>Резиновые</Rubber.label>
   <Rubber.labelShort>RB</Rubber.labelShort>
   <Rubber.description>Снаряды что временно выводят противника из строя не убивая его</Rubber.description>
+  
+   <Metal.label>Стальные</Metal.label>
+  <Metal.labelShort>ST</Metal.labelShort>
+  <Metal.description>Металичиские снаряды</Metal.description>
 
   <YadRay.label>Ядарит-Излучение</YadRay.label>
   <YadRay.labelShort>YR</YadRay.labelShort>

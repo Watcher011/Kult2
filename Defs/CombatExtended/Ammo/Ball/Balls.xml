@@ -43,7 +43,7 @@
 			<Mass>0.012</Mass>
 			<Bulk>0.01</Bulk>
 		</statBases>
-		<ammoClass>FullMetalJacket</ammoClass>
+		<ammoClass>Metal</ammoClass>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 		</comps>

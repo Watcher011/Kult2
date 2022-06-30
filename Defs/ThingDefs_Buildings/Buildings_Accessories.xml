@@ -231,7 +231,7 @@
 		<graphicData>
 			<texPath>Things/Building/Furniture/FU</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(1.5,1.5)</drawSize>
+			<drawSize>(3,3)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 			<damageData>
 				<cornerTL>Damage/Corner</cornerTL>
@@ -262,7 +262,7 @@
 			<Electronics>1</Electronics>
 			<Wire>5</Wire>
 		</costList>
-		<size>(2,2)</size>
+		<size>(3,3)</size>
 		<building>
 			<uninstallWork>650</uninstallWork>
 		</building>
@@ -288,8 +288,8 @@
 		</researchPrerequisites>
 		<!-- ThingDef_UF fields -->
 		<showProductIcon>false</showProductIcon>
-		<barOffset>(-0.4, -0.52)</barOffset>
-		<barScale>(1, 0.5)</barScale>
+		<barOffset>(-0.8, -1)</barOffset>
+		<barScale>(2, 1)</barScale>
 		<slotsCount>4</slotsCount>
 	</ThingDef>
 </Defs>
