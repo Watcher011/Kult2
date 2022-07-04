@@ -292,7 +292,7 @@
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<fillPercent>0.35</fillPercent>
-		<rotatable>false</rotatable>
+		<rotatable>true</rotatable>
 		<statBases>
 			<MaxHitPoints>90</MaxHitPoints>
 			<Beauty>20</Beauty>
@@ -686,7 +686,7 @@
 		</statBases>
 		 <comps>
 			<li Class="CompProperties_Glower">
-				<glowRadius>10</glowRadius>
+				<glowRadius>5</glowRadius>
 				<glowColor>(255,255,0,0)</glowColor>
 			</li>
 			<li Class="CompProperties_SpawnerFilth">

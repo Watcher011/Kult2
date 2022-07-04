@@ -90,13 +90,14 @@
 		<useHitPoints>true</useHitPoints>
 		<techLevel>Spacer</techLevel>
 		<statBases>
-			<MaxHitPoints>10</MaxHitPoints>
+			<MaxHitPoints>100</MaxHitPoints>
 			<MarketValue>400</MarketValue>
 			<DeteriorationRate>0.02</DeteriorationRate>
-			<Flammability>5</Flammability>
-			<Mass>0.1</Mass>
-			<Bulk>0.1</Bulk>
+			<Flammability>15</Flammability>
+			<Mass>0.5</Mass>
+			<Bulk>0.5</Bulk>
 		</statBases>
+		<specialDisplayRadius>3</specialDisplayRadius>
 		<tickerType>Normal</tickerType>
 		<comps>
 			<li Class="CompProperties_Explosive">
@@ -115,6 +116,10 @@
 				<severityToAdd>0.005</severityToAdd>
 			</li>
 		</comps>
+		 <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+         <killedLeavings>
+          <DangerCore>1</DangerCore>
+         </killedLeavings>
 		<thingCategories>
 			<li>CTextiles</li>
 		</thingCategories>

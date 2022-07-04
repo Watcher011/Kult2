@@ -135,6 +135,7 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>-60</Beauty>
 			<Mass>170</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">2</StyleDominance>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<description>A Fuel Power Plant that produces electricity. Can be fueled with yadarit.</description>
@@ -150,8 +151,9 @@
 		</costList>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
-			<uninstallWork>450</uninstallWork>
+			<uninstallWork>3050</uninstallWork>
 		</building>
+		<specialDisplayRadius>2</specialDisplayRadius>
 		<comps>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -241,6 +243,7 @@
 			<Flammability>1.0</Flammability>
 			<Beauty>-60</Beauty>
 			<Mass>370</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
 		</statBases>
 		<tickerType>Normal</tickerType>
 		<description>A Fuel Power Plant that produces electricity. Can be fueled with yadarit.</description>
@@ -257,8 +260,9 @@
 		</costList>
 		<building>
 			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
-			<uninstallWork>450</uninstallWork>
+			<uninstallWork>4500</uninstallWork>
 		</building>
+		<specialDisplayRadius>3</specialDisplayRadius>
 		<comps>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
@@ -294,7 +298,7 @@
 			</li>
 			<li Class="SK.CompProperties_ApplyHediffAround">
 				<hediff>YadaritP</hediff>
-				<radius>2</radius>
+				<radius>3</radius>
 				<severityToAdd>0.005</severityToAdd>
 			</li>
 			<li Class="CompProperties_DarklightOverlay">

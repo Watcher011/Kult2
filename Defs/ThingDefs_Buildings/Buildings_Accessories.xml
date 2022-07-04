@@ -35,13 +35,14 @@
 			<Cleanliness>3</Cleanliness>
 			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
 		</statBases>
+		<specialDisplayRadius>8</specialDisplayRadius>
 		<comps>
 			<li>
 				<compClass>CompQuality</compClass>
 			</li>
 			 <li Class="CompProperties_Glower">
-        <overlightRadius>10.0</overlightRadius>
-        <glowRadius>10.0</glowRadius>
+        <overlightRadius>8.0</overlightRadius>
+        <glowRadius>8.0</glowRadius>
        <glowColor>(255,255,233,1)</glowColor>
       </li>
 		</comps>
