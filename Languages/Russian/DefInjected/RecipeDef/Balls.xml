@@ -15,5 +15,9 @@
   <MakeAmmo_Balls_RU.description>Создаёт 100 шт,15-миллиметровые резиновын шарики.</MakeAmmo_Balls_RU.description>
   <MakeAmmo_Balls_RU.jobString>Создаёт 15-миллиметровые резиновые шарики.</MakeAmmo_Balls_RU.jobString>
 
+  <MakeAmmo_Balls_EMI.label>Сделать 15-миллиметровые конденсаторы ЭМИ  x100шт</MakeAmmo_Balls_EMI.label>
+  <MakeAmmo_Balls_EMI.description>Создаёт 100 шт .</MakeAmmo_Balls_EMI.description>
+  <MakeAmmo_Balls_EMI.jobString>Создаёт конденсаторы.</MakeAmmo_Balls_EMI.jobString>
+
 
 </LanguageData>

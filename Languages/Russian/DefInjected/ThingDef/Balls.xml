@@ -6,6 +6,9 @@
   <Ammo_Balls.label>15-миллиметровые стальные шарики</Ammo_Balls.label>
   <Ammo_Balls.description>Шарики из подшипников благодаря идеальной обработке и распространённости стали отличным боеприпасом для некоторых кустарных видов оружия.</Ammo_Balls.description>
 
+  <Ammo_Balls_EMI.label>15-миллиметровые заряженные конденсаторы</Ammo_Balls_EMI.label>
+  <Ammo_Balls_EMI.description>Одноразовые высокомощные конденсатоы .При прикосновении боевой части к твёрдому предмету происходит разрядка конденсатора и создание ЭМИ поля</Ammo_Balls_EMI.description>
+
   <Ammo_Balls_RU.label>15-миллиметровые резиновые шарики</Ammo_Balls_RU.label>
   <Ammo_Balls_RU.description>Стальные шарики покрытые слоем толстой резины,очень распространены для разгона толпы и нелетального выведения из строя особо буйных.</Ammo_Balls_RU.description>
 
@@ -18,6 +21,7 @@
   <Balls.label>15-миллиметровые стальные шарики</Balls.label>
   <Balls_YA.label>15-миллиметровые стальные шарики облучённые ядаритом</Balls_YA.label>
   <Balls_RU.label>15-миллиметровые резиновые шарики</Balls_RU.label>
+  <Balls_EMI.label>15-миллиметровые заряженные конденсаторы</Balls_EMI.label>
 
 
 </LanguageData>

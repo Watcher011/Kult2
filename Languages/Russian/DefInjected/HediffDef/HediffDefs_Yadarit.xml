@@ -21,6 +21,13 @@
   <Acid_Yadarit.stages.5.label>Критичиская форма</Acid_Yadarit.stages.5.label>
   <Acid_Yadarit.labelNoun>Отравление ядаритом</Acid_Yadarit.labelNoun>
 
+  <PainShock.label>Болевой шок</PainShock.label>
+  <PainShock.description>Болевой шок</PainShock.description>
+  <PainShock.stages.0.label>1-уровень</PainShock.stages.0.label>
+  <PainShock.stages.1.label>2-уровень</PainShock.stages.1.label>
+  <PainShock.stages.2.label>3-уровень</PainShock.stages.2.label>
+  <PainShock.stages.3.label>паралич</PainShock.stages.3.label>
+
 
   <!--<YadaritP.stages.6.label>Смертельная форма облучения .Поражено более 70% организма,Из Е2 клеток формируются грибницы Ядарита.Проростая сквозь кожу ,тело используется как инкубатор.Рекомендуется быстрое устранение пациента и стерилизация помещения для предотвращения распространения спор.</YadaritP.stages.6.label>-->
 

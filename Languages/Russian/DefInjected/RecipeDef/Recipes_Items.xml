@@ -14,8 +14,8 @@
   <MakeGrenadeYadar.jobString>Создаёт ящик Пандоры.</MakeGrenadeYadar.jobString>
 
 
-  <!--<MakeYadareCell.label>Сделать Ядарит ядро</MakeYadareCell.label>-->
-  <!--<MakeYadareCell.description>Сделать Ядарит ядро.1шт.</MakeYadareCell.description>-->
-  <!--<MakeYadareCell.jobString>Делает ядарит компоненты.</MakeYadareCell.jobString>-->
+  <MakeYadareCell.label>Сделать Ядарит ядро</MakeYadareCell.label>
+  <MakeYadareCell.description>Сделать Ядарит ядро.1шт.</MakeYadareCell.description>
+  <MakeYadareCell.jobString>Делает ядарит компоненты.</MakeYadareCell.jobString>
 
 </LanguageData>
