@@ -1179,7 +1179,6 @@
 			<li>Turret_AGSThirty</li>
 			<li>Turret_AGS30GrenadeLauncher</li>
 			<li>Turret_Mortar</li>
-			<li>155mmArt</li>
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>
@@ -1213,6 +1212,7 @@
 			<li>Turret_1Turret</li>
 			<li>Drob</li>
 			<li>Turret_Arr</li>
+			<li>Turret_flame</li>
 			<li>Turret_xray</li>
 		</defNames>
 		<designationCategory>Security</designationCategory>
