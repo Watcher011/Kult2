@@ -247,29 +247,73 @@
 				<recoilAmount>0.95</recoilAmount>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_Flamethrower_Prometheum</defaultProjectile>
-				<warmupTime>2.0</warmupTime>
+				<warmupTime>4.0</warmupTime>
 				<range>17</range>
-				<minRange>2</minRange>
+				<minRange>1</minRange>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
 				<soundCast>HissFlamethrower</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-				<burstShotCount>20</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>10</burstShotCount>
 			</li>
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>80</magazineSize>
+				<magazineSize>90</magazineSize>
 				<reloadTime>5</reloadTime>
 				<ammoSet>AmmoSet_Flamethrower</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>true</aiUseBurstMode>
-				<aimedBurstShotCount>10</aimedBurstShotCount>
+				<aimedBurstShotCount>3</aimedBurstShotCount>
 				<aiAimMode>Snapshot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseAutoTurretGun">
+		<defName>Gun_Rifl</defName>
+		<label>Rifl gun</label>
+		<graphicData>
+			<texPath>Things/Building/Security/Rifle_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<description>-------------</description>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<tradeability>None</tradeability>
+		<statBases>
+			<MarketValue>4400</MarketValue>
+			<SightsEfficiency>1.65</SightsEfficiency>
+			<ShotSpread>0.05</ShotSpread>
+			<SwayFactor>1.30</SwayFactor>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+		  <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
+                <warmupTime>1</warmupTime>
+                <range>50</range>
+                <soundCast>Shot_BoltActionRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				  <magazineSize>30</magazineSize>
+                <reloadTime>4</reloadTime>
+                <ammoSet>AmmoSet_303British</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>true</aiUseBurstMode>
+				<aiAimMode>AimedShot</aiAimMode>
+				<noSnapshot>true</noSnapshot>
+				<noSingleShot>true</noSingleShot>
 			</li>
 		</comps>
 	</ThingDef>

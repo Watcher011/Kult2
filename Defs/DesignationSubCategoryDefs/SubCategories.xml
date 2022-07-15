@@ -1203,6 +1203,7 @@
 		<label>sentry turrets</label>
 		<description>An AI-controlled turret that automatically fires at nearby enemies.</description>
 		<defNames>
+		     <li>Turret_Rifel</li>
 			<li>Turret_MiniTurret</li>
 			<li>Turret_Autocannon</li>
 			<li>Turret_Blaster</li>
@@ -1214,6 +1215,7 @@
 			<li>Turret_Arr</li>
 			<li>Turret_flame</li>
 			<li>Turret_xray</li>
+			
 		</defNames>
 		<designationCategory>Security</designationCategory>
 		<debug>false</debug>

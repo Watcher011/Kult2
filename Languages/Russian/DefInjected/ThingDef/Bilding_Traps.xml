@@ -25,6 +25,8 @@
   <XBomb.label>X-01 Устройство</XBomb.label>
   <XBomb.description>X-01 предназначенна для очисктки огромных областей от нежелательной биологической формы жизни.Может быть активирована как вручную так и удалёно(Радио-детонаром)</XBomb.description>
   <XBomb.comps.0.useLabel>Нажать большую красную кнопку!</XBomb.comps.0.useLabel>
-
+  
+<Turret_Rifel.label>«Lee-Enfield.v2»</Turret_Rifel.label>
+  <Turret_Rifel.description>Древняя однозарядная винтовка ,установленная на поворотный штатив. Хорошая дальность, хорошая мощность, низкая скорострельность,слегка увеличенный магазин до 30 патронов(.303 British).</Turret_Rifel.description>
 
 </LanguageData>

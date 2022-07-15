@@ -378,12 +378,12 @@
 		 <li Class="CompProperties_ProjectileInterceptor">
         <radius>6</radius>
         <interceptGroundProjectiles>true</interceptGroundProjectiles>
-        <color>(0.6, 0.6, 0.6)</color>
+        <color>(1.6, 0.6, 1.6)</color>
         <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
         <activeSound>BulletShield_Ambience</activeSound>
         <disarmedByEmpForTicks>1080</disarmedByEmpForTicks>
-        <chargeIntervalTicks>600000</chargeIntervalTicks>
-        <chargeDurationTicks>60000</chargeDurationTicks>
+        <chargeIntervalTicks>6000</chargeIntervalTicks>
+        <chargeDurationTicks>600000</chargeDurationTicks>
       </li>
 			
 			<li Class="CompProperties_Glower">
