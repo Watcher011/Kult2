@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="SK_BasePawn" Name="BaseHaiter" Abstract="True">
+		<statBases>
+			<PsychicSensitivity>0.7</PsychicSensitivity>
+			<Flammability>0.2</Flammability>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<SmokeSensitivity>0.7</SmokeSensitivity>
+		</statBases>
+		<race>
+			<meatColor>(200,135,100)</meatColor>
+			<hasGenders>false</hasGenders>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHaiter">
+		<defName>Mutant_Haiter</defName>
+		<thingClass>Pawn</thingClass>
+		<label>Haiter</label>
+		<description>-/--/-</description>
+		<statBases>
+			<Mass>150</Mass>
+			<MoveSpeed>4.7</MoveSpeed>
+			<ArmorRating_Blunt>3.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>3.5</ArmorRating_Sharp>
+			<MeatAmount>45</MeatAmount>
+			<LeatherAmount>15</LeatherAmount>
+			<CarryWeight>170</CarryWeight>
+			<CarryBulk>70</CarryBulk>
+			<MeleeDodgeChance>0.12</MeleeDodgeChance>
+			<MeleeCritChance>0.1</MeleeCritChance>
+			<MeleeParryChance>0.14</MeleeParryChance>
+			<NightVisionEfficiency>0.2</NightVisionEfficiency>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1.9</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<armorPenetrationBlunt>9</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1.9</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<armorPenetrationBlunt>9</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>4.2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>12</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.7</cooldownTime>
+				<linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+				<armorPenetrationSharp>3.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>2.4</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<comps>
+			<li Class="SK.CompProperties_PawnJumper">
+				<maxCharges>5</maxCharges> <!-- Number of possible jumps -->
+				<minEnergy>0.45</minEnergy> <!-- Subtracts from the current rest(energy) level. 0.5 = 50% -->
+				<ammoCountPerCharge>10</ammoCountPerCharge> <!-- Rest(energy) consumption. 10 = 10% cost per jump. -->
+				<jumpCooldown>2250</jumpCooldown> <!-- Jump cooldown in ticks -->
+				<range>4</range>
+				<chargeNoun>jump</chargeNoun>
+				<hotKey>Misc4</hotKey>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<butcherProducts>
+		<BioMicrochips>1</BioMicrochips>
+			<PoisonGland>1</PoisonGland>
+		</butcherProducts>
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<intelligence>ToolUser</intelligence>
+			<body>Ogre</body>
+			<predator>true</predator>
+			<baseHungerRate>1.2</baseHungerRate>
+			<lifeExpectancy>80</lifeExpectancy>
+			<baseBodySize>1.1</baseBodySize>
+			<baseHealthScale>3.8</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Bear_Injured</soundWounded>
+					<soundDeath>Pawn_Bear_Death</soundDeath>
+					<soundCall>Pawn_Bear_Call</soundCall>
+					<soundAngry>Pawn_Bear_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>1000</min>
+				<max>2000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<useMeatFrom>Human</useMeatFrom>
+			<leatherDef>Leather_Heavy</leatherDef>
+			<hediffGiverSets>
+				<li>BerserkPassiveSet</li>
+			</hediffGiverSets>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	 <PawnKindDef Name="HaiterPawn" Abstract="True">
+        <race>Mutant_Haiter</race>
+        <!-- <defaultFactionType>OgreClan</defaultFactionType> -->
+		<defaultFactionType>OgreMutants</defaultFactionType>
+        <aiAvoidCover>true</aiAvoidCover>
+        <techHediffsChance>0</techHediffsChance>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<initialWillRange>4~5</initialWillRange>
+		<initialResistanceRange>37~49</initialResistanceRange>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Humanlike/Haiter/heiter</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>2.2</drawSize>
+                    <shadowData>
+                        <volume>(0.2, 0.3, 0.8)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+ </PawnKindDef>
+  
+	<!-- Ogre Bases -->
+  <PawnKindDef ParentName="HaiterPawn">
+        <defName>Haiter</defName>
+        <label>Haiter</label>
+        <combatPower>375</combatPower>
+        <weaponMoney>
+            <min>250</min>
+            <max>310</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>st0</li>
+        </weaponTags>
+    </PawnKindDef>
+	
+	<!-- Destroyer -->
+  <PawnKindDef ParentName="BaseOgrePawn">
+        <defName>HaiterDES</defName>
+        <label>Haiter destroyer</label>
+        <combatPower>800</combatPower>
+        <weaponMoney>
+            <min>2600</min>
+            <max>2900</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>st1</li>
+        </weaponTags>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>4</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+	
+	
+	<!-- Devastator -->
+  <PawnKindDef ParentName="BaseOgrePawn">
+        <defName>HaiterDEV</defName>
+        <label>Haiter devastator</label>
+        <combatPower>820</combatPower>
+        <weaponMoney>
+            <min>2650</min>
+            <max>2700</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>st2</li>
+        </weaponTags>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>3</min>
+                    <max>4</max>
+                </primaryMagazineCount>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+	
+	
+
+
+
+
+
+
+</Defs>

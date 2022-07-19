@@ -23,7 +23,7 @@
 			<Mass>5.25</Mass>
 		</statBases>
 		<weaponTags>
-			<li>PT1</li>
+			<li>st1</li>
 			<li>Gun</li>
 			<li>TierOnePistol</li>
 			<li>CE_Sidearm</li>

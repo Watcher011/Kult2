@@ -15,6 +15,7 @@
 		<soundInteract>InteractMelee</soundInteract>
 		<techLevel>Medieval</techLevel>
 		<weaponTags>
+		    <li>st0</li>
 			<li>NorbalMelee</li>
 			<li>CE_OneHandedWeapon</li>
 		</weaponTags>

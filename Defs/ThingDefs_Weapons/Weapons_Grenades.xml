@@ -55,6 +55,7 @@
 			<li>GrenadeDestructive</li>
 			<li>GrenadeTierThree</li>
 			<li>CE_AI_Grenade</li>
+			<li>st2</li>
 		</weaponTags>
 		<thingCategories>
 			<li>Grenades</li>
