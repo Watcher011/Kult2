@@ -393,6 +393,11 @@
 			<li>BuildingsSecurity</li>
 		</thingCategories>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		 <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+         <killedLeavings>
+           <Gun_BoltActionRifle>1</Gun_BoltActionRifle>
+         </killedLeavings>
+		 <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
 		<modExtensions>
 			<li Class="SK.Events.AccidentalExplosionExtension">
 			</li>

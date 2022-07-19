@@ -95,7 +95,7 @@
 	
 	
 	
-	<ThingDef ParentName="WeaponMedievalBase">
+	<ThingDef ParentName="MeleeWeaponUltratech">
 		<defName>Tentsword</defName>
 		<label>Tentsword</label>
 		<description>---//---</description>
@@ -105,6 +105,8 @@
 			<drawSize>(1,1)</drawSize>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
+		 <equippedAngleOffset>-65</equippedAngleOffset>
+         <relicChance>3</relicChance>
 		<fillPercent>0.5</fillPercent>
 		<soundInteract>InteractMelee</soundInteract>
 		<techLevel>Medieval</techLevel>
@@ -128,7 +130,6 @@
 			<Mass>2.2</Mass>
 			<MeleeCounterParryBonus>1.2</MeleeCounterParryBonus>
 		</statBases>
-		<equippedAngleOffset>-65</equippedAngleOffset>
 		<equippedStatOffsets>
 			<MeleeCritChance>0.4</MeleeCritChance>
 			<MeleeParryChance>0.4</MeleeParryChance>
@@ -160,16 +161,19 @@
 			</li>
 			<li Class="CombatExtended.ToolCE">
 				<label>point</label>
-				<capacities>
-					<li>ElectricShock</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2.65</cooldownTime>
-				<chanceFactor>30</chanceFactor>
-				<armorPenetrationSharp>6</armorPenetrationSharp>
-				<armorPenetrationBlunt>6</armorPenetrationBlunt>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			</li>
+				 <labelUsedInLogging>false</labelUsedInLogging>
+               <capacities>
+                 <li>Blunt</li>
+                 </capacities>
+               <power>31</power>
+             <cooldownTime>3</cooldownTime>
+             <extraMeleeDamages>
+               <li>
+                <def>EMP</def>
+                 <amount>9</amount>
+                 </li>
+               </extraMeleeDamages>
+	 		</li>
 			
 		</tools>
 		<modExtensions>
