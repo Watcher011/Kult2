@@ -166,6 +166,195 @@
 		</modExtensions>
 	</PawnKindDef>
 
+
+<ThingDef ParentName="SK_AnimalThingBase">
+		<defName>Kukuha</defName>
+		<label>Kukuha</label>
+		<devNote>misc</devNote>
+		<description>----</description>
+		<statBases>
+			<Mass>6.0</Mass>
+			<MoveSpeed>4.9</MoveSpeed>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<ArmorRating_Blunt>3.9</ArmorRating_Blunt>
+			<ArmorRating_Sharp>3.9</ArmorRating_Sharp>
+			<LeatherAmount>20</LeatherAmount>
+			<ImmunityGainSpeed>2.5</ImmunityGainSpeed>
+			<MarketValue>4000</MarketValue>
+			<MeatAmount>70</MeatAmount>
+			<MeleeDodgeChance>0.15</MeleeDodgeChance>
+			<MeleeCritChance>0.3</MeleeCritChance>
+			<GermResistance>0.4</GermResistance>
+			<GermContainment>0.2</GermContainment>
+			<FilthRate>18</FilthRate>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.15</recoilAmount>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>2</accuracyShort>
+				<accuracyMedium>3</accuracyMedium>
+				<accuracyLong>4</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_Acid</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<burstShotCount>8</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<minRange>2</minRange>
+				<range>17</range>
+				<soundCast>FlameThrower</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<!--Commanility determines how frequent this range verb is chosen.-->
+				<commonality>0.9</commonality>
+			</li>
+		</verbs>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<capacities>
+					<li>Flame</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>1.7</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+				<armorPenetrationSharp>8</armorPenetrationSharp>
+				<armorPenetrationBlunt>13</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>7</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<comps>
+			
+		</comps>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<maxPreyBodySize>2.9</maxPreyBodySize>
+			<herdMigrationAllowed>true</herdMigrationAllowed>
+			<body>RaptorLike</body>
+			<baseBodySize>2.6</baseBodySize>
+			<baseHungerRate>1.7</baseHungerRate>
+			<baseHealthScale>3.2</baseHealthScale>
+			<foodType>CarnivoreAnimal</foodType>
+			<useMeatFrom>Muffalo</useMeatFrom>
+			<leatherDef>Leather_Human</leatherDef>
+			<gestationPeriodDays>14</gestationPeriodDays>
+			<wildness>0.9</wildness>
+			<petness>0.1</petness>
+			<manhunterOnDamageChance>1.75</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
+			<nuzzleMtbHours>60</nuzzleMtbHours>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(3, 0.7)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>400</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>2</minAge>
+					
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<hediffGiverSets>
+				<li>BerserkPassiveSet</li>
+			</hediffGiverSets>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Birdlike</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="SK_AnimalKindBase">
+		<defName>Kukuha</defName>
+		<label>Kukuha</label>
+		<race>Kukuha</race>
+		<combatPower>1800</combatPower>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+	     	<li>
+		       <label>Baby Kukuha</label>
+				<bodyGraphicData>
+					<graphicClass>SK.PawnGraphic</graphicClass>
+					<texPath>Things/Pawn/Animal/Kukuha/Kukuha</texPath>
+					<drawSize>2.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>2.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<graphicClass>SK.PawnGraphic</graphicClass>
+					<texPath>Things/Pawn/Animal/Kukuha/Kukuha</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.15, 0.2, 0.45)</volume>
+						<offset>(0,0,-0.4)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<graphicClass>SK.PawnGraphic</graphicClass>
+					<texPath>Things/Pawn/Animal/Kukuha/Kukuha</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.5)</volume>
+						<offset>(0,0,-0.4)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+
+
+
+
+
+
 <ThingDef ParentName="SK_AnimalThingBase">
 		<defName>reaper</defName>
 		<label>reaper</label>
@@ -287,7 +476,7 @@
 		<comps>
 			<li Class="SK.CompProperties_PawnJumper">
 				<maxCharges>5</maxCharges> <!-- Number of possible jumps -->
-				<minEnergy>0.45</minEnergy> <!-- Subtracts from the current rest(energy) level. 0.5 = 50% -->
+				<minEnergy>0.75</minEnergy> <!-- Subtracts from the current rest(energy) level. 0.5 = 50% -->
 				<ammoCountPerCharge>10</ammoCountPerCharge> <!-- Rest(energy) consumption. 10 = 10% cost per jump. -->
 				<jumpCooldown>1250</jumpCooldown> <!-- Jump cooldown in ticks -->
 				<range>4</range>

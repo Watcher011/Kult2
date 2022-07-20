@@ -139,7 +139,7 @@
 	 <PawnKindDef Name="HaiterPawn" Abstract="True">
         <race>Mutant_Haiter</race>
         <!-- <defaultFactionType>OgreClan</defaultFactionType> -->
-		<defaultFactionType>OgreMutants</defaultFactionType>
+		<defaultFactionType>Haiter</defaultFactionType>
         <aiAvoidCover>true</aiAvoidCover>
         <techHediffsChance>0</techHediffsChance>
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
