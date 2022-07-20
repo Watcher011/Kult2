@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- <FactionDef ParentName="SK_OgreClanFactionBase">
+		<defName>OgreClan</defName>
+		<label>Neolitic ogre clan</label>
+		<earliestRaidDays>35</earliestRaidDays>
+		<techLevel>Medieval</techLevel>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0.4)</li>
+				<li>(500, 0.6)</li>
+				<li>(4500, 0.8)</li>
+				<li>(7000, 0.95)</li>
+				<li>(15000, 0.8)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,400)</li>
+				<li>(100000,10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<Ogre>30</Ogre>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>55</configurationListOrderPriority>
+	</FactionDef> -->
+
+  <Haiter.label>Хейтеры</Haiter.label>
+  <Haiter.pawnsPlural>Хейтеры</Haiter.pawnsPlural>
+  <Haiter.leaderTitle>Безликий Мориарти</Haiter.leaderTitle>
+
+
+</LanguageData>

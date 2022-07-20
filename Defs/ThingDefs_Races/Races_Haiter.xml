@@ -27,8 +27,8 @@
 		<statBases>
 			<Mass>150</Mass>
 			<MoveSpeed>4.7</MoveSpeed>
-			<ArmorRating_Blunt>3.2</ArmorRating_Blunt>
-			<ArmorRating_Sharp>3.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
 			<MeatAmount>45</MeatAmount>
 			<LeatherAmount>15</LeatherAmount>
 			<CarryWeight>170</CarryWeight>
@@ -162,19 +162,27 @@
 	<!-- Ogre Bases -->
   <PawnKindDef ParentName="HaiterPawn">
         <defName>Haiter</defName>
-        <label>Haiter</label>
+        <label>Haiter Melee</label>
         <combatPower>375</combatPower>
         <weaponMoney>
-            <min>250</min>
-            <max>310</max>
+            <min>2500</min>
+            <max>3100</max>
         </weaponMoney>
         <weaponTags>
             <li>st0</li>
         </weaponTags>
+		 <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>4</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </modExtensions>
     </PawnKindDef>
 	
 	<!-- Destroyer -->
-  <PawnKindDef ParentName="BaseOgrePawn">
+  <PawnKindDef ParentName="HaiterPawn">
         <defName>HaiterDES</defName>
         <label>Haiter destroyer</label>
         <combatPower>800</combatPower>
@@ -197,13 +205,13 @@
 	
 	
 	<!-- Devastator -->
-  <PawnKindDef ParentName="BaseOgrePawn">
+  <PawnKindDef ParentName="HaiterPawn">
         <defName>HaiterDEV</defName>
         <label>Haiter devastator</label>
         <combatPower>820</combatPower>
         <weaponMoney>
             <min>2650</min>
-            <max>2700</max>
+            <max>4700</max>
         </weaponMoney>
         <weaponTags>
             <li>st2</li>

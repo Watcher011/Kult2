@@ -23,12 +23,13 @@
 			<Mass>5.25</Mass>
 		</statBases>
 		<weaponTags>
-			<li>st1</li>
+			<li>PT1</li>
 			<li>Gun</li>
 			<li>TierOnePistol</li>
 			<li>CE_Sidearm</li>
 			<li>CE_AI_Pistol</li>
 			<li>CE_OneHandedWeapon</li>
+			<li>st2</li>
 		</weaponTags>
 		<weaponClasses>
 		  <li>RangedLight</li>

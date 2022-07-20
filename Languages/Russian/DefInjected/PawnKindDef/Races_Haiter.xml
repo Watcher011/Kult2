@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Ogre Bases -->
+
+  <Haiter.label>Хейтер хулиган</Haiter.label>
+  <Haiter.labelPlural>Хейтер свеживатель</Haiter.labelPlural>
+  <Haiter.labelMale>Хейтер</Haiter.labelMale>
+  <Haiter.labelMalePlural>Хейтер хулиган</Haiter.labelMalePlural>
+  <Haiter.labelFemale>Хейтерша</Haiter.labelFemale>
+  <Haiter.labelFemalePlural>Хейтерша хулиганка</Haiter.labelFemalePlural>
+
+
+  <!-- Destroyer -->
+
+  <HaiterDES.label>Хейтер стрелок</HaiterDES.label>
+  <HaiterDES.labelPlural>Хейтер Мазила</HaiterDES.labelPlural>
+  <HaiterDES.labelMale>Хейтер стрелок</HaiterDES.labelMale>
+  <HaiterDES.labelMalePlural>Хейтор стрелок</HaiterDES.labelMalePlural>
+  <HaiterDES.labelFemale>Хейтерша стрелок</HaiterDES.labelFemale>
+  <HaiterDES.labelFemalePlural>Хейтерша стрелок</HaiterDES.labelFemalePlural>
+
+
+  <!-- Devastator -->
+
+  <HaiterDEV.label>Хейтер анархист</HaiterDEV.label>
+  <HaiterDEV.labelPlural>Хейтер гренадёр</HaiterDEV.labelPlural>
+  <HaiterDEV.labelMale>Хейтер анархист</HaiterDEV.labelMale>
+  <HaiterDEV.labelMalePlural>Хейтер анархист</HaiterDEV.labelMalePlural>
+  <HaiterDEV.labelFemale>Хейтерша</HaiterDEV.labelFemale>
+  <HaiterDEV.labelFemalePlural>Хейтерша</HaiterDEV.labelFemalePlural>
+
+
+</LanguageData>
