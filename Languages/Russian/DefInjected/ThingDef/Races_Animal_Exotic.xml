@@ -5,6 +5,10 @@
   <GG.description>Ожившая статуя Грини,очень общительная.</GG.description>
   <GG.tools.0.label>Голова</GG.tools.0.label>
 
+  <Kukuha.label>Дикая Кукуха</Kukuha.label>
+  <Kukuha.description>В момент ментальной слабости этого мира, жестокая инопланетная сущность завладела гусиным разумом, и смогла спроецировать свой образ на поверхности, стала божеством, управляющим всеми мыслящими существами, ибо когда Кукуха отлетает - начинается безумие</Kukuha.description>
+  <Kukuha.tools.1.label>Клюв</Kukuha.tools.1.label>
+
   <reaper.label>Жнец</reaper.label>
   <reaper.description>Кто то надругался над хомячком превратив его в ужасного жнеца ,берегитесь яда.</reaper.description>
   <reaper.tools.1.label>Left paw</reaper.tools.1.label>
