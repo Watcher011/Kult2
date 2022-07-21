@@ -109,13 +109,14 @@
 				<commonality>66</commonality>
 				<options>
 					<Haiter>30</Haiter>
-					<Kukuha>20</Kukuha>
+					<Kukuha>5</Kukuha>
 				</options>
 			</li>
 			<li>
 				<kindDef>Combat</kindDef>
 				<commonality>33</commonality>
 				<options>
+				    <Kukuha>15</Kukuha>
 					<HaiterDES>90</HaiterDES>
 					<HaiterDEV>25</HaiterDEV>
 					<Haiter>25</Haiter>
