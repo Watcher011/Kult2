@@ -51,6 +51,34 @@
   <Kukuha.labelFemale>Дикая Кукуха</Kukuha.labelFemale>
   <Kukuha.labelFemalePlural>Дикая Кукуха</Kukuha.labelFemalePlural>
 
+  <KukuhaKlon.label>Клон Кукухи</KukuhaKlon.label>
+  <KukuhaKlon.labelPlural>Клон Кукухи</KukuhaKlon.labelPlural>
+  <KukuhaKlon.lifeStages.0.label>Клон Кукухи</KukuhaKlon.lifeStages.0.label>
+  <KukuhaKlon.lifeStages.0.labelPlural>Клон Кукухи</KukuhaKlon.lifeStages.0.labelPlural>
+  <KukuhaKlon.lifeStages.0.labelMale>Клон Кукухи</KukuhaKlon.lifeStages.0.labelMale>
+  <KukuhaKlon.lifeStages.0.labelMalePlural>Клон Кукухи</KukuhaKlon.lifeStages.0.labelMalePlural>
+  <KukuhaKlon.lifeStages.0.labelFemale>Клон Кукухи</KukuhaKlon.lifeStages.0.labelFemale>
+  <KukuhaKlon.lifeStages.0.labelFemalePlural>Клон Кукухи</KukuhaKlon.lifeStages.0.labelFemalePlural>
+  <KukuhaKlon.lifeStages.1.label>Клон Кукухи</KukuhaKlon.lifeStages.1.label>
+  <KukuhaKlon.lifeStages.1.labelPlural>Клон Кукухи</KukuhaKlon.lifeStages.1.labelPlural>
+  <KukuhaKlon.lifeStages.1.labelMale>Клон Кукухи</KukuhaKlon.lifeStages.1.labelMale>
+  <KukuhaKlon.lifeStages.1.labelMalePlural>Клон Кукухи</KukuhaKlon.lifeStages.1.labelMalePlural>
+  <KukuhaKlon.lifeStages.1.labelFemale>Клон Кукухи</KukuhaKlon.lifeStages.1.labelFemale>
+  <KukuhaKlon.lifeStages.1.labelFemalePlural>Клон Кукухи</KukuhaKlon.lifeStages.1.labelFemalePlural>
+  <KukuhaKlon.lifeStages.2.label>Клон Кукухи</KukuhaKlon.lifeStages.2.label>
+  <KukuhaKlon.lifeStages.2.labelPlural>Клон Кукухи</KukuhaKlon.lifeStages.2.labelPlural>
+  <KukuhaKlon.lifeStages.2.labelMale>Клон Кукухи</KukuhaKlon.lifeStages.2.labelMale>
+  <KukuhaKlon.lifeStages.2.labelMalePlural>Клон Кукухи</KukuhaKlon.lifeStages.2.labelMalePlural>
+  <KukuhaKlon.lifeStages.2.labelFemale>Клон Кукухи</KukuhaKlon.lifeStages.2.labelFemale>
+  <KukuhaKlon.lifeStages.2.labelFemalePlural>Клон Кукухи</KukuhaKlon.lifeStages.2.labelFemalePlural>
+  <KukuhaKlon.labelMale>Клон Кукухи</KukuhaKlon.labelMale>
+  <KukuhaKlon.labelMalePlural>Клон Кукухи</KukuhaKlon.labelMalePlural>
+  <KukuhaKlon.labelFemale>Клон Кукухи</KukuhaKlon.labelFemale>
+  <KukuhaKlon.labelFemalePlural>Клон Кукухи</KukuhaKlon.labelFemalePlural>
+
+
+
+
   <reaper.label>Жнец</reaper.label>
   <reaper.labelPlural>Жнец</reaper.labelPlural>
   <reaper.lifeStages.0.label>Жнец</reaper.lifeStages.0.label>

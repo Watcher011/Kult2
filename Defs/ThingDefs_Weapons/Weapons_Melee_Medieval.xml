@@ -30,7 +30,7 @@
 			<Mechanism>2</Mechanism>
 		</costList>
 		<statBases>
-		 <MarketValue>1200</MarketValue>
+		 <MarketValue>400</MarketValue>
 			<WorkToMake>7500</WorkToMake>
 			<Bulk>6</Bulk>
 			<Mass>4.2</Mass>
@@ -127,7 +127,7 @@
 			<Mechanism>2</Mechanism>
 		</costList>
 		<statBases>
-		    <MarketValue>3200</MarketValue>
+		    <MarketValue>300</MarketValue>
 			<WorkToMake>7500</WorkToMake>
 			<Bulk>6</Bulk>
 			<Mass>2.2</Mass>

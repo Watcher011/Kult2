@@ -4,7 +4,7 @@
 	<HediffDef>
 		<defName>YadaritP</defName> 
 		<hediffClass>HediffWithComps</hediffClass> 
-		<defaultLabelColor>(0.5, 1.0, 0.3)</defaultLabelColor> 
+		<defaultLabelColor>(0.5, 0.7, 0.3)</defaultLabelColor> 
 		<label>Yadarit buildup</label> 
 		<labelNoun>a Yadarit buildup</labelNoun>
 		<description>Immersed in a dream</description>
@@ -16,7 +16,7 @@
 		<isBad>true</isBad>
 		<comps>
 		<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>-0.03</severityPerDayNotImmune>
+				<severityPerDayNotImmune>-0.003</severityPerDayNotImmune>
 			</li>
 			<li Class="SK.HediffCompProperties_FleshOnly"/>
 			  <li Class="HediffCompProperties_DissolveGearOnDeath">
@@ -354,14 +354,14 @@
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>Dementia</hediff>
-						<mtbDays>146</mtbDays>
+						<mtbDays>14</mtbDays>
 						<partsToAffect>
 							<li>Brain</li>
 						</partsToAffect>
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Carcinoma</hediff>
-						<mtbDays>438</mtbDays>
+						<mtbDays>38</mtbDays>
 						<canAffectAnyLivePart>true</canAffectAnyLivePart>
 					</li>
 				</hediffGivers>
@@ -386,7 +386,7 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Carcinoma</hediff>
-						<mtbDays>111</mtbDays>
+						<mtbDays>11</mtbDays>
 						<canAffectAnyLivePart>true</canAffectAnyLivePart>
 					</li>
 				</hediffGivers>
@@ -398,24 +398,30 @@
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
-						<setMax>0.10</setMax>
+						<setMax>0.60</setMax>
 					</li>
 					<li>
 						<capacity>BloodFiltration</capacity>
 						<offset>-0.16</offset>
 					</li>
 				</capMods>
+				 <mentalStateGivers>
+                <li>
+                <mentalState>Berserk</mentalState>
+                <mtbDays>0.4</mtbDays>
+                 </li>
+        </mentalStateGivers>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>Dementia</hediff>
-						<mtbDays>13</mtbDays>
+						<mtbDays>3</mtbDays>
 						<partsToAffect>
 							<li>Brain</li>
 						</partsToAffect>
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Carcinoma</hediff>
-						<mtbDays>39</mtbDays>
+						<mtbDays>9</mtbDays>
 						<canAffectAnyLivePart>true</canAffectAnyLivePart>
 					</li>
 				</hediffGivers>

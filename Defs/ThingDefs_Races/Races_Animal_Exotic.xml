@@ -299,7 +299,7 @@
 		<defName>Kukuha</defName>
 		<label>Kukuha</label>
 		<race>Kukuha</race>
-		<combatPower>1800</combatPower>
+		<combatPower>800</combatPower>
 		<ecoSystemWeight>0.1</ecoSystemWeight>
 		<wildGroupSize>1</wildGroupSize>
 		<lifeStages>
@@ -351,6 +351,186 @@
 
 
 
+<ThingDef ParentName="SK_AnimalThingBase">
+		<defName>KukuhaKlon</defName>
+		<label>KukuhaKlon</label>
+		<devNote>misc</devNote>
+		<description>----</description>
+		<statBases>
+			<Mass>10.0</Mass>
+			<MoveSpeed>2.9</MoveSpeed>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMax>50</ComfyTemperatureMax>
+			<ArmorRating_Blunt>2.9</ArmorRating_Blunt>
+			<ArmorRating_Sharp>2.9</ArmorRating_Sharp>
+			<LeatherAmount>5</LeatherAmount>
+			<ImmunityGainSpeed>2.5</ImmunityGainSpeed>
+			<MarketValue>200</MarketValue>
+			<MeatAmount>10</MeatAmount>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+			<MeleeCritChance>0.2</MeleeCritChance>
+			<GermResistance>0.2</GermResistance>
+			<GermContainment>0.2</GermContainment>
+			<FilthRate>18</FilthRate>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<recoilAmount>0.45</recoilAmount>
+				<verbClass>Verb_Shoot</verbClass>
+				<accuracyTouch>1</accuracyTouch>
+				<accuracyShort>2</accuracyShort>
+				<accuracyMedium>3</accuracyMedium>
+				<accuracyLong>4</accuracyLong>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Projectile_Acid</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<burstShotCount>8</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<minRange>1</minRange>
+				<range>10</range>
+				<soundCast>FlameThrower</soundCast>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<!--Commanility determines how frequent this range verb is chosen.-->
+				<commonality>0.9</commonality>
+			</li>
+		</verbs>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<capacities>
+					<li>Flame</li>
+				</capacities>
+				<power>32</power>
+				<cooldownTime>1.7</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.7</chanceFactor>
+				<armorPenetrationSharp>8</armorPenetrationSharp>
+				<armorPenetrationBlunt>13</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>7</armorPenetrationBlunt>
+			</li>
+		</tools>
+		<comps>
+			
+		</comps>
+		<race>
+			<herdAnimal>true</herdAnimal>
+			<predator>true</predator>
+			<maxPreyBodySize>2.9</maxPreyBodySize>
+			<herdMigrationAllowed>true</herdMigrationAllowed>
+			<body>RaptorLike</body>
+			<baseBodySize>2.6</baseBodySize>
+			<baseHungerRate>1.7</baseHungerRate>
+			<baseHealthScale>3.2</baseHealthScale>
+			<foodType>CarnivoreAnimal</foodType>
+			<useMeatFrom>Muffalo</useMeatFrom>
+			<leatherDef>Leather_Human</leatherDef>
+			<gestationPeriodDays>14</gestationPeriodDays>
+			<wildness>0.9</wildness>
+			<petness>0.1</petness>
+			<manhunterOnDamageChance>1.75</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
+			<nuzzleMtbHours>60</nuzzleMtbHours>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(3, 0.7)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>40</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>1</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>2</minAge>
+					
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+			<hediffGiverSets>
+				<li>BerserkPassiveSet</li>
+			</hediffGiverSets>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Birdlike</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="SK_AnimalKindBase">
+		<defName>KukuhaKlon</defName>
+		<label>KukuhaKlon</label>
+		<race>KukuhaKlon</race>
+		<combatPower>100</combatPower>
+		<ecoSystemWeight>0.1</ecoSystemWeight>
+		<wildGroupSize>1</wildGroupSize>
+		<lifeStages>
+	     	<li>
+		       <label>Baby Kukuha Klon</label>
+				<bodyGraphicData>
+					<graphicClass>SK.PawnGraphic</graphicClass>
+					<texPath>Things/Pawn/Animal/KukuhaKlon/KukuhaKlon</texPath>
+					<drawSize>2.1</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>2.1</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<graphicClass>SK.PawnGraphic</graphicClass>
+					<texPath>Things/Pawn/Animal/KukuhaKlon/KukuhaKlon</texPath>
+					<drawSize>2.2</drawSize>
+					<shadowData>
+						<volume>(0.15, 0.2, 0.45)</volume>
+						<offset>(0,0,-0.4)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>2.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<graphicClass>SK.PawnGraphic</graphicClass>
+					<texPath>Things/Pawn/Animal/KukuhaKlon/KukuhaKlon</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.5)</volume>
+						<offset>(0,0,-0.4)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedSmall</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
 
 
 

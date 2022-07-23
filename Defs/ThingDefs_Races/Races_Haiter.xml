@@ -163,13 +163,15 @@
   <PawnKindDef ParentName="HaiterPawn">
         <defName>Haiter</defName>
         <label>Haiter Melee</label>
-        <combatPower>375</combatPower>
+        <combatPower>175</combatPower>
         <weaponMoney>
             <min>2500</min>
             <max>3100</max>
         </weaponMoney>
         <weaponTags>
             <li>st0</li>
+			<li>MedievalMelee</li>
+			<li>CE_OneHandedWeapon</li>
         </weaponTags>
 		 <modExtensions>
             <li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -185,13 +187,24 @@
   <PawnKindDef ParentName="HaiterPawn">
         <defName>HaiterDES</defName>
         <label>Haiter destroyer</label>
-        <combatPower>800</combatPower>
+        <combatPower>200</combatPower>
         <weaponMoney>
             <min>2600</min>
             <max>2900</max>
         </weaponMoney>
         <weaponTags>
             <li>st1</li>
+			<li>ADP1</li>
+			<li>TierTwoLow</li>
+			<li>Futuristic</li>
+			<li>CE_Sidearm</li>
+			<li>CE_AI_Pistol</li>
+			<li>CE_OneHandedWeapon</li>
+			  <li>RF3</li>
+			<li>IndustrialGunAdvanced</li>
+            <li>TierTwoRifle</li>
+            <li>TierOneRifle</li>
+            <li>CE_AI_Rifle</li>
         </weaponTags>
         <modExtensions>
             <li Class="CombatExtended.LoadoutPropertiesExtension">
@@ -208,13 +221,17 @@
   <PawnKindDef ParentName="HaiterPawn">
         <defName>HaiterDEV</defName>
         <label>Haiter devastator</label>
-        <combatPower>820</combatPower>
+        <combatPower>320</combatPower>
         <weaponMoney>
             <min>2650</min>
             <max>4700</max>
         </weaponMoney>
         <weaponTags>
             <li>st2</li>
+			<li>GrenadeDestructive</li>
+			<li>GrenadeTierOne</li>
+			<li>Norbhammar</li>
+			<li>CE_AI_Grenade</li>
         </weaponTags>
         <modExtensions>
             <li Class="CombatExtended.LoadoutPropertiesExtension">
