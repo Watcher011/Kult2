@@ -54,7 +54,7 @@
 			</li>
 			<li>
 				<label>minor</label>
-				<minSeverity>0.1</minSeverity>
+				<minSeverity>0.3</minSeverity>
 				<painOffset>0.2</painOffset>
 				<vomitMtbDays>0.1</vomitMtbDays>
 				<capMods>
@@ -82,7 +82,7 @@
 			</li>
 			<li>
 				<label>moderate</label>
-				<minSeverity>0.2</minSeverity>
+				<minSeverity>0.5</minSeverity>
 				<vomitMtbDays>0.03</vomitMtbDays>
 				<painOffset>0.3</painOffset>
 				<capMods>
@@ -114,7 +114,7 @@
 			</li>
 			<li>
 				<label>serious</label>
-				<minSeverity>0.4</minSeverity>
+				<minSeverity>0.7</minSeverity>
 				<vomitMtbDays>0.05</vomitMtbDays>
 					<painOffset>0.8</painOffset>
 				<capMods>
@@ -146,35 +146,23 @@
 			</li>
 			<li>
 				<label>extreme</label>
-				<minSeverity>0.9</minSeverity>
-				<vomitMtbDays>0.01</vomitMtbDays>
-					<painOffset>0.0</painOffset>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>0.1</setMax>
-					</li>
-					<li>
-						<capacity>BloodFiltration</capacity>
-						<offset>-1.1</offset>
-					</li>
-						<li>
-						<capacity>Consciousness</capacity>
-						<offset>-1.1</offset>
-					</li>
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>-1.1</offset>
-					</li>
-					<li>
-						<capacity>Breathing</capacity>
-						<offset>-1.1</offset>
-					</li>
-				</capMods>
-				 
-        
+		<minSeverity>0.8</minSeverity>
+        <painOffset>0.4</painOffset>
+        <lifeThreatening>true</lifeThreatening>
+        <deathMtbDays>3</deathMtbDays>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.8</setMax>
+          </li>
+        </capMods>
+        <mentalStateGivers>
+          <li>
+              <mentalState>Berserk</mentalState>
+            <mtbDays>.01</mtbDays>
+          </li>
+        </mentalStateGivers>
       </li>
-
 		</stages>
 	</HediffDef>
 	
@@ -402,29 +390,9 @@
 					</li>
 					<li>
 						<capacity>BloodFiltration</capacity>
-						<offset>-0.16</offset>
+						<offset>-1</offset>
 					</li>
 				</capMods>
-				 <mentalStateGivers>
-                <li>
-                <mentalState>Berserk</mentalState>
-                <mtbDays>0.4</mtbDays>
-                 </li>
-        </mentalStateGivers>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>Dementia</hediff>
-						<mtbDays>3</mtbDays>
-						<partsToAffect>
-							<li>Brain</li>
-						</partsToAffect>
-					</li>
-					<li Class="HediffGiver_Random">
-						<hediff>Carcinoma</hediff>
-						<mtbDays>9</mtbDays>
-						<canAffectAnyLivePart>true</canAffectAnyLivePart>
-					</li>
-				</hediffGivers>
 			</li>
 		</stages>
 	</HediffDef>

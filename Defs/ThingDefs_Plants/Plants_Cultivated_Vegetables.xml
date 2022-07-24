@@ -9,6 +9,14 @@
 			<texPath>Things/Trees/TreeY</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<foodType>Plant</foodType>
+		</ingestible>
+		<statBases>
+			<Beauty>8</Beauty>
+			<BeautyOutdoors>8</BeautyOutdoors>
+		</statBases>
 		<plant>
 			<sowMinSkill>5</sowMinSkill>
 			<sowTags>
@@ -52,8 +60,8 @@
 			<texPath>Things/Trees/Cristal/Cristal</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
+		<selectable>true</selectable>
 		<plant>
-			<sowMinSkill>19</sowMinSkill>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
