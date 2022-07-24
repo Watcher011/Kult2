@@ -167,22 +167,6 @@
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 			
-			<li Class="CompProperties_Refuelable">
-        <fuelLabel>Shots until Needs repair</fuelLabel>
-        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
-        <outOfFuelMessage>Cannot shoot: Needs repair</outOfFuelMessage>
-        <fuelFilter><thingDefs><li>Toolbox</li></thingDefs></fuelFilter>
-        <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
-        <fuelCapacity>400</fuelCapacity>
-        <fuelMultiplier>400</fuelMultiplier>
-        <initialFuelPercent>1</initialFuelPercent>
-        <showFuelGizmo>true</showFuelGizmo>
-        <minimumFueledThreshold>1</minimumFueledThreshold>
-        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-        <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-        <autoRefuelPercent>0</autoRefuelPercent>
-        <fuelIconPath>Things/Item/toolbox</fuelIconPath>
-      </li>
 		</comps>
 		<description>-----</description>
 		<stuffCategories>

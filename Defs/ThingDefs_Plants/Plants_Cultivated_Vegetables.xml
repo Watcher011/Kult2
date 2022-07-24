@@ -65,6 +65,7 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
+			<sowMinSkill>19</sowMinSkill>
 			<immatureGraphicPath>Things/Trees/Cristal/Cristal</immatureGraphicPath>
 			<harvestedThingDef>Coldstone</harvestedThingDef>
 			<harvestTag>Standard</harvestTag>
@@ -81,6 +82,7 @@
 			<purpose>Beauty</purpose>
 			<humanFoodPlant>false</humanFoodPlant>
 		</plant>
+		
 		 <comps>
         	<li Class="CompProperties_Glower">
 				<glowRadius>4</glowRadius>

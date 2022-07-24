@@ -54,56 +54,6 @@
 	</RecipeDef>
 
 
-<RecipeDef>
-		<defName>MakeRepairKit</defName>
-		<label>MakeRepairKit</label>
-		<description>MakeRepairKit. Produces 3.</description>
-		<jobString>Assembling RepairKit components.</jobString>
-		<workAmount>100</workAmount>
-		<workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
-		<effectWorking>Smith</effectWorking>
-		<soundWorking>Recipe_Machining</soundWorking>
-		<recipeUsers>
-			<li>TableElectronics</li>
-		</recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Mechanism</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>ComponentMedieval</li>
-					</thingDefs>
-				</filter>
-				<count>3</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Mechanism</li>
-				<li>ComponentMedieval</li>
-
-			</thingDefs>
-			<categories>
-				<li>HCMBar</li>
-			</categories>
-		</fixedIngredientFilter>
-		<products>
-			<Toolbox>3</Toolbox>
-		</products>
-		<skillRequirements>
-			<Crafting>5</Crafting>
-		</skillRequirements>
-		<workSkill>Crafting</workSkill>
-		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-	</RecipeDef>
-
 
 
 <RecipeDef>
