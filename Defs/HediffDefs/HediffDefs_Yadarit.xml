@@ -23,7 +23,7 @@
         <fleck>AcidCloud</fleck>
         <moteCount>6</moteCount>
         <moteOffsetRange>0.25~0.75</moteOffsetRange>
-        <filth>Filth_Yadarit</filth>
+        <filth>Filth_Fuel_Yadarit</filth>
         <sound>DeathAcidifier</sound>
         <injuryCreatedOnDeath>ChemicalBurn</injuryCreatedOnDeath>
         <injuryCount>3~6</injuryCount>
@@ -306,93 +306,33 @@
 		</comps>
 		<stages>
 			<li>
-				<label>initial</label>
+				<label>extreme</label>
 				<becomeVisible>false</becomeVisible>
 			</li>
 			<li>
-				<label>initial</label>
+				<label>extreme</label>
 				<minSeverity>0.04</minSeverity>
+				<statOffsets>
+               <Flammability>1.5</Flammability>
+                 </statOffsets>
 				<capMods>
 					<li>
 						<capacity>BloodFiltration</capacity>
 						<offset>-0.02</offset>
 					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>minor</label>
-				<minSeverity>0.2</minSeverity>
-				<capMods>
-					<li>
-						<capacity>BloodFiltration</capacity>
-						<offset>-0.04</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<label>moderate</label>
-				<minSeverity>0.40</minSeverity>
-				<vomitMtbDays>5</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>BloodFiltration</capacity>
-						<offset>-0.08</offset>
-					</li>
-				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>Dementia</hediff>
-						<mtbDays>14</mtbDays>
-						<partsToAffect>
-							<li>Brain</li>
-						</partsToAffect>
-					</li>
-					<li Class="HediffGiver_Random">
-						<hediff>Carcinoma</hediff>
-						<mtbDays>38</mtbDays>
-						<canAffectAnyLivePart>true</canAffectAnyLivePart>
-					</li>
-				</hediffGivers>
-			</li>
-			<li>
-				<label>serious</label>
-				<minSeverity>0.60</minSeverity>
-				<vomitMtbDays>1</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>BloodFiltration</capacity>
-						<offset>-0.12</offset>
-					</li>
-				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>Dementia</hediff>
-						<mtbDays>37</mtbDays>
-						<partsToAffect>
-							<li>Brain</li>
-						</partsToAffect>
-					</li>
-					<li Class="HediffGiver_Random">
-						<hediff>Carcinoma</hediff>
-						<mtbDays>11</mtbDays>
-						<canAffectAnyLivePart>true</canAffectAnyLivePart>
-					</li>
-				</hediffGivers>
-			</li>
-			<li>
-				<label>extreme</label>
-				<minSeverity>0.80</minSeverity>
-				<vomitMtbDays>0.5</vomitMtbDays>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>0.60</setMax>
-					</li>
-					<li>
-						<capacity>BloodFiltration</capacity>
-						<offset>-1</offset>
-					</li>
-				</capMods>
+					   <li>
+                       <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                        </li>
+                     <li>
+                       <capacity>Breathing</capacity>
+                         <setMax>0.1</setMax>
+                       </li>
+                      <li>
+                      <capacity>BloodPumping</capacity>
+                         <setMax>0.1</setMax>
+                       </li>
+		           </capMods>
 			</li>
 		</stages>
 	</HediffDef>

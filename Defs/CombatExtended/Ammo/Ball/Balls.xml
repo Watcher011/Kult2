@@ -173,20 +173,26 @@
 			<speed>20</speed>
 			<dropsCasings>false</dropsCasings>
 		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>1</damageAmountBase>
+				<explosiveDamageType>Flame</explosiveDamageType>
+            <preExplosionSpawnThingDef>Filth_Fuel_Yadarit</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>			
+			</li>
+		</comps>
 	</ThingDef>
 
 <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBalls_YA">
 		<defName>Balls_YA</defName>
 		<label>Balls_YA</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-		   <pelletCount>3</pelletCount>
-			<spreadMult>1.4</spreadMult>
-			<damageAmountBase>25</damageAmountBase>
+		  <damageAmountBase>30</damageAmountBase>
 			<!-- <armorPenetrationBase>0.15</armorPenetrationBase> -->
-			<armorPenetrationBlunt>480</armorPenetrationBlunt>
-			<armorPenetrationSharp>19</armorPenetrationSharp>
-			
+			<armorPenetrationBlunt>8</armorPenetrationBlunt>
+			<armorPenetrationSharp>7.9</armorPenetrationSharp>
 		</projectile>
+		
 		</ThingDef>
 		
 		<ThingDef Class="CombatExtended.AmmoDef" Name="BaseBalls_RU" ParentName="SK_BaseBullet" Abstract="true">
