@@ -13,12 +13,8 @@
 
   <Acid_Yadarit.label>Отравление тяжелыми металами Ядаритом</Acid_Yadarit.label>
   <Acid_Yadarit.description>Попадание кристалов Ядарита в кровь приводит к тяжелейшему отравлению.</Acid_Yadarit.description>
-  <Acid_Yadarit.stages.0.label>Лёгкая форма</Acid_Yadarit.stages.0.label>
-  <Acid_Yadarit.stages.1.label>Начальная форма</Acid_Yadarit.stages.1.label>
-  <Acid_Yadarit.stages.2.label>Прогрессирующая форма</Acid_Yadarit.stages.2.label>
-  <Acid_Yadarit.stages.3.label>Средняя форма</Acid_Yadarit.stages.3.label>
-  <Acid_Yadarit.stages.4.label>Тяжелая форма</Acid_Yadarit.stages.4.label>
-  <Acid_Yadarit.stages.5.label>Критичиская форма</Acid_Yadarit.stages.5.label>
+  <Acid_Yadarit.stages.0.label>Критичиская Форма</Acid_Yadarit.stages.0.label>
+  <Acid_Yadarit.stages.1.label>Критичиская Форма</Acid_Yadarit.stages.1.label>
   <Acid_Yadarit.labelNoun>Отравление ядаритом</Acid_Yadarit.labelNoun>
 
   <PainShock.label>Болевой шок</PainShock.label>
@@ -29,6 +25,10 @@
   <PainShock.stages.3.label>паралич</PainShock.stages.3.label>
 
 
+  <!--<Acid_Yadarit.stages.2.label>Прогрессирующая форма</Acid_Yadarit.stages.2.label>-->
+  <!--<Acid_Yadarit.stages.3.label>Средняя форма</Acid_Yadarit.stages.3.label>-->
+  <!--<Acid_Yadarit.stages.4.label>Тяжелая форма</Acid_Yadarit.stages.4.label>-->
+  <!--<Acid_Yadarit.stages.5.label>Критичиская форма</Acid_Yadarit.stages.5.label>-->
   <!--<YadaritP.stages.6.label>Смертельная форма облучения .Поражено более 70% организма,Из Е2 клеток формируются грибницы Ядарита.Проростая сквозь кожу ,тело используется как инкубатор.Рекомендуется быстрое устранение пациента и стерилизация помещения для предотвращения распространения спор.</YadaritP.stages.6.label>-->
 
 </LanguageData>

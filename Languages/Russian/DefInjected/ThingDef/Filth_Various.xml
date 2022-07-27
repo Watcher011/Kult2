@@ -1,9 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- 
   <Filth_Yadarit.label>Споры Ядарита</Filth_Yadarit.label>
  
   <Tears_of_Enemies.label>Слёзы врагов</Tears_of_Enemies.label>
  
+  <Filth_Fuel_Yadarit.label>Ядарит слизь</Filth_Fuel_Yadarit.label>
+  <Filth_Fuel_Yadarit.description>Лужа ядарит слизи.</Filth_Fuel_Yadarit.description>
+
+
 </LanguageData>
