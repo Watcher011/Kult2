@@ -311,9 +311,9 @@
 		  <tickerType>Normal</tickerType>
 		<useHitPoints>true</useHitPoints>
 		<statBases>
-			<MarketValue>1065</MarketValue>
+			<MarketValue>12065</MarketValue>
 			<MaxHitPoints>100</MaxHitPoints>
-			<Mass>60.0</Mass>
+			<Mass>0.3</Mass>
 		</statBases>
 		<thingCategories>
 			<li>Items</li>

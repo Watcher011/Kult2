@@ -5,8 +5,8 @@
 			<MarketValue>2050</MarketValue>
 			<PsychicSensitivity>0.7</PsychicSensitivity>
 			<Flammability>0.2</Flammability>
-			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
-			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-666</ComfyTemperatureMin>
+			<ComfyTemperatureMax>666</ComfyTemperatureMax>
 			<SmokeSensitivity>0.1</SmokeSensitivity>
 		</statBases>
 		<race>
