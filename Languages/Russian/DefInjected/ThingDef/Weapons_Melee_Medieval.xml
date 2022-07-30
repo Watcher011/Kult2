@@ -13,5 +13,10 @@
   <Tentsword.tools.1.label>Крюки</Tentsword.tools.1.label>
   <Tentsword.tools.2.label>Электро-присоски</Tentsword.tools.2.label>
 
+  <Kars.label>Бан-коса</Kars.label>
+  <Kars.description>Верная спутница пернатой .Ходят легенды что лезвие косы было создано из страданий ,и закалено в крови несчастных.</Kars.description>
+  <Kars.tools.0.label>Лезвие</Kars.tools.0.label>
+  <Kars.tools.1.label>Древко</Kars.tools.1.label>
+
 
 </LanguageData>

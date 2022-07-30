@@ -16,8 +16,15 @@
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
 				<li>Human</li>
+				<li>HardPassiveSet</li>
+				<li>BerserkPassiveSet</li>
 			</hediffGiverSets>
 		</race>
+		<comps>
+			<li>
+				<compClass>CompAttachBase</compClass>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseMKar">
@@ -92,7 +99,7 @@
 			<predator>true</predator>
 			<baseHungerRate>1.5</baseHungerRate>
 			<lifeExpectancy>80000</lifeExpectancy>
-			<baseBodySize>1.5</baseBodySize>
+			<baseBodySize>2</baseBodySize>
 			<baseHealthScale>3.8</baseHealthScale>
 			<lifeStageAges>
 				<li>
@@ -114,6 +121,7 @@
 			<useMeatFrom>Human</useMeatFrom>
 			<leatherDef>Leather_Heavy</leatherDef>
 			<hediffGiverSets>
+				<li>HardPassiveSet</li>
 				<li>BerserkPassiveSet</li>
 			</hediffGiverSets>
 		</race>
@@ -127,7 +135,7 @@
 	 <PawnKindDef Name="MKarPawn" Abstract="True">
         <race>MKar</race>
         <!-- <defaultFactionType>OgreClan</defaultFactionType> -->
-		<defaultFactionType>MKar</defaultFactionType>
+		<defaultFactionType>Haiter</defaultFactionType>
         <aiAvoidCover>true</aiAvoidCover>
         <techHediffsChance>0</techHediffsChance>
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
@@ -138,7 +146,7 @@
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Humanlike/MKar/MKar</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
-                    <drawSize>1.5</drawSize>
+                    <drawSize>2</drawSize>
                     <shadowData>
                         <volume>(0.2, 0.3, 0.8)</volume>
                     </shadowData>

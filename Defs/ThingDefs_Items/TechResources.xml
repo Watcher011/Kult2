@@ -334,21 +334,19 @@
         <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
       </li>
       <li Class="CompProperties_PawnSpawnOnWakeup">
-        <points>350~1450</points>
+        <points>750</points>
         <dropInPods>True</dropInPods>
         <pawnSpawnRadius>10~12</pawnSpawnRadius>
         <spawnEffecter>MechDropBeaconActivated</spawnEffecter>
         <activatedMessageKey>MessageKult</activatedMessageKey>
         <spawnablePawnKinds>
-          <li>Haiter</li>
-          <li>HaiterDES</li>
-          <li>HaiterDEV</li>
+          <li>MKar</li>
         </spawnablePawnKinds>
         <lordJob>LordJob_MechanoidsDefend</lordJob>
         <shouldJoinParentLord>True</shouldJoinParentLord>
       </li>
-	  <li Class="CompProperties_UseEffect">
-				<compClass>CompUseEffect_DestroySelf</compClass>
+	 <li Class="CompProperties_Lifespan">
+				<lifespanTicks>6666</lifespanTicks>
 			</li>
 		</comps>
 	</ThingDef>
