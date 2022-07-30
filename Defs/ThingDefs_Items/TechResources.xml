@@ -294,7 +294,7 @@
 	</ThingDef>
  
  
- <!--
+
  
  	<ThingDef ParentName="ResourceBase">
 		<defName>KarBU</defName>
@@ -307,6 +307,8 @@
 		</graphicData>
 		<resourceReadoutPriority>Middle</resourceReadoutPriority>
 		<stackLimit>1</stackLimit>
+		 <receivesSignals>true</receivesSignals>
+		  <tickerType>Normal</tickerType>
 		<useHitPoints>true</useHitPoints>
 		<statBases>
 			<MarketValue>1065</MarketValue>
@@ -327,28 +329,31 @@
 				<useLabel>Assemble Droid</useLabel>
 				<useDuration>600</useDuration>
 			</li>
-			<li Class="CompProperties_UseEffect">
-				<compClass>CONN.CompUseEffect_Reconditionner</compClass>
+			 
+      <li Class="CompProperties_WakeUpDormant">
+        <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+      </li>
+      <li Class="CompProperties_PawnSpawnOnWakeup">
+        <points>350~1450</points>
+        <dropInPods>True</dropInPods>
+        <pawnSpawnRadius>10~12</pawnSpawnRadius>
+        <spawnEffecter>MechDropBeaconActivated</spawnEffecter>
+        <activatedMessageKey>MessageKult</activatedMessageKey>
+        <spawnablePawnKinds>
+          <li>Haiter</li>
+          <li>HaiterDES</li>
+          <li>HaiterDEV</li>
+        </spawnablePawnKinds>
+        <lordJob>LordJob_MechanoidsDefend</lordJob>
+        <shouldJoinParentLord>True</shouldJoinParentLord>
+      </li>
+	  <li Class="CompProperties_UseEffect">
+				<compClass>CompUseEffect_DestroySelf</compClass>
 			</li>
-			
-			<li Class="CompProperties_SpawnerPawn">
-				<spawnablePawnKinds>
-					<li>Haiter</li>
-					<li>Kukuha</li>
-				</spawnablePawnKinds>
-                <spawnIntervalRange>30000~60000</spawnIntervalRange>
-                <spawnMaxAdjacent>1</spawnMaxAdjacent>
-				 <lordJob>LordJob_MechanoidsDefend</lordJob>
-                 <shouldJoinParentLord>True</shouldJoinParentLord>
-				<initialPawnsPoints>3500</initialPawnsPoints>
-				<maxSpawnedPawnsPoints>8000</maxSpawnedPawnsPoints>
-			</li>
-			
 		</comps>
 	</ThingDef>
 
- 
- -->
+
  
  
 </Defs>

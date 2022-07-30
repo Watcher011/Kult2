@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="SK_BasePawn" Name="BaseMKar" Abstract="True">
+		<statBases>
+			<MarketValue>2050</MarketValue>
+			<PsychicSensitivity>0.7</PsychicSensitivity>
+			<Flammability>0.2</Flammability>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<SmokeSensitivity>0.1</SmokeSensitivity>
+		</statBases>
+		<race>
+			<meatColor>(200,135,100)</meatColor>
+			<hasGenders>false</hasGenders>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMKar">
+		<defName>MKar</defName>
+		<thingClass>Pawn</thingClass>
+		<label>MKar</label>
+		<description>-/--/-</description>
+		<statBases>
+			<Mass>50</Mass>
+			<MoveSpeed>4.7</MoveSpeed>
+			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+			<MeatAmount>45</MeatAmount>
+			<LeatherAmount>15</LeatherAmount>
+			<CarryWeight>170</CarryWeight>
+			<CarryBulk>70</CarryBulk>
+			<MeleeDodgeChance>0.12</MeleeDodgeChance>
+			<MeleeCritChance>0.4</MeleeCritChance>
+			<MeleeParryChance>0.14</MeleeParryChance>
+			<NightVisionEfficiency>0.2</NightVisionEfficiency>
+		</statBases>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1.9</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<armorPenetrationBlunt>9</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>1.9</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<armorPenetrationBlunt>9</armorPenetrationBlunt>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>4.2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>12</armorPenetrationBlunt>
+			</li>
+			
+		</tools>
+		<comps>
+			<li Class="SK.CompProperties_PawnJumper">
+				<maxCharges>5</maxCharges> <!-- Number of possible jumps -->
+				<minEnergy>0.75</minEnergy> <!-- Subtracts from the current rest(energy) level. 0.5 = 50% -->
+				<ammoCountPerCharge>10</ammoCountPerCharge> <!-- Rest(energy) consumption. 10 = 10% cost per jump. -->
+				<jumpCooldown>5250</jumpCooldown> <!-- Jump cooldown in ticks -->
+				<range>4</range>
+				<chargeNoun>jump</chargeNoun>
+				<hotKey>Misc4</hotKey>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<intelligence>ToolUser</intelligence>
+			<body>Ogre</body>
+			<predator>true</predator>
+			<baseHungerRate>1.5</baseHungerRate>
+			<lifeExpectancy>80000</lifeExpectancy>
+			<baseBodySize>1.5</baseBodySize>
+			<baseHealthScale>3.8</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Bear_Injured</soundWounded>
+					<soundDeath>Pawn_Bear_Death</soundDeath>
+					<soundCall>Pawn_Bear_Call</soundCall>
+					<soundAngry>Pawn_Bear_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>1000</min>
+				<max>2000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+			<useMeatFrom>Human</useMeatFrom>
+			<leatherDef>Leather_Heavy</leatherDef>
+			<hediffGiverSets>
+				<li>BerserkPassiveSet</li>
+			</hediffGiverSets>
+		</race>
+		<modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Humanoid</bodyShape>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	 <PawnKindDef Name="MKarPawn" Abstract="True">
+        <race>MKar</race>
+        <!-- <defaultFactionType>OgreClan</defaultFactionType> -->
+		<defaultFactionType>MKar</defaultFactionType>
+        <aiAvoidCover>true</aiAvoidCover>
+        <techHediffsChance>0</techHediffsChance>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<initialWillRange>4~5</initialWillRange>
+		<initialResistanceRange>37~49</initialResistanceRange>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Humanlike/MKar/MKar</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.5</drawSize>
+                    <shadowData>
+                        <volume>(0.2, 0.3, 0.8)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+ </PawnKindDef>
+  
+	<!-- Ogre Bases -->
+  <PawnKindDef ParentName="MKarPawn">
+        <defName>MKar</defName>
+        <label>MKar Melee</label>
+        <combatPower>475</combatPower>
+        <weaponMoney>
+            <min>2500</min>
+            <max>3100</max>
+        </weaponMoney>
+        <weaponTags>
+          <li>Kar</li>
+        </weaponTags>
+		 <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>4</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+	
+</Defs>

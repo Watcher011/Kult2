@@ -198,4 +198,79 @@
 
 
 
+<ThingDef ParentName="WeaponMedievalBase">
+		<defName>Kars</defName>
+		<label>Kars</label>
+		<description>The Crow's power scythe is a great item for both the fighter and the artisan. It mows both wheat and heads with equal ease.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Kars</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>Kar</li>
+		</weaponTags>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<yadarit>30</yadarit>
+			<Weapon_Parts>4</Weapon_Parts>
+			<Electronics>3</Electronics>
+		</costList>
+		<statBases>
+		  <MarketValue>300</MarketValue>
+			<WorkToMake>100</WorkToMake>
+			<Bulk>6.5</Bulk>
+			<Mass>3.5</Mass>
+			<MeleeCounterParryBonus>0.35</MeleeCounterParryBonus>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MeleeCritChance>0.5</MeleeCritChance>
+			<MeleeParryChance>0.1</MeleeParryChance>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+			<PlantWorkSpeed>0.3</PlantWorkSpeed>
+			<ConstructionSpeed>0.4</ConstructionSpeed>
+			<MiningSpeed>0.5</MiningSpeed>
+		</equippedStatOffsets>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.1</cooldownTime>
+				<chanceFactor>2.33</chanceFactor>
+				<armorPenetrationSharp>5.5</armorPenetrationSharp>
+				<armorPenetrationBlunt>11</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>0.65</cooldownTime>
+				<chanceFactor>1.15</chanceFactor>
+				<armorPenetrationBlunt>18</armorPenetrationBlunt>
+				<armorPenetrationSharp>13</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+			<li>Ultratech</li>
+		</weaponClasses>
+		<thingCategories>
+			<li>HeavyMelee</li>
+			<li>SharpMelee</li>
+		</thingCategories>
+	</ThingDef>
+
+
 </Defs>
