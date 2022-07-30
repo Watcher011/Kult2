@@ -166,6 +166,8 @@
 		</stages>
 	</HediffDef>
 	
+	
+	
 	 <RecipeDef ParentName="SurgeryFlesh">
     <defName>CureYAd</defName>
     <label>cure Yadarit</label>
@@ -340,96 +342,79 @@
 	
 	
 	
+		
+		
 	
-	
-	
-<HediffDef ParentName="DiseaseBase">
-		<defName>PainShock</defName>
-		<description>A dangerous Pain Shock . It might have damaged the heart, and the higher the intensity the hgher the possibility of a heart attack.</description>
-		<label>Pain shock</label>
+	<HediffDef>
+    <defName>ElectricBurn</defName>
+    <label>ElectricBurn</label>
+	<hediffClass>HediffWithComps</hediffClass> 
+    <defaultLabelColor>(0.5, 0.7, 0.3)</defaultLabelColor> 
+    <description>ElectricBurn</description>
+	    <minSeverity>0</minSeverity>
+		<maxSeverity>1</maxSeverity>
+		<lethalSeverity>1</lethalSeverity>
+		<makesSickThought>true</makesSickThought>
+		<scenarioCanAdd>false</scenarioCanAdd>
 		<isBad>true</isBad>
 		<comps>
-			<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>-2</severityPerDayNotImmune>
+		<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>-0.003</severityPerDayNotImmune>
 			</li>
 		</comps>
-		<stages>
-			<li>
-				<label>initial</label>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>0.9</setMax>
-					</li>
-				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>HeartAttack</hediff>
-						<mtbDays>10</mtbDays>
-						<partsToAffect>
-							<li>Heart</li>
-						</partsToAffect>
-					</li>
-				</hediffGivers>
-			</li>
-			<li>
-				<label>shocked</label>
-				<minSeverity>0.2</minSeverity>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>0.6</setMax>
-					</li>
-				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>HeartAttack</hediff>
-						<mtbDays>5</mtbDays>
-						<partsToAffect>
-							<li>Heart</li>
-						</partsToAffect>
-					</li>
-				</hediffGivers>
-			</li>
-			<li>
-				<label>very shocked</label>
-				<minSeverity>0.5</minSeverity>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>0.4</setMax>
-					</li>
-				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>HeartAttack</hediff>
-						<mtbDays>1</mtbDays>
-						<partsToAffect>
-							<li>Heart</li>
-						</partsToAffect>
-					</li>
-				</hediffGivers>
-			</li>
-			<li>
-				<label>paralysed</label>
-				<minSeverity>0.8</minSeverity>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>0.1</setMax>
-					</li>
-				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>HeartAttack</hediff>
-						<mtbDays>0.5</mtbDays>
-						<partsToAffect>
-							<li>Heart</li>
-						</partsToAffect>
-					</li>
-				</hediffGivers>
-			</li>
-		</stages>
-	</HediffDef>
+    <stages>
+      <li>
+        <label>minor</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <minSeverity>0.15</minSeverity>
+        <label>minor</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.1</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.30</minSeverity>
+        <label>moderate</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.2</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.45</minSeverity>
+        <label>severe</label>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.4</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <minSeverity>0.60</minSeverity>
+        <label>extreme</label>
+        <lifeThreatening>true</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.4</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+	
+ 
 	
 </Defs>

@@ -54,6 +54,7 @@
 		<description>Stores electricity when there is excess power and yields it when there is not.</description>
 		<defNames>
 			<li>Battery</li>
+			<li>BatteryX</li>
 			<li>FissionBattery</li>
 		</defNames>
 		<designationCategory>Power</designationCategory>

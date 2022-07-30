@@ -293,4 +293,62 @@
 		</thingCategories>
 	</ThingDef>
  
+ 
+ <!--
+ 
+ 	<ThingDef ParentName="ResourceBase">
+		<defName>KarBU</defName>
+		<label>KarBU</label>
+		<thingClass>ThingWithComps</thingClass>
+		<description>KarBU.</description>
+		<graphicData>
+			<texPath>Things/Item/stq</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MarketValue>1065</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>60.0</Mass>
+		</statBases>
+		<thingCategories>
+			<li>Items</li>
+		</thingCategories>
+		<tradeability>All</tradeability>
+		<techLevel>Spacer</techLevel>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Assemble Droid</useLabel>
+				<useDuration>600</useDuration>
+			</li>
+			<li Class="CompProperties_UseEffect">
+				<compClass>CONN.CompUseEffect_Reconditionner</compClass>
+			</li>
+			
+			<li Class="CompProperties_SpawnerPawn">
+				<spawnablePawnKinds>
+					<li>Haiter</li>
+					<li>Kukuha</li>
+				</spawnablePawnKinds>
+                <spawnIntervalRange>30000~60000</spawnIntervalRange>
+                <spawnMaxAdjacent>1</spawnMaxAdjacent>
+				 <lordJob>LordJob_MechanoidsDefend</lordJob>
+                 <shouldJoinParentLord>True</shouldJoinParentLord>
+				<initialPawnsPoints>3500</initialPawnsPoints>
+				<maxSpawnedPawnsPoints>8000</maxSpawnedPawnsPoints>
+			</li>
+			
+		</comps>
+	</ThingDef>
+
+ 
+ -->
+ 
+ 
 </Defs>
