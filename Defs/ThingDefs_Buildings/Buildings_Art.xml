@@ -320,6 +320,10 @@
 		<costList>
 			<Glowstone>18</Glowstone>
 		</costList>
+		 <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <killedLeavings>
+      <KarBU>1</KarBU>
+    </killedLeavings>
 		<recipeMaker>
 			<researchPrerequisite>Art_B1</researchPrerequisite>
 		</recipeMaker>

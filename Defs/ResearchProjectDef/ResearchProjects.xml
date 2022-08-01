@@ -27,7 +27,6 @@
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <tab>YadaritTech</tab>
     </ResearchProjectDef>
-    
     <!-- Tier 0 - base project -->
     <ResearchProjectDef ParentName="MedievalBase">
         <defName>YadariteReclamation</defName>
@@ -49,7 +48,17 @@
         <techLevel>Industrial</techLevel>
         <prerequisites>
             <li>Pneumatics</li>
-        </prerequisites>
+        </prerequisites> 
+		<hiddenPrerequisites>
+      <li>Prosthetics</li>
+    </hiddenPrerequisites>
+    <techprintCount>1</techprintCount>
+    <techprintCommonality>1</techprintCommonality>
+    <techprintMarketValue>2000</techprintMarketValue>
+	<heldByFactionCategoryTags>
+			<li>Empire</li>
+			<li>Outlander</li>
+    </heldByFactionCategoryTags>
         <researchViewX>2</researchViewX>
         <researchViewY>20</researchViewY>
 		<tab>Buildings_SK</tab>
@@ -65,6 +74,16 @@
             <li>YadariteReclamation</li>
 		     <li>Electricity</li>
         </prerequisites>
+		<hiddenPrerequisites>
+      <li>Prosthetics</li>
+    </hiddenPrerequisites>
+    <techprintCount>1</techprintCount>
+    <techprintCommonality>2</techprintCommonality>
+    <techprintMarketValue>2000</techprintMarketValue>
+	<heldByFactionCategoryTags>
+			<li>Empire</li>
+			<li>Outlander</li>
+    </heldByFactionCategoryTags>
         <researchViewX>2</researchViewX>
         <researchViewY>18</researchViewY>
 		<tab>Buildings_SK</tab>
@@ -78,6 +97,7 @@
         <baseCost>100</baseCost>
         <techLevel>Industrial</techLevel>
         <prerequisites>
+		 <li>YadariteReclamation</li>
             <li>YadaritePower</li>
         </prerequisites>
         <researchViewX>3</researchViewX>
@@ -112,6 +132,11 @@
         <defName>InDevelopment</defName>
         <label>Development</label>
         <description>these artifacts.</description>
+		 <hiddenPrerequisites>
+      <li>Prosthetics</li>
+    </hiddenPrerequisites>
+    <techprintCount>1</techprintCount>
+    <techprintCommonality>2</techprintCommonality>
         <baseCost>100</baseCost>
         <techLevel>Industrial</techLevel>
         <researchViewX>1</researchViewX>

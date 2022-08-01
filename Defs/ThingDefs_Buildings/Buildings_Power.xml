@@ -477,7 +477,7 @@ Power output: around 750 W.</description>
 				<heatPushMaxTemperature>75</heatPushMaxTemperature>
 			</li>
 			<li Class="SK.CompFueled_Properties">
-				<operatingTemp>800</operatingTemp>
+				<operatingTemp>500</operatingTemp>
 				<drawfirefuel>false</drawfirefuel>
 				<canAutoBurn>true</canAutoBurn>
 				<smokeDrawOffset>(0,0,0.1)</smokeDrawOffset>
@@ -572,7 +572,7 @@ Power output: around 750 W.</description>
 		<li Class="SK.CompProperties_ApplyHediffAround">
 				<hediff>ElectricBurn</hediff>
 				<radius>2</radius>
-				<severityToAdd>0.15</severityToAdd>
+				<severityToAdd>0.05</severityToAdd>
 			</li>
 			<li Class="CompProperties_Battery">
 				<storedEnergyMax>1800</storedEnergyMax>
